@@ -251,7 +251,7 @@ void Begin_OS2jet()
                                         ana.tx.setBranch<float>("OS2jet_fatjetwgt_vloose",      -999.);
                                         ana.tx.setBranch<float>("OS2jet_fatjetwgt_loose",       -999.);
                                         ana.tx.setBranch<float>("OS2jet_fatjetwgt_medium",      -999.);
-                                        ana.tx.setBranch<float>("OS2jet_LHEWeightSM",           nt.LHEWeight_mg_reweighting()[0]);
+                                       if(ana.is_EFT_sample) ana.tx.setBranch<float>("OS2jet_LHEWeightSM",           nt.LHEWeight_mg_reweighting()[0]);
 
                                         if(ana.tx.getBranchLazy<vector<LorentzVector>>("Common_gen_vvvdecay_p4s").size()>=6){
                                           LorentzVector genVVV = LorentzVector(0.,0.,0.,0.);
@@ -717,13 +717,15 @@ void Begin_OS2jet()
     ana.histograms.addHistogram("EvtMassNoMET" , 450,   0,  4500, [&]() { return      ana.tx.getBranch<float>("OS2jet_Mfatjetsleptons"         )   ; } );
     ana.histograms.addHistogram("EvtMT"        , 450,   0,  4500, [&]() { return      ana.tx.getBranch<float>("OS2jet_MTfatjetsleptonsMET"     )   ; } );
 
-    ana.histograms.addHistogram("LHESMWeight"  , 2000,   0,  2.0, [&]() { return      ana.tx.getBranch<float>("OS2jet_LHEWeightSM"             )   ; } );
+   if (ana.is_EFT_sample){ 
+   ana.histograms.addHistogram("LHESMWeight"  , 2000,   0,  2.0, [&]() { return      ana.tx.getBranch<float>("OS2jet_LHEWeightSM"             )   ; } );
     ana.histograms.addHistogram("LogLHESMWeight", 300, -29.,  1.0, [&]() { return  log(ana.tx.getBranch<float>("OS2jet_LHEWeightSM")    )   ; } );
     ana.histograms.addHistogram("LHESMWeight_lowMET"  ,  2200,-0.1,  2.1, [&]() { return   ana.tx.getBranch<float>("OS2jet_MET") < 400. ? ana.tx.getBranch<float>("OS2jet_LHEWeightSM") : -999.   ; } );
     ana.histograms.addHistogram("LogLHESMWeight_lowMET",  350, -34.,  1.0, [&]() { return  ana.tx.getBranch<float>("OS2jet_MET") < 400. ? log(ana.tx.getBranch<float>("OS2jet_LHEWeightSM")) : -999.   ; } );
     ana.histograms.addHistogram("LHESMWeight_highMET"  , 2200,-0.1,  2.1, [&]() { return   ana.tx.getBranch<float>("OS2jet_MET")>= 400. ? ana.tx.getBranch<float>("OS2jet_LHEWeightSM") : -999.   ; } );
     ana.histograms.addHistogram("LogLHESMWeight_highMET", 350, -34.,  1.0, [&]() { return  ana.tx.getBranch<float>("OS2jet_MET")>= 400. ? log(ana.tx.getBranch<float>("OS2jet_LHEWeightSM")) : -999.   ; } );
 
+}
     ana.histograms.addHistogram("Fat1_massSDgenmatch"  , 300,   0,   300, [&]() { return  ana.tx.getBranch<int>("OS2jet_fatjet1_genmatching")>=0 ?    ana.tx.getBranch<float>("OS2jet_fatjet1_massSD"          ) : -999.   ; } );
     ana.histograms.addHistogram("Fat1_tau21genmatch"   , 400,   0,     1, [&]() { return  ana.tx.getBranch<int>("OS2jet_fatjet1_genmatching")>=0 ?    ana.tx.getBranch<float>("OS2jet_fatjet1_tau21"           ) : -999.   ; } );
     ana.histograms.addHistogram("Fat1_Wtaggenmatch"    , 400,   0,     1, [&]() { return  ana.tx.getBranch<int>("OS2jet_fatjet1_genmatching")>=0 ?    ana.tx.getBranch<float>("OS2jet_fatjet1_Wtag"            ) : -999.   ; } );
