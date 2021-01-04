@@ -23,7 +23,8 @@ void Begin()
         case AnalysisConfig::kOS2jet: Begin_OS2jet(); break;
         case AnalysisConfig::kSS2jet: Begin_SS2jet(); break;
         case AnalysisConfig::k1Lep4jet: Begin_1Lep4jet(); break;
-    }
+  	case AnalysisConfig::kOS2Fatjet:Begin_OS2Fatjet(); break;  
+  }
 
     // At this point, the variables, histograms, selections are all defined and booked.
 
