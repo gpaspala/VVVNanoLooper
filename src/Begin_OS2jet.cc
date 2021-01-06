@@ -7,7 +7,6 @@ void Begin_OS2jet()
     // This function gets called prior to the event looping.
     // This is where one declares variables, histograms, event selections for the category OS2jet.
     //==============================================
-
     // Create variables used in this category.
     // Please follow the convention of <category>_<varname> structure.
     ana.tx.createBranch<int>  ("OS2jet_SFcontent"             );
@@ -146,6 +145,7 @@ void Begin_OS2jet()
                                         return true;
                                       }, UNITY);
     ana.cutflow.addCutToLastActiveCut("Cut_OS2jet_Preselection",
+                                       //comm
                                       [&]()
                                       {
                                         bool isSFOSZ = false;
@@ -341,7 +341,7 @@ void Begin_OS2jet()
                                                 if(idq1<0) { idq1  = ig; dRq1  = tempDR; }
                                                 else       { idqp1 = ig; dRqp1 = tempDR; }
                                               }
-                                              if((abs(ana.tx.getBranchLazy<vector<int>>("Common_gen_pdgid")[ig])==11 || abs(ana.tx.getBranchLazy<vector<int>>("Common_gen_pdgid")[ig])==13 || abs(ana.tx.getBranchLazy<vector<int>>("Common_gen_pdgid")[ig])==15)  && (ana.tx.getBranchLazy<vector<int>>("Common_gen_mother_id")[ig])==24){ 
+                                              if((abs(ana.tx.getBranchLazy<vector<int>>("Common_gen_pdgid")[ig])==11 || abs(ana.tx.getBranchLazy<vector<int>>("Common_gen_pdgid")[ig])==13 || abs(ana.tx.getBranchLazy<vector<int>>("Common_gen_pdgid")[ig])==15)  && (ana.tx.getBranchLazy<vector<int>>("Common_gen_mother_id")[ig])==24){
                                                 idl1 = ig; dRl1 = tempDR;
                                               }
                                               if(abs(ana.tx.getBranchLazy<vector<int>>("Common_gen_pdgid")[ig])==5 && (ana.tx.getBranchLazy<vector<int>>("Common_gen_mother_id")[ig])==-6) {
@@ -423,7 +423,7 @@ void Begin_OS2jet()
                                           ana.tx.setBranch<bool >("OS2jet_fatjet12_ORtau21cut",   ((ana.tx.getBranchLazy<vector<float>>("Common_fatjet_tau21")[1]<0.45)||(ana.tx.getBranchLazy<vector<float>>("Common_fatjet_tau21")[1]<0.45)));
                                         }
                                         //do >=2 jets - do jets orthogonal to fatjets
-                                        if(jetidx2>=0){  
+                                        if(jetidx2>=0){
                                           ana.tx.setBranch<int>  ("OS2jet_jet1_idx",              jetidx1);
                                           ana.tx.setBranch<int>  ("OS2jet_jet2_idx",              jetidx2);
                                           ana.tx.setBranch<float>("OS2jet_jet1_pt",               ana.tx.getBranchLazy<vector<LorentzVector>>("Common_jet_p4")[jetidx1].Pt());
@@ -524,7 +524,7 @@ void Begin_OS2jet()
     ana.cutflow.addCutToLastActiveCut("Cut_OS2jet_SFnoZ2fatjets_looseWP",           [&]() { return ana.tx.getBranch<int>("OS2jet_Nfatjets_loose") >=2;}, [&]() { return ana.tx.getBranch<float>("OS2jet_fatjetwgt_loose"); });
     ana.cutflow.getCut("Cut_OS2jet_SFnoZ2fatjets");
     ana.cutflow.addCutToLastActiveCut("Cut_OS2jet_SFnoZ2fatjets_mediumWP",          [&]() { return ana.tx.getBranch<int>("OS2jet_Nfatjets_medium")>=2;}, [&]() { return ana.tx.getBranch<float>("OS2jet_fatjetwgt_medium"); });
-    
+
     // --------------------
     // ***   SF with Z  ***
     // --------------------
@@ -548,7 +548,7 @@ void Begin_OS2jet()
     ana.cutflow.addCutToLastActiveCut("Cut_OS2jet_SFZ1fatjet_looseWP",            [&]() { return ana.tx.getBranch<int>("OS2jet_Nfatjets_loose") ==1;}, [&]() { return ana.tx.getBranch<float>("OS2jet_fatjetwgt_loose"); });
     ana.cutflow.getCut("Cut_OS2jet_SFZ1fatjet");
     ana.cutflow.addCutToLastActiveCut("Cut_OS2jet_SFZ1fatjet_mediumWP",           [&]() { return ana.tx.getBranch<int>("OS2jet_Nfatjets_medium")==1;}, [&]() { return ana.tx.getBranch<float>("OS2jet_fatjetwgt_medium"); });
-    
+
     // _____________________
     // *** OS2jet_SFZ2fatjets
     // note: did full chain only for tag12plus/tag1and2 as well as M12/M12SD
@@ -567,7 +567,7 @@ void Begin_OS2jet()
     ana.cutflow.addCutToLastActiveCut("Cut_OS2jet_SFZ2fatjets_looseWP",           [&]() { return ana.tx.getBranch<int>("OS2jet_Nfatjets_loose") >=2;}, [&]() { return ana.tx.getBranch<float>("OS2jet_fatjetwgt_loose"); });
     ana.cutflow.getCut("Cut_OS2jet_SFZ2fatjets");
     ana.cutflow.addCutToLastActiveCut("Cut_OS2jet_SFZ2fatjets_mediumWP",          [&]() { return ana.tx.getBranch<int>("OS2jet_Nfatjets_medium")>=2;}, [&]() { return ana.tx.getBranch<float>("OS2jet_fatjetwgt_medium"); });
-    
+
     //top CR
     ana.cutflow.getCut("Cut_OS2jet_Preselection");
     ana.cutflow.addCutToLastActiveCut("Cut_OS2jet_topCRPreselection",               [&]() { return ana.tx.getBranch<int>("OS2jet_Nbjetsmedv1")>=1;},  [&]() { return ana.tx.getBranchLazy<float>("Common_btagWeight_DeepCSVB");});
@@ -717,7 +717,7 @@ void Begin_OS2jet()
     ana.histograms.addHistogram("EvtMassNoMET" , 450,   0,  4500, [&]() { return      ana.tx.getBranch<float>("OS2jet_Mfatjetsleptons"         )   ; } );
     ana.histograms.addHistogram("EvtMT"        , 450,   0,  4500, [&]() { return      ana.tx.getBranch<float>("OS2jet_MTfatjetsleptonsMET"     )   ; } );
 
-   if (ana.is_EFT_sample){ 
+   if (ana.is_EFT_sample){
    ana.histograms.addHistogram("LHESMWeight"  , 2000,   0,  2.0, [&]() { return      ana.tx.getBranch<float>("OS2jet_LHEWeightSM"             )   ; } );
     ana.histograms.addHistogram("LogLHESMWeight", 300, -29.,  1.0, [&]() { return  log(ana.tx.getBranch<float>("OS2jet_LHEWeightSM")    )   ; } );
     ana.histograms.addHistogram("LHESMWeight_lowMET"  ,  2200,-0.1,  2.1, [&]() { return   ana.tx.getBranch<float>("OS2jet_MET") < 400. ? ana.tx.getBranch<float>("OS2jet_LHEWeightSM") : -999.   ; } );
