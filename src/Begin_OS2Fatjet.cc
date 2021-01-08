@@ -291,6 +291,10 @@ void Begin_OS2Fatjet()
                                         ana.tx.setBranch<float>("OS2jet_fatjetwgt_medium",      -999.);
                                         ana.tx.setBranch<float>("OS2jet_LHEWeightSM",           nt.LHEWeight_mg_reweighting()[0]);*/
 
+                                        //vvv decays//
+																				jj
+
+
 
                                //       now fill branches already here
                                         int nfat= ana.tx.getBranchLazy<vector<LorentzVector>>("Common_fatjet_p4").size();
