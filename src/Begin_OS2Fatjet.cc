@@ -38,6 +38,18 @@ void Begin_OS2Fatjet()
   ana.tx.createBranch<float>("OS2jet_fatjet2_mass"          );
   ana.tx.createBranch<float>("OS2jet_fatjet1_massSD"        );
   ana.tx.createBranch<float>("OS2jet_fatjet2_massSD"        );
+  ana.tx.createBranch<float>("OS2jet_fatjet1_subjet0_pt"    );
+  ana.tx.createBranch<float>("OS2jet_fatjet1_subjet1_pt"    );
+  ana.tx.createBranch<float>("OS2jet_fatjet1_subjet0_eta"   );
+  ana.tx.createBranch<float>("OS2jet_fatjet1_subjet1_eta"   );
+  ana.tx.createBranch<float>("OS2jet_fatjet1_subjet0_mass"  );
+  ana.tx.createBranch<float>("OS2jet_fatjet1_subjet1_mass"  );
+  ana.tx.createBranch<float>("OS2jet_fatjet2_subjet0_pt"    );
+  ana.tx.createBranch<float>("OS2jet_fatjet2_subjet1_pt"    );
+  ana.tx.createBranch<float>("OS2jet_fatjet2_subjet0_eta"   );
+  ana.tx.createBranch<float>("OS2jet_fatjet2_subjet1_eta"   );
+  ana.tx.createBranch<float>("OS2jet_fatjet2_subjet0_mass"  );
+  ana.tx.createBranch<float>("OS2jet_fatjet2_subjet1_mass"  );
   ana.tx.createBranch<float>("OS2jet_fatjet1_tau1"          );
   ana.tx.createBranch<float>("OS2jet_fatjet1_tau2"          );
   ana.tx.createBranch<float>("OS2jet_fatjet1_tau3"          );
@@ -228,6 +240,18 @@ void Begin_OS2Fatjet()
                                         ana.tx.setBranch<float>("OS2jet_fatjet2_mass",          -999.);
                                         ana.tx.setBranch<float>("OS2jet_fatjet1_massSD",        -999.);
                                         ana.tx.setBranch<float>("OS2jet_fatjet2_massSD",        -999.);
+                                        ana.tx.setBranch<float>("OS2jet_fatjet1_subjet0_pt",     -999.);
+                                        ana.tx.setBranch<float>("OS2jet_fatjet1_subjet1_pt",     -999.);
+                                        ana.tx.setBranch<float>("OS2jet_fatjet1_subjet0_eta",    -999.);
+                                        ana.tx.setBranch<float>("OS2jet_fatjet1_subjet1_eta",    -999.);
+                                        ana.tx.setBranch<float>("OS2jet_fatjet1_subjet0_mass",   -999.);
+                                        ana.tx.setBranch<float>("OS2jet_fatjet1_subjet1_mass",   -999.);
+                                        ana.tx.setBranch<float>("OS2jet_fatjet2_subjet0_pt",     -999.);
+                                        ana.tx.setBranch<float>("OS2jet_fatjet2_subjet1_pt",     -999.);
+                                        ana.tx.setBranch<float>("OS2jet_fatjet2_subjet0_eta",    -999.);
+                                        ana.tx.setBranch<float>("OS2jet_fatjet2_subjet1_eta",   -999.);
+                                        ana.tx.setBranch<float>("OS2jet_fatjet2_subjet0_mass",   -999.);
+                                        ana.tx.setBranch<float>("OS2jet_fatjet2_subjet1_mass",   -999.);
                                         ana.tx.setBranch<float>("OS2jet_fatjet1_tau21",         -999.);
                                         ana.tx.setBranch<float>("OS2jet_fatjet2_tau21",         -999.);
                                         ana.tx.setBranch<float>("OS2jet_fatjet1_tau32",         -999.);
@@ -345,6 +369,14 @@ void Begin_OS2Fatjet()
                                           ana.tx.setBranch<float>("OS2jet_fatjet1_pt",            ana.tx.getBranchLazy<vector<LorentzVector>>("Common_fatjet_p4")[0].Pt());
                                           ana.tx.setBranch<float>("OS2jet_fatjet1_mass",          ana.tx.getBranchLazy<vector<LorentzVector>>("Common_fatjet_p4")[0].M());
                                           ana.tx.setBranch<float>("OS2jet_fatjet1_massSD",        ana.tx.getBranchLazy<vector<float>>("Common_fatjet_msoftdrop")[0]);
+                                          //subjet info
+                                          ana.tx.setBranch<float>("OS2jet_fatjet1_subjet0_pt",     ana.tx.getBranchLazy<vector<float>>("Common_fatjet_subjet0_pt")[0]);
+                                          ana.tx.setBranch<float>("OS2jet_fatjet1_subjet1_pt",     ana.tx.getBranchLazy<vector<float>>("Common_fatjet_subjet1_pt")[0]);
+                                          ana.tx.setBranch<float>("OS2jet_fatjet1_subjet0_eta",    ana.tx.getBranchLazy<vector<float>>("Common_fatjet_subjet0_eta")[0]);
+                                          ana.tx.setBranch<float>("OS2jet_fatjet1_subjet1_eta",    ana.tx.getBranchLazy<vector<float>>("Common_fatjet_subjet1_eta")[0]);
+                                          ana.tx.setBranch<float>("OS2jet_fatjet1_subjet0_mass",   ana.tx.getBranchLazy<vector<float>>("Common_fatjet_subjet0_mass")[0]);
+                                          ana.tx.setBranch<float>("OS2jet_fatjet1_subjet1_mass",   ana.tx.getBranchLazy<vector<float>>("Common_fatjet_subjet1_mass")[0]);
+                                          //Njettines info
                                           ana.tx.setBranch<float>("OS2jet_fatjet1_tau1",          ana.tx.getBranchLazy<vector<float>>("Common_fatjet_tau1")[0]);
                                           ana.tx.setBranch<float>("OS2jet_fatjet1_tau2",          ana.tx.getBranchLazy<vector<float>>("Common_fatjet_tau2")[0]);
                                           ana.tx.setBranch<float>("OS2jet_fatjet1_tau3",          ana.tx.getBranchLazy<vector<float>>("Common_fatjet_tau3")[0]);
@@ -457,6 +489,16 @@ void Begin_OS2Fatjet()
                                           ana.tx.setBranch<float>("OS2jet_fatjet2_pt",            ana.tx.getBranchLazy<vector<LorentzVector>>("Common_fatjet_p4")[1].Pt());
                                           ana.tx.setBranch<float>("OS2jet_fatjet2_mass",          ana.tx.getBranchLazy<vector<LorentzVector>>("Common_fatjet_p4")[1].M());
                                           ana.tx.setBranch<float>("OS2jet_fatjet2_massSD",        ana.tx.getBranchLazy<vector<float>>("Common_fatjet_msoftdrop")[1]);
+                                          //subjet info
+                                          ana.tx.setBranch<float>("OS2jet_fatjet2_subjet0_pt",     ana.tx.getBranchLazy<vector<float>>("Common_fatjet_subjet0_pt")[1]);
+                                          ana.tx.setBranch<float>("OS2jet_fatjet2_subjet1_pt",     ana.tx.getBranchLazy<vector<float>>("Common_fatjet_subjet1_pt")[1]);
+                                          ana.tx.setBranch<float>("OS2jet_fatjet2_subjet0_eta",    ana.tx.getBranchLazy<vector<float>>("Common_fatjet_subjet0_eta")[1]);
+                                          ana.tx.setBranch<float>("OS2jet_fatjet2_subjet1_eta",    ana.tx.getBranchLazy<vector<float>>("Common_fatjet_subjet1_eta")[1]);
+                                          ana.tx.setBranch<float>("OS2jet_fatjet2_subjet0_mass",   ana.tx.getBranchLazy<vector<float>>("Common_fatjet_subjet0_mass")[1]);
+                                          ana.tx.setBranch<float>("OS2jet_fatjet2_subjet1_mass",   ana.tx.getBranchLazy<vector<float>>("Common_fatjet_subjet1_mass")[1]);
+
+
+
                                           ana.tx.setBranch<float>("OS2jet_fatjet2_tau1",          ana.tx.getBranchLazy<vector<float>>("Common_fatjet_tau1")[1]);
                                           ana.tx.setBranch<float>("OS2jet_fatjet2_tau2",          ana.tx.getBranchLazy<vector<float>>("Common_fatjet_tau2")[1]);
                                           ana.tx.setBranch<float>("OS2jet_fatjet2_tau3",          ana.tx.getBranchLazy<vector<float>>("Common_fatjet_tau3")[1]);
