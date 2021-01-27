@@ -233,7 +233,6 @@ void Begin_OS2Fatjet()
                                         ana.tx.setBranch<float>("OS2jet_MET",                   ana.tx.getBranchLazy<LorentzVector>("Common_met_p4").Pt());
                                         ana.tx.setBranch<float>("OS2jet_MET_fatjet1_DPhi",      -999.);
                                         ana.tx.setBranch<float>("OS2jet_MET_ll_DPhi",           abs(RooUtil::Calc::DeltaPhi(ana.tx.getBranchLazy<vector<LorentzVector>>("Common_lep_p4")[0]+ana.tx.getBranchLazy<vector<LorentzVector>>("Common_lep_p4")[1],ana.tx.getBranchLazy<LorentzVector>("Common_met_p4"))));
-                                        ana.tx.setBranch<float>("OS2jet_MET_ll_DPhi",           -999);
                                         ana.tx.setBranch<float>("OS2jet_fatjet1_pt",            -999.);
                                         ana.tx.setBranch<float>("OS2jet_fatjet2_pt",            -999.);
                                         ana.tx.setBranch<float>("OS2jet_fatjet1_mass",          -999.);
@@ -564,15 +563,20 @@ void Begin_OS2Fatjet()
                                    return true;
                                   }, UNITY);// trigger SF would go in here instead of UNITY, in principle also btag weight
 
-/////////
+    //
+    ///////// 'matched selection'
+    ana.cutflow.getCut("Cut_OS2Fatjet_Preselection");
+    ana.cutflow.addCutToLastActiveCut("Cut_OS2Fatjet_Preselection_genmatched",               [&]() { return ana.tx.getBranch<int>("OS2jet_fatjet1_genmatching") >=0 /*&& ana.tx.getBranch<int>("OS2jet_Nbjetsv1")==0*/;}, UNITY);
 
 
+    //adding cut flow plots to compare with matched plots
 
     // --------------------
 
     // ***      OF      ***
     // --------------------
     ana.cutflow.getCut("Cut_OS2Fatjet_Preselection");
+
     ana.cutflow.addCutToLastActiveCut("Cut_OS2Fatjet_OFPreselection",               [&]() { return ana.tx.getBranch<int>("OS2jet_SFcontent") ==0 /*&& ana.tx.getBranch<int>("OS2jet_Nbjetsv1")==0*/;}, UNITY);
     // __________________
     // *** OS2jet_OF2jets
@@ -584,9 +588,6 @@ void Begin_OS2Fatjet()
 
 
 
-
-
-
     // Create histograms used in this category.
     // Please follow the convention of h_<category>_<varname> structure.
     // N.B. Using nbins of size 180 or 360 can provide flexibility as it can be rebinned easily, as 180, 360 are highly composite numbers.
@@ -594,6 +595,7 @@ void Begin_OS2Fatjet()
     ana.histograms.addHistogram("NFatjets"     ,  10,   0,    10, [&]() { return      ana.tx.getBranch<int>  ("OS2jet_Nfatjets"                   )   ; } );
     ana.histograms.addHistogram("Fat1_mass"    , 300,   0,   300, [&]() { return      ana.tx.getBranch<float>("OS2jet_fatjet1_mass"            )   ; } );
     ana.histograms.addHistogram("Fat1_massSD"  , 300,   0,   300, [&]() { return      ana.tx.getBranch<float>("OS2jet_fatjet1_massSD"          )   ; } );
+
 
     RooUtil::Histograms hists_OSFat2jet;
 
@@ -606,6 +608,7 @@ void Begin_OS2Fatjet()
 
 // Book histograms to cuts that user wants for this category.
     ana.cutflow.bookHistogramsForCutAndBelow(ana.histograms, "Cut_OS2Fatjet_Preselection");
+    //ana.cutflow.bookHistogramsForCutAndBelow(ana.histograms, "CommonCut");
 
 
 
