@@ -26,8 +26,9 @@ void Process_OS2Fatjet()
 }
 
   void PostProcess_OS2Fatjet(){
-    if (ana.cutflow.getCut("Cut_OS2Fatjet_Preselection").pass){
-                   ana.tx.fill(); 
+      if (ana.cutflow.getCut("Cut_OS2Fatjet_Preselection").pass){
+     // if (ana.cutflow.getCut("Cut_OS2Fatjet_Preselection_genmatched").pass){     
+              ana.tx.fill(); 
     }
   }	
 

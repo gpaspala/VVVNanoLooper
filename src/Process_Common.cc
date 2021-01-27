@@ -744,6 +744,13 @@ void Process_Common()
                 }
             }
         }
+        
+        /*cout << "----------------" << endl;
+        cout << "number of genW "<< nW          <<endl;
+        cout << "number of lep_W "<< nlepW       <<endl;
+        cout << "number of leptau_W " <<ntaulepW <<endl;
+        cout << "number of hadtau_W "<<ntauhadW  <<endl;
+        cout << "----------------" << endl;*/
 
         ana.tx.setBranch<int> ("Common_n_W",        nW      );
         ana.tx.setBranch<int> ("Common_n_lep_W",    nlepW   );

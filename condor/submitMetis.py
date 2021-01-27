@@ -55,11 +55,12 @@ if __name__ == "__main__":
         elif args.year==2016:
             sample_map = samples.data_2016 # See condor/samples.py
     if args.mysample:
-        sample_map = samples.samples_VVV4L_2018 # See condor/samples.py
-        if args.year==2017:
-            sample_map = samples.samples_VVV4L_2017 # See condor/samples.py
-        elif args.year==2016:
-            sample_map = samples.samples_VVV4L_2016 # See condor/samples.py
+        sample_map = samples.lisa_sampletest
+        #sample_map = samples.samples_VVV4L_2018 # See condor/samples.py
+        #if args.year==2017:
+           # sample_map = samples.samples_VVV4L_2017 # See condor/samples.py
+        #elif args.year==2016:
+           # sample_map = samples.samples_VVV4L_2016 # See condor/samples.py
         
 
     # submission tag
@@ -144,4 +145,3 @@ if __name__ == "__main__":
         except KeyboardInterrupt:
             raw_input("Press Enter to force update, or Ctrl-C to quit.")
             print("Force updating...")
-
