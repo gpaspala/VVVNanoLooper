@@ -3,148 +3,26 @@
 void Begin_OS2Fatjet()
 {
 
-   //comment
+   //comment2
   //==============================================
   //// Begin_OS2Fatjet:
   //// This function gets called prior to the event looping.
   //// This is where one declares variables, histograms, event selections for the category OS2jet.
   ////==============================================
   //
+Begin_OS2Fatjet_Create_Branches();
 
+// The framework may run over NanoAOD directly or, it may run over VVVTree.
+// ana.run_VVVTree boolean determines this.
 
-  // Create variables used in this category.
-  // Please follow the convention of <category>_<varname> structure.
-
-  ana.tx.createBranch<int>  ("OS2jet_SFcontent"             );
-  ana.tx.createBranch<int>  ("OS2jet_Jetcontent"            );
-  ana.tx.createBranch<int>  ("OS2jet_Nfatjets"              );
-  ana.tx.createBranch<int>  ("OS2jet_Njets"                 );
-  ana.tx.createBranch<int>  ("OS2jet_Nbjetsv1"              );
-  ana.tx.createBranch<int>  ("OS2jet_Nbjetsv2"              );
-  //ana.tx.createBranch<int>  ("OS2jet_Nbjetsmedv1"           );
-  //ana.tx.createBranch<int>  ("OS2jet_NfatjetsMinusNjets"    );
-  ana.tx.createBranch<float>("OS2jet_lep1_pt"               );
-  ana.tx.createBranch<float>("OS2jet_lep2_pt"               );
-  ana.tx.createBranch<float>("OS2jet_lep12_ptvectorsum"     );
-  ana.tx.createBranch<float>("OS2jet_lep12_ptscalarsum"     );
-  ana.tx.createBranch<float>("OS2jet_lep12_ptscalarprod"    );
-  ana.tx.createBranch<float>("OS2jet_lep12_mass"            );
-  ana.tx.createBranch<float>("OS2jet_lep12_DR"              );
-  ana.tx.createBranch<float>("OS2jet_lep12_DPhi"            );
-  ana.tx.createBranch<float>("OS2jet_lep12_Deta"            );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_pt"            );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_pt"            );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_mass"          );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_mass"          );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_massSD"        );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_massSD"        );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_subjet0_pt"    );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_subjet1_pt"    );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_subjet0_eta"   );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_subjet1_eta"   );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_subjet0_mass"  );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_subjet1_mass"  );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_subjet0_pt"    );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_subjet1_pt"    );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_subjet0_eta"   );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_subjet1_eta"   );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_subjet0_mass"  );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_subjet1_mass"  );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_tau1"          );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_tau2"          );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_tau3"          );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_tau21"         );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_tau21"         );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_tau32"         );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_tau32"         );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_tau1"          );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_tau2"          );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_tau3"          );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_ll_DR"         );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_ll_DR"         );
-  ana.tx.createBranch<float>("OS2jet_fatjet12_ll_DRmax"     );
-  ana.tx.createBranch<float>("OS2jet_fatjet12_ptvectorsum"  );
-  ana.tx.createBranch<float>("OS2jet_fatjet12_ptscalarsum"  );
-  ana.tx.createBranch<float>("OS2jet_fatjet12_ptscalarprod" );
-  ana.tx.createBranch<float>("OS2jet_fatjet12_mass"         );
-  ana.tx.createBranch<float>("OS2jet_fatjet12_masssum"      );
-  ana.tx.createBranch<float>("OS2jet_fatjet12_massproduct"  );
-  ana.tx.createBranch<float>("OS2jet_fatjet12_massSDsum"    );
-  ana.tx.createBranch<float>("OS2jet_fatjet12_massSDproduct");
-  ana.tx.createBranch<float>("OS2jet_fatjet12_DR"           );
-  ana.tx.createBranch<float>("OS2jet_fatjet12_DPhi"         );
-  ana.tx.createBranch<float>("OS2jet_fatjet12_DEta"         );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_toptag"        );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_toptag"        );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_Wtag"          );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_Wtag"          );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_Ztag"          );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_Ztag"          );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_Zbbtag"        );
-  ana.tx.createBranch<float>("OS2jet_fatjet2_Zbbtag"        );
-  //ana.tx.createBranch<float>("OS2jet_fatjet1_WpZtag"        );
-  //ana.tx.createBranch<float>("OS2jet_fatjet1_WtZtag"        );
-  //ana.tx.createBranch<float>("OS2jet_fatjet2_WpZtag"        );
-  //ana.tx.createBranch<float>("OS2jet_fatjet2_WtZtag"        );
-  ana.tx.createBranch<float>("OS2jet_fatjet12_WtWtag"       );
-  //ana.tx.createBranch<float>("OS2jet_fatjet12_WtZtag"       );
-  //ana.tx.createBranch<float>("OS2jet_fatjet12_ZtWtag"       );
-  //ana.tx.createBranch<float>("OS2jet_fatjet12_ZtZtag"       );
-  ana.tx.createBranch<float>("OS2jet_fatjet12_WpWtag"       );
-  //ana.tx.createBranch<float>("OS2jet_fatjet12_WpZtag"       );
-  //ana.tx.createBranch<float>("OS2jet_fatjet12_ZpWtag"       );
-  //ana.tx.createBranch<float>("OS2jet_fatjet12_ZpZtag"       );
-  ana.tx.createBranch<int>  ("OS2jet_jet1_idx"              );
-  ana.tx.createBranch<int>  ("OS2jet_jet2_idx"              );
-  ana.tx.createBranch<float>("OS2jet_jet1_pt"               );
-  ana.tx.createBranch<float>("OS2jet_jet2_pt"               );
-  ana.tx.createBranch<float>("OS2jet_jet12_ptvectorsum"     );
-  ana.tx.createBranch<float>("OS2jet_jet12_ptscalarsum"     );
-  ana.tx.createBranch<float>("OS2jet_jet12_ptscalarprod"    );
-  ana.tx.createBranch<float>("OS2jet_jet12_mass"            );
-  ana.tx.createBranch<float>("OS2jet_jet12_DR"              );
-  ana.tx.createBranch<float>("OS2jet_jet12_DPhi"            );
-  ana.tx.createBranch<float>("OS2jet_jet12_DEta"            );
-  ana.tx.createBranch<float>("OS2jet_MET"                   );
-  ana.tx.createBranch<float>("OS2jet_MET_fatjet1_DPhi"      );
-  ana.tx.createBranch<float>("OS2jet_MET_ll_DPhi"           );
-  ana.tx.createBranch<float>("OS2jet_fatjet1_Recojet_matchJet_DRmin");
-  //ana.tx.createBranch<float>("OS2jet_fatjet2_Recojet_matchJet_DRmin");
-  //ana.tx.createBranch<float>("OS2jet_fatjet1_Recojet_Whadr_match_DRmin");
-  ana.tx.createBranch<int>  ("OS2jet_fatjet1_genmatching"   );
-  ana.tx.createBranch<int>  ("OS2jet_fatjet2_genmatching"   );
-  ana.tx.createBranch<int>  ("OS2jet_fatjet1_genmatchingv2" );
-  ana.tx.createBranch<int>  ("OS2jet_fatjet2_genmatchingv2" );
-  ana.tx.createBranch<int>  ("OS2jet_fatjet1_genmatchingv3" );
-  //ana.tx.createBranch<int>  ("OS2jet_fatjet2_genmatchingv3" );
-  ana.tx.createBranch<float>("OS2jet_genMVVV"               );
-  ana.tx.createBranch<float>("OS2jet_genpTVVV"              );
-  ana.tx.createBranch<float>("OS2jet_Mfatjetsleptons"       );
-  ana.tx.createBranch<float>("OS2jet_MTfatjetsleptonsMET"   );
-  /*ana.tx.createBranch<bool >("OS2jet_fatjet1_massSDcut"     );
-  ana.tx.createBranch<bool >("OS2jet_fatjet1_WtagMcut"      );
-  ana.tx.createBranch<bool >("OS2jet_fatjet1_WtagLcut"      );
-  ana.tx.createBranch<bool >("OS2jet_fatjet1_tau21cut"      );
-  ana.tx.createBranch<bool >("OS2jet_fatjet2_massSDcut"     );
-  ana.tx.createBranch<bool >("OS2jet_fatjet2_WtagMcut"      );
-  ana.tx.createBranch<bool >("OS2jet_fatjet2_WtagLcut"      );
-  ana.tx.createBranch<bool >("OS2jet_fatjet2_tau21cut"      );
-  //ana.tx.createBranch<float>("OS2jet_fatjet2_Recojet_Whadr_match_DRmin");
-  ana.tx.createBranch<bool >("OS2jet_fatjet12_ANDmassSDcut" );
-  ana.tx.createBranch<bool >("OS2jet_fatjet12_ANDWtagMcut"  );
-  ana.tx.createBranch<bool >("OS2jet_fatjet12_ANDWtagLcut"  );
-  ana.tx.createBranch<bool >("OS2jet_fatjet12_ANDtau21cut"  );
-  ana.tx.createBranch<bool >("OS2jet_fatjet12_ORmassSDcut"  );
-  ana.tx.createBranch<bool >("OS2jet_fatjet12_ORWtagMcut"   );
-  ana.tx.createBranch<bool >("OS2jet_fatjet12_ORWtagLcut"   );
-  ana.tx.createBranch<bool >("OS2jet_fatjet12_ORtau21cut"   );
-  ana.tx.createBranch<int  >("OS2jet_Nfatjets_vloose"       );
-  ana.tx.createBranch<int  >("OS2jet_Nfatjets_loose"        );
-  ana.tx.createBranch<int  >("OS2jet_Nfatjets_medium"       );
-  ana.tx.createBranch<float>("OS2jet_fatjetwgt_vloose"      );
-  ana.tx.createBranch<float>("OS2jet_fatjetwgt_loose"       );
-  ana.tx.createBranch<float>("OS2jet_fatjetwgt_medium"      ); */
-
+  if (ana.run_VVVTree)
+     {
+         Begin_OS2Fatjet_VVVTree();
+     }
+     else
+     {
+         Begin_OS2Fatjet_NanoAOD();
+     }
 
 
 
@@ -563,6 +441,7 @@ void Begin_OS2Fatjet()
                                    return true;
                                   }, UNITY);// trigger SF would go in here instead of UNITY, in principle also btag weight
 
+
     //
     ///////// 'matched selection'
     ana.cutflow.getCut("Cut_OS2Fatjet_Preselection");
@@ -610,6 +489,156 @@ void Begin_OS2Fatjet()
     ana.cutflow.bookHistogramsForCutAndBelow(ana.histograms, "Cut_OS2Fatjet_Preselection");
     //ana.cutflow.bookHistogramsForCutAndBelow(ana.histograms, "CommonCut");
 
+  }
 
 
-}
+  void Begin_OS2Fatjet_VVVTree(){
+
+  }
+
+
+  void Begin_OS2Fatjet_NanoAOD()
+  {
+
+  }
+
+
+
+  void Begin_OS2Fatjet_Create_Branches()
+  {
+    // Create variables used in this category.
+    // Please follow the convention of <category>_<varname> structure.
+
+    ana.tx.createBranch<int>  ("OS2jet_SFcontent"             );
+    ana.tx.createBranch<int>  ("OS2jet_Jetcontent"            );
+    ana.tx.createBranch<int>  ("OS2jet_Nfatjets"              );
+    ana.tx.createBranch<int>  ("OS2jet_Njets"                 );
+    ana.tx.createBranch<int>  ("OS2jet_Nbjetsv1"              );
+    ana.tx.createBranch<int>  ("OS2jet_Nbjetsv2"              );
+    //ana.tx.createBranch<int>  ("OS2jet_Nbjetsmedv1"           );
+    //ana.tx.createBranch<int>  ("OS2jet_NfatjetsMinusNjets"    );
+    ana.tx.createBranch<float>("OS2jet_lep1_pt"               );
+    ana.tx.createBranch<float>("OS2jet_lep2_pt"               );
+    ana.tx.createBranch<float>("OS2jet_lep12_ptvectorsum"     );
+    ana.tx.createBranch<float>("OS2jet_lep12_ptscalarsum"     );
+    ana.tx.createBranch<float>("OS2jet_lep12_ptscalarprod"    );
+    ana.tx.createBranch<float>("OS2jet_lep12_mass"            );
+    ana.tx.createBranch<float>("OS2jet_lep12_DR"              );
+    ana.tx.createBranch<float>("OS2jet_lep12_DPhi"            );
+    ana.tx.createBranch<float>("OS2jet_lep12_Deta"            );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_pt"            );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_pt"            );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_mass"          );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_mass"          );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_massSD"        );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_massSD"        );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_subjet0_pt"    );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_subjet1_pt"    );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_subjet0_eta"   );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_subjet1_eta"   );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_subjet0_mass"  );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_subjet1_mass"  );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_subjet0_pt"    );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_subjet1_pt"    );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_subjet0_eta"   );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_subjet1_eta"   );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_subjet0_mass"  );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_subjet1_mass"  );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_tau1"          );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_tau2"          );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_tau3"          );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_tau21"         );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_tau21"         );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_tau32"         );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_tau32"         );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_tau1"          );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_tau2"          );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_tau3"          );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_ll_DR"         );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_ll_DR"         );
+    ana.tx.createBranch<float>("OS2jet_fatjet12_ll_DRmax"     );
+    ana.tx.createBranch<float>("OS2jet_fatjet12_ptvectorsum"  );
+    ana.tx.createBranch<float>("OS2jet_fatjet12_ptscalarsum"  );
+    ana.tx.createBranch<float>("OS2jet_fatjet12_ptscalarprod" );
+    ana.tx.createBranch<float>("OS2jet_fatjet12_mass"         );
+    ana.tx.createBranch<float>("OS2jet_fatjet12_masssum"      );
+    ana.tx.createBranch<float>("OS2jet_fatjet12_massproduct"  );
+    ana.tx.createBranch<float>("OS2jet_fatjet12_massSDsum"    );
+    ana.tx.createBranch<float>("OS2jet_fatjet12_massSDproduct");
+    ana.tx.createBranch<float>("OS2jet_fatjet12_DR"           );
+    ana.tx.createBranch<float>("OS2jet_fatjet12_DPhi"         );
+    ana.tx.createBranch<float>("OS2jet_fatjet12_DEta"         );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_toptag"        );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_toptag"        );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_Wtag"          );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_Wtag"          );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_Ztag"          );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_Ztag"          );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_Zbbtag"        );
+    ana.tx.createBranch<float>("OS2jet_fatjet2_Zbbtag"        );
+    //ana.tx.createBranch<float>("OS2jet_fatjet1_WpZtag"        );
+    //ana.tx.createBranch<float>("OS2jet_fatjet1_WtZtag"        );
+    //ana.tx.createBranch<float>("OS2jet_fatjet2_WpZtag"        );
+    //ana.tx.createBranch<float>("OS2jet_fatjet2_WtZtag"        );
+    ana.tx.createBranch<float>("OS2jet_fatjet12_WtWtag"       );
+    //ana.tx.createBranch<float>("OS2jet_fatjet12_WtZtag"       );
+    //ana.tx.createBranch<float>("OS2jet_fatjet12_ZtWtag"       );
+    //ana.tx.createBranch<float>("OS2jet_fatjet12_ZtZtag"       );
+    ana.tx.createBranch<float>("OS2jet_fatjet12_WpWtag"       );
+    //ana.tx.createBranch<float>("OS2jet_fatjet12_WpZtag"       );
+    //ana.tx.createBranch<float>("OS2jet_fatjet12_ZpWtag"       );
+    //ana.tx.createBranch<float>("OS2jet_fatjet12_ZpZtag"       );
+    ana.tx.createBranch<int>  ("OS2jet_jet1_idx"              );
+    ana.tx.createBranch<int>  ("OS2jet_jet2_idx"              );
+    ana.tx.createBranch<float>("OS2jet_jet1_pt"               );
+    ana.tx.createBranch<float>("OS2jet_jet2_pt"               );
+    ana.tx.createBranch<float>("OS2jet_jet12_ptvectorsum"     );
+    ana.tx.createBranch<float>("OS2jet_jet12_ptscalarsum"     );
+    ana.tx.createBranch<float>("OS2jet_jet12_ptscalarprod"    );
+    ana.tx.createBranch<float>("OS2jet_jet12_mass"            );
+    ana.tx.createBranch<float>("OS2jet_jet12_DR"              );
+    ana.tx.createBranch<float>("OS2jet_jet12_DPhi"            );
+    ana.tx.createBranch<float>("OS2jet_jet12_DEta"            );
+    ana.tx.createBranch<float>("OS2jet_MET"                   );
+    ana.tx.createBranch<float>("OS2jet_MET_fatjet1_DPhi"      );
+    ana.tx.createBranch<float>("OS2jet_MET_ll_DPhi"           );
+    ana.tx.createBranch<float>("OS2jet_fatjet1_Recojet_matchJet_DRmin");
+    //ana.tx.createBranch<float>("OS2jet_fatjet2_Recojet_matchJet_DRmin");
+    //ana.tx.createBranch<float>("OS2jet_fatjet1_Recojet_Whadr_match_DRmin");
+    ana.tx.createBranch<int>  ("OS2jet_fatjet1_genmatching"   );
+    ana.tx.createBranch<int>  ("OS2jet_fatjet2_genmatching"   );
+    ana.tx.createBranch<int>  ("OS2jet_fatjet1_genmatchingv2" );
+    ana.tx.createBranch<int>  ("OS2jet_fatjet2_genmatchingv2" );
+    ana.tx.createBranch<int>  ("OS2jet_fatjet1_genmatchingv3" );
+    //ana.tx.createBranch<int>  ("OS2jet_fatjet2_genmatchingv3" );
+    ana.tx.createBranch<float>("OS2jet_genMVVV"               );
+    ana.tx.createBranch<float>("OS2jet_genpTVVV"              );
+    ana.tx.createBranch<float>("OS2jet_Mfatjetsleptons"       );
+    ana.tx.createBranch<float>("OS2jet_MTfatjetsleptonsMET"   );
+    /*ana.tx.createBranch<bool >("OS2jet_fatjet1_massSDcut"     );
+    ana.tx.createBranch<bool >("OS2jet_fatjet1_WtagMcut"      );
+    ana.tx.createBranch<bool >("OS2jet_fatjet1_WtagLcut"      );
+    ana.tx.createBranch<bool >("OS2jet_fatjet1_tau21cut"      );
+    ana.tx.createBranch<bool >("OS2jet_fatjet2_massSDcut"     );
+    ana.tx.createBranch<bool >("OS2jet_fatjet2_WtagMcut"      );
+    ana.tx.createBranch<bool >("OS2jet_fatjet2_WtagLcut"      );
+    ana.tx.createBranch<bool >("OS2jet_fatjet2_tau21cut"      );
+    //ana.tx.createBranch<float>("OS2jet_fatjet2_Recojet_Whadr_match_DRmin");
+    ana.tx.createBranch<bool >("OS2jet_fatjet12_ANDmassSDcut" );
+    ana.tx.createBranch<bool >("OS2jet_fatjet12_ANDWtagMcut"  );
+    ana.tx.createBranch<bool >("OS2jet_fatjet12_ANDWtagLcut"  );
+    ana.tx.createBranch<bool >("OS2jet_fatjet12_ANDtau21cut"  );
+    ana.tx.createBranch<bool >("OS2jet_fatjet12_ORmassSDcut"  );
+    ana.tx.createBranch<bool >("OS2jet_fatjet12_ORWtagMcut"   );
+    ana.tx.createBranch<bool >("OS2jet_fatjet12_ORWtagLcut"   );
+    ana.tx.createBranch<bool >("OS2jet_fatjet12_ORtau21cut"   );
+    ana.tx.createBranch<int  >("OS2jet_Nfatjets_vloose"       );
+    ana.tx.createBranch<int  >("OS2jet_Nfatjets_loose"        );
+    ana.tx.createBranch<int  >("OS2jet_Nfatjets_medium"       );
+    ana.tx.createBranch<float>("OS2jet_fatjetwgt_vloose"      );
+    ana.tx.createBranch<float>("OS2jet_fatjetwgt_loose"       );
+    ana.tx.createBranch<float>("OS2jet_fatjetwgt_medium"      ); */
+
+
+
+   }
