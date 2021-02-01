@@ -21,6 +21,7 @@ public:
         kOS2jet,
         kSS2jet,
         k1Lep4jet,
+        kOS2Fatjet,
     };
 
     LooperMode looperMode;

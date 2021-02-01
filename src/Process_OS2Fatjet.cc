@@ -1,18 +1,18 @@
-#include "Process_OS2jet.h"
+#include "Process_OS2Fatjet.h"
 
-void Process_OS2jet()
+void Process_OS2Fatjet()
 {
     //==============================================
-    // Process_OS2jet:
+    // Process_OS2Fatjet:
     // This function gets called during the event looping.
-    // This is where one sets the variables used for the category OS2jet.
+    // This is where one sets the variables used for the category OS2Fatjet.
     //==============================================
 
     // Set variables used in this category.
     // If histograms are booked with these variables the histograms will be filled automatically.
     // Please follow the convention of <category>_<varname> structure.
-    //ana.tx.setBranch<int>("OS2jet_intVar1", -999);
-    //ana.tx.setBranch<float>("OS2jet_floatVar1", -999);
+    //ana.tx.setBranch<int>("OS2Fatjet_intVar1", -999);
+    //ana.tx.setBranch<float>("OS2Fatjet_floatVar1", -999);
 
     // Example of reading from Nano
     // std::vector<LorentzVector> electron_p4s = nt.Electron_p4(); // nt is a global variable that accesses NanoAOD
@@ -25,8 +25,8 @@ void Process_OS2jet()
     //ana.tx.setBranch<LorentzVector>("OS2jet_LVVar1", LV_OS2jet_LVVar1);
 }
 
-void PostProcess_OS2jet(){
-    if (ana.cutflow.getCut("Cut_OS2jet_Preselection").pass){
-                   ana.tx.fill(); 
+  void PostProcess_OS2Fatjet(){
+    if (ana.cutflow.getCut("Cut_OS2Fatjet_Preselection").pass){
+                   ana.tx.fill();
     }
   }

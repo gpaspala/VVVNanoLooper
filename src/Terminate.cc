@@ -23,6 +23,7 @@ void Terminate()
         case AnalysisConfig::kOS2jet: Terminate_OS2jet(); break;
         case AnalysisConfig::kSS2jet: Terminate_SS2jet(); break;
         case AnalysisConfig::k1Lep4jet: Terminate_1Lep4jet(); break;
+        case AnalysisConfig::kOS2Fatjet:Terminate_OS2Fatjet(); break;
     }
 
     // Writing output file
