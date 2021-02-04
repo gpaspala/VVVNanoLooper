@@ -53,9 +53,34 @@ void Process_OS2Fatjet_VVVTree()
     // If histograms are booked with these variables the histograms will be filled automatically.
     // Please follow the convention of <category>_<varname> structure.
 
-    //ana.tx.setBranch<bool>         ("Cut_OS2Fatjet_Preselection"       , vvv.Cut_OS2Fatjet_Preselection());
+    ana.tx.setBranch<bool>         ("Cut_OS2Fatjet_Preselection"               , vvv.Cut_OS2Fatjet_Preselection());
+    ana.tx.setBranch<bool>         ("Cut_OS2Fatjet_Preselection_genmatched"    , vvv.Cut_OS2Fatjet_Preselection_genmatched());
+    ana.tx.setBranch<bool>         ("Cut_OS2Fatjet_OFPreselection"       , vvv.Cut_OS2Fatjet_OFPreselection());
+    ana.tx.setBranch<bool>         ("Cut_OS2Fatjet_OF2jets"       , vvv.Cut_OS2Fatjet_OF2jets());
+    ana.tx.setBranch<bool>         ("Cut_OS2Fatjet_OFPreselection"       , vvv.Cut_OS2Fatjet_OFPreselection());
+    ana.tx.setBranch<bool>         ("Cut_OS2Fatjet_OF1fatjet"       , vvv.Cut_OS2Fatjet_OF1fatjet());
+
+    ana.tx.setBranch<int>          ("OS2jet_SFcontent"             ,vvv.OS2jet_SFcontent());
+    ana.tx.setBranch<int>          ("OS2jet_Jetcontent"            ,vvv.OS2jet_Jetcontent());
+    ana.tx.setBranch<int>          ("OS2jet_Njets"                 ,vvv.OS2jet_Njets());
+    ana.tx.setBranch<int>          ("OS2jet_Nfatjets_medium"       ,vvv.OS2jet_Nfatjets_medium());
+    ana.tx.setBranch<float>        ("OS2jet_fatjetwgt_medium"      ,vvv.OS2jet_fatjetwgt_medium());
+    ana.tx.setBranch<int>          ("OS2jet_Nbjetsv1"              ,vvv.OS2jet_Nbjetsv1());
+    ana.tx.setBranch<float>        ("OS2jet_lep12_DR"              ,vvv.OS2jet_lep12_DR());
+    ana.tx.setBranch<float>        ("OS2jet_jet12_DR"              ,vvv.OS2jet_jet12_DR());
+
+    ana.tx.setBranch<bool>         ("OS2jet_fatjet1_tau21cut"       , vvv.OS2jet_fatjet1_tau21cut());
+
+
+
+
+
+
+
+
 
 }
+
 
 
 

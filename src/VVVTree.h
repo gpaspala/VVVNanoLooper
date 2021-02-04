@@ -1,6 +1,6 @@
 // -*- C++ -*-
 // This is a header file generated with the command:
-// makeCMS3ClassFiles("/home/users/phchang/public_html/analysis/vvv/VVVNanoLooper__/debug.root", "t", "VVVTree", "tas", "vvv")
+// makeCMS3ClassFiles("/home/users/gpaspala/myTries/VVVNanoLooper/www_eft_newPtcut.root", "t", "VVVTree", "tas", "vvv")
 
 #ifndef VVVTree_H
 #define VVVTree_H
@@ -540,81 +540,501 @@ class VVVTree {
 /*                Cut_4LepMET_Preselection*/  TBranch *Cut_4LepMET_Preselection_branch;
 /*                Cut_4LepMET_Preselection*/  bool     Cut_4LepMET_Preselection_isLoaded;
 //---------------------------------------------------------------------------------
+/*              Cut_OS2Fatjet_Preselection*/  bool     Cut_OS2Fatjet_Preselection_;
+/*              Cut_OS2Fatjet_Preselection*/  TBranch *Cut_OS2Fatjet_Preselection_branch;
+/*              Cut_OS2Fatjet_Preselection*/  bool     Cut_OS2Fatjet_Preselection_isLoaded;
+//---------------------------------------------------------------------------------
+/*   Cut_OS2Fatjet_Preselection_genmatched*/  bool     Cut_OS2Fatjet_Preselection_genmatched_;
+/*   Cut_OS2Fatjet_Preselection_genmatched*/  TBranch *Cut_OS2Fatjet_Preselection_genmatched_branch;
+/*   Cut_OS2Fatjet_Preselection_genmatched*/  bool     Cut_OS2Fatjet_Preselection_genmatched_isLoaded;
+//---------------------------------------------------------------------------------
+/*            Cut_OS2Fatjet_OFPreselection*/  bool     Cut_OS2Fatjet_OFPreselection_;
+/*            Cut_OS2Fatjet_OFPreselection*/  TBranch *Cut_OS2Fatjet_OFPreselection_branch;
+/*            Cut_OS2Fatjet_OFPreselection*/  bool     Cut_OS2Fatjet_OFPreselection_isLoaded;
+//---------------------------------------------------------------------------------
+/*                   Cut_OS2Fatjet_OF2jets*/  bool     Cut_OS2Fatjet_OF2jets_;
+/*                   Cut_OS2Fatjet_OF2jets*/  TBranch *Cut_OS2Fatjet_OF2jets_branch;
+/*                   Cut_OS2Fatjet_OF2jets*/  bool     Cut_OS2Fatjet_OF2jets_isLoaded;
+//---------------------------------------------------------------------------------
+/*                 Cut_OS2Fatjet_OF1fatjet*/  bool     Cut_OS2Fatjet_OF1fatjet_;
+/*                 Cut_OS2Fatjet_OF1fatjet*/  TBranch *Cut_OS2Fatjet_OF1fatjet_branch;
+/*                 Cut_OS2Fatjet_OF1fatjet*/  bool     Cut_OS2Fatjet_OF1fatjet_isLoaded;
+//---------------------------------------------------------------------------------
+/*                        OS2jet_SFcontent*/  int      OS2jet_SFcontent_;
+/*                        OS2jet_SFcontent*/  TBranch *OS2jet_SFcontent_branch;
+/*                        OS2jet_SFcontent*/  bool     OS2jet_SFcontent_isLoaded;
+//---------------------------------------------------------------------------------
 /*                  Cut_4LepMET_emuChannel*/  bool     Cut_4LepMET_emuChannel_;
 /*                  Cut_4LepMET_emuChannel*/  TBranch *Cut_4LepMET_emuChannel_branch;
 /*                  Cut_4LepMET_emuChannel*/  bool     Cut_4LepMET_emuChannel_isLoaded;
+//---------------------------------------------------------------------------------
+/*                       OS2jet_Jetcontent*/  int      OS2jet_Jetcontent_;
+/*                       OS2jet_Jetcontent*/  TBranch *OS2jet_Jetcontent_branch;
+/*                       OS2jet_Jetcontent*/  bool     OS2jet_Jetcontent_isLoaded;
 //---------------------------------------------------------------------------------
 /*                 Cut_4LepMET_offzChannel*/  bool     Cut_4LepMET_offzChannel_;
 /*                 Cut_4LepMET_offzChannel*/  TBranch *Cut_4LepMET_offzChannel_branch;
 /*                 Cut_4LepMET_offzChannel*/  bool     Cut_4LepMET_offzChannel_isLoaded;
 //---------------------------------------------------------------------------------
+/*                         OS2jet_Nfatjets*/  int      OS2jet_Nfatjets_;
+/*                         OS2jet_Nfatjets*/  TBranch *OS2jet_Nfatjets_branch;
+/*                         OS2jet_Nfatjets*/  bool     OS2jet_Nfatjets_isLoaded;
+//---------------------------------------------------------------------------------
 /*                  Cut_4LepMET_onzChannel*/  bool     Cut_4LepMET_onzChannel_;
 /*                  Cut_4LepMET_onzChannel*/  TBranch *Cut_4LepMET_onzChannel_branch;
 /*                  Cut_4LepMET_onzChannel*/  bool     Cut_4LepMET_onzChannel_isLoaded;
+//---------------------------------------------------------------------------------
+/*                            OS2jet_Njets*/  int      OS2jet_Njets_;
+/*                            OS2jet_Njets*/  TBranch *OS2jet_Njets_branch;
+/*                            OS2jet_Njets*/  bool     OS2jet_Njets_isLoaded;
 //---------------------------------------------------------------------------------
 /*          Cut_4LepMET_onzChannel_HighMET*/  bool     Cut_4LepMET_onzChannel_HighMET_;
 /*          Cut_4LepMET_onzChannel_HighMET*/  TBranch *Cut_4LepMET_onzChannel_HighMET_branch;
 /*          Cut_4LepMET_onzChannel_HighMET*/  bool     Cut_4LepMET_onzChannel_HighMET_isLoaded;
 //---------------------------------------------------------------------------------
+/*                         OS2jet_Nbjetsv1*/  int      OS2jet_Nbjetsv1_;
+/*                         OS2jet_Nbjetsv1*/  TBranch *OS2jet_Nbjetsv1_branch;
+/*                         OS2jet_Nbjetsv1*/  bool     OS2jet_Nbjetsv1_isLoaded;
+//---------------------------------------------------------------------------------
 /*             Var_4LepMET_Zcand_lep_idx_0*/  int      Var_4LepMET_Zcand_lep_idx_0_;
 /*             Var_4LepMET_Zcand_lep_idx_0*/  TBranch *Var_4LepMET_Zcand_lep_idx_0_branch;
 /*             Var_4LepMET_Zcand_lep_idx_0*/  bool     Var_4LepMET_Zcand_lep_idx_0_isLoaded;
+//---------------------------------------------------------------------------------
+/*                         OS2jet_Nbjetsv2*/  int      OS2jet_Nbjetsv2_;
+/*                         OS2jet_Nbjetsv2*/  TBranch *OS2jet_Nbjetsv2_branch;
+/*                         OS2jet_Nbjetsv2*/  bool     OS2jet_Nbjetsv2_isLoaded;
 //---------------------------------------------------------------------------------
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  int      Var_4LepMET_Zcand_lep_pdgid_0_;
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  TBranch *Var_4LepMET_Zcand_lep_pdgid_0_branch;
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  bool     Var_4LepMET_Zcand_lep_pdgid_0_isLoaded;
 //---------------------------------------------------------------------------------
+/*                        OS2jet_fatjet_pt*/  float    OS2jet_fatjet_pt_;
+/*                        OS2jet_fatjet_pt*/  TBranch *OS2jet_fatjet_pt_branch;
+/*                        OS2jet_fatjet_pt*/  bool     OS2jet_fatjet_pt_isLoaded;
+//---------------------------------------------------------------------------------
 /*              Var_4LepMET_Zcand_lep_p4_0*/  ROOT::Math::LorentzVector<ROOT::Math::PtEtaPhiM4D<float> > *Var_4LepMET_Zcand_lep_p4_0_;
 /*              Var_4LepMET_Zcand_lep_p4_0*/  TBranch *Var_4LepMET_Zcand_lep_p4_0_branch;
 /*              Var_4LepMET_Zcand_lep_p4_0*/  bool     Var_4LepMET_Zcand_lep_p4_0_isLoaded;
+//---------------------------------------------------------------------------------
+/*                          OS2jet_lep1_pt*/  float    OS2jet_lep1_pt_;
+/*                          OS2jet_lep1_pt*/  TBranch *OS2jet_lep1_pt_branch;
+/*                          OS2jet_lep1_pt*/  bool     OS2jet_lep1_pt_isLoaded;
 //---------------------------------------------------------------------------------
 /*             Var_4LepMET_Zcand_lep_idx_1*/  int      Var_4LepMET_Zcand_lep_idx_1_;
 /*             Var_4LepMET_Zcand_lep_idx_1*/  TBranch *Var_4LepMET_Zcand_lep_idx_1_branch;
 /*             Var_4LepMET_Zcand_lep_idx_1*/  bool     Var_4LepMET_Zcand_lep_idx_1_isLoaded;
 //---------------------------------------------------------------------------------
+/*                          OS2jet_lep2_pt*/  float    OS2jet_lep2_pt_;
+/*                          OS2jet_lep2_pt*/  TBranch *OS2jet_lep2_pt_branch;
+/*                          OS2jet_lep2_pt*/  bool     OS2jet_lep2_pt_isLoaded;
+//---------------------------------------------------------------------------------
 /*           Var_4LepMET_Zcand_lep_pdgid_1*/  int      Var_4LepMET_Zcand_lep_pdgid_1_;
 /*           Var_4LepMET_Zcand_lep_pdgid_1*/  TBranch *Var_4LepMET_Zcand_lep_pdgid_1_branch;
 /*           Var_4LepMET_Zcand_lep_pdgid_1*/  bool     Var_4LepMET_Zcand_lep_pdgid_1_isLoaded;
+//---------------------------------------------------------------------------------
+/*                OS2jet_lep12_ptvectorsum*/  float    OS2jet_lep12_ptvectorsum_;
+/*                OS2jet_lep12_ptvectorsum*/  TBranch *OS2jet_lep12_ptvectorsum_branch;
+/*                OS2jet_lep12_ptvectorsum*/  bool     OS2jet_lep12_ptvectorsum_isLoaded;
 //---------------------------------------------------------------------------------
 /*              Var_4LepMET_Zcand_lep_p4_1*/  ROOT::Math::LorentzVector<ROOT::Math::PtEtaPhiM4D<float> > *Var_4LepMET_Zcand_lep_p4_1_;
 /*              Var_4LepMET_Zcand_lep_p4_1*/  TBranch *Var_4LepMET_Zcand_lep_p4_1_branch;
 /*              Var_4LepMET_Zcand_lep_p4_1*/  bool     Var_4LepMET_Zcand_lep_p4_1_isLoaded;
 //---------------------------------------------------------------------------------
+/*                OS2jet_lep12_ptscalarsum*/  float    OS2jet_lep12_ptscalarsum_;
+/*                OS2jet_lep12_ptscalarsum*/  TBranch *OS2jet_lep12_ptscalarsum_branch;
+/*                OS2jet_lep12_ptscalarsum*/  bool     OS2jet_lep12_ptscalarsum_isLoaded;
+//---------------------------------------------------------------------------------
 /*                   Var_4LepMET_Zcand_mll*/  float    Var_4LepMET_Zcand_mll_;
 /*                   Var_4LepMET_Zcand_mll*/  TBranch *Var_4LepMET_Zcand_mll_branch;
 /*                   Var_4LepMET_Zcand_mll*/  bool     Var_4LepMET_Zcand_mll_isLoaded;
+//---------------------------------------------------------------------------------
+/*               OS2jet_lep12_ptscalarprod*/  float    OS2jet_lep12_ptscalarprod_;
+/*               OS2jet_lep12_ptscalarprod*/  TBranch *OS2jet_lep12_ptscalarprod_branch;
+/*               OS2jet_lep12_ptscalarprod*/  bool     OS2jet_lep12_ptscalarprod_isLoaded;
 //---------------------------------------------------------------------------------
 /*             Var_4LepMET_other_lep_idx_0*/  int      Var_4LepMET_other_lep_idx_0_;
 /*             Var_4LepMET_other_lep_idx_0*/  TBranch *Var_4LepMET_other_lep_idx_0_branch;
 /*             Var_4LepMET_other_lep_idx_0*/  bool     Var_4LepMET_other_lep_idx_0_isLoaded;
 //---------------------------------------------------------------------------------
+/*                       OS2jet_lep12_mass*/  float    OS2jet_lep12_mass_;
+/*                       OS2jet_lep12_mass*/  TBranch *OS2jet_lep12_mass_branch;
+/*                       OS2jet_lep12_mass*/  bool     OS2jet_lep12_mass_isLoaded;
+//---------------------------------------------------------------------------------
 /*           Var_4LepMET_other_lep_pdgid_0*/  int      Var_4LepMET_other_lep_pdgid_0_;
 /*           Var_4LepMET_other_lep_pdgid_0*/  TBranch *Var_4LepMET_other_lep_pdgid_0_branch;
 /*           Var_4LepMET_other_lep_pdgid_0*/  bool     Var_4LepMET_other_lep_pdgid_0_isLoaded;
+//---------------------------------------------------------------------------------
+/*                         OS2jet_lep12_DR*/  float    OS2jet_lep12_DR_;
+/*                         OS2jet_lep12_DR*/  TBranch *OS2jet_lep12_DR_branch;
+/*                         OS2jet_lep12_DR*/  bool     OS2jet_lep12_DR_isLoaded;
 //---------------------------------------------------------------------------------
 /*              Var_4LepMET_other_lep_p4_0*/  ROOT::Math::LorentzVector<ROOT::Math::PtEtaPhiM4D<float> > *Var_4LepMET_other_lep_p4_0_;
 /*              Var_4LepMET_other_lep_p4_0*/  TBranch *Var_4LepMET_other_lep_p4_0_branch;
 /*              Var_4LepMET_other_lep_p4_0*/  bool     Var_4LepMET_other_lep_p4_0_isLoaded;
 //---------------------------------------------------------------------------------
+/*                       OS2jet_lep12_DPhi*/  float    OS2jet_lep12_DPhi_;
+/*                       OS2jet_lep12_DPhi*/  TBranch *OS2jet_lep12_DPhi_branch;
+/*                       OS2jet_lep12_DPhi*/  bool     OS2jet_lep12_DPhi_isLoaded;
+//---------------------------------------------------------------------------------
 /*             Var_4LepMET_other_lep_idx_1*/  int      Var_4LepMET_other_lep_idx_1_;
 /*             Var_4LepMET_other_lep_idx_1*/  TBranch *Var_4LepMET_other_lep_idx_1_branch;
 /*             Var_4LepMET_other_lep_idx_1*/  bool     Var_4LepMET_other_lep_idx_1_isLoaded;
+//---------------------------------------------------------------------------------
+/*                       OS2jet_lep12_Deta*/  float    OS2jet_lep12_Deta_;
+/*                       OS2jet_lep12_Deta*/  TBranch *OS2jet_lep12_Deta_branch;
+/*                       OS2jet_lep12_Deta*/  bool     OS2jet_lep12_Deta_isLoaded;
 //---------------------------------------------------------------------------------
 /*           Var_4LepMET_other_lep_pdgid_1*/  int      Var_4LepMET_other_lep_pdgid_1_;
 /*           Var_4LepMET_other_lep_pdgid_1*/  TBranch *Var_4LepMET_other_lep_pdgid_1_branch;
 /*           Var_4LepMET_other_lep_pdgid_1*/  bool     Var_4LepMET_other_lep_pdgid_1_isLoaded;
 //---------------------------------------------------------------------------------
+/*                       OS2jet_fatjet1_pt*/  float    OS2jet_fatjet1_pt_;
+/*                       OS2jet_fatjet1_pt*/  TBranch *OS2jet_fatjet1_pt_branch;
+/*                       OS2jet_fatjet1_pt*/  bool     OS2jet_fatjet1_pt_isLoaded;
+//---------------------------------------------------------------------------------
 /*              Var_4LepMET_other_lep_p4_1*/  ROOT::Math::LorentzVector<ROOT::Math::PtEtaPhiM4D<float> > *Var_4LepMET_other_lep_p4_1_;
 /*              Var_4LepMET_other_lep_p4_1*/  TBranch *Var_4LepMET_other_lep_p4_1_branch;
 /*              Var_4LepMET_other_lep_p4_1*/  bool     Var_4LepMET_other_lep_p4_1_isLoaded;
+//---------------------------------------------------------------------------------
+/*                       OS2jet_fatjet2_pt*/  float    OS2jet_fatjet2_pt_;
+/*                       OS2jet_fatjet2_pt*/  TBranch *OS2jet_fatjet2_pt_branch;
+/*                       OS2jet_fatjet2_pt*/  bool     OS2jet_fatjet2_pt_isLoaded;
 //---------------------------------------------------------------------------------
 /*                   Var_4LepMET_other_mll*/  float    Var_4LepMET_other_mll_;
 /*                   Var_4LepMET_other_mll*/  TBranch *Var_4LepMET_other_mll_branch;
 /*                   Var_4LepMET_other_mll*/  bool     Var_4LepMET_other_mll_isLoaded;
 //---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_mass*/  float    OS2jet_fatjet1_mass_;
+/*                     OS2jet_fatjet1_mass*/  TBranch *OS2jet_fatjet1_mass_branch;
+/*                     OS2jet_fatjet1_mass*/  bool     OS2jet_fatjet1_mass_isLoaded;
+//---------------------------------------------------------------------------------
 /*                         Var_4LepMET_mt2*/  float    Var_4LepMET_mt2_;
 /*                         Var_4LepMET_mt2*/  TBranch *Var_4LepMET_mt2_branch;
 /*                         Var_4LepMET_mt2*/  bool     Var_4LepMET_mt2_isLoaded;
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_mass*/  float    OS2jet_fatjet2_mass_;
+/*                     OS2jet_fatjet2_mass*/  TBranch *OS2jet_fatjet2_mass_branch;
+/*                     OS2jet_fatjet2_mass*/  bool     OS2jet_fatjet2_mass_isLoaded;
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet1_massSD*/  float    OS2jet_fatjet1_massSD_;
+/*                   OS2jet_fatjet1_massSD*/  TBranch *OS2jet_fatjet1_massSD_branch;
+/*                   OS2jet_fatjet1_massSD*/  bool     OS2jet_fatjet1_massSD_isLoaded;
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet2_massSD*/  float    OS2jet_fatjet2_massSD_;
+/*                   OS2jet_fatjet2_massSD*/  TBranch *OS2jet_fatjet2_massSD_branch;
+/*                   OS2jet_fatjet2_massSD*/  bool     OS2jet_fatjet2_massSD_isLoaded;
+//---------------------------------------------------------------------------------
+/*               OS2jet_fatjet1_subjet0_pt*/  float    OS2jet_fatjet1_subjet0_pt_;
+/*               OS2jet_fatjet1_subjet0_pt*/  TBranch *OS2jet_fatjet1_subjet0_pt_branch;
+/*               OS2jet_fatjet1_subjet0_pt*/  bool     OS2jet_fatjet1_subjet0_pt_isLoaded;
+//---------------------------------------------------------------------------------
+/*               OS2jet_fatjet1_subjet1_pt*/  float    OS2jet_fatjet1_subjet1_pt_;
+/*               OS2jet_fatjet1_subjet1_pt*/  TBranch *OS2jet_fatjet1_subjet1_pt_branch;
+/*               OS2jet_fatjet1_subjet1_pt*/  bool     OS2jet_fatjet1_subjet1_pt_isLoaded;
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet1_subjet0_eta*/  float    OS2jet_fatjet1_subjet0_eta_;
+/*              OS2jet_fatjet1_subjet0_eta*/  TBranch *OS2jet_fatjet1_subjet0_eta_branch;
+/*              OS2jet_fatjet1_subjet0_eta*/  bool     OS2jet_fatjet1_subjet0_eta_isLoaded;
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet1_subjet1_eta*/  float    OS2jet_fatjet1_subjet1_eta_;
+/*              OS2jet_fatjet1_subjet1_eta*/  TBranch *OS2jet_fatjet1_subjet1_eta_branch;
+/*              OS2jet_fatjet1_subjet1_eta*/  bool     OS2jet_fatjet1_subjet1_eta_isLoaded;
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet1_subjet0_mass*/  float    OS2jet_fatjet1_subjet0_mass_;
+/*             OS2jet_fatjet1_subjet0_mass*/  TBranch *OS2jet_fatjet1_subjet0_mass_branch;
+/*             OS2jet_fatjet1_subjet0_mass*/  bool     OS2jet_fatjet1_subjet0_mass_isLoaded;
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet1_subjet1_mass*/  float    OS2jet_fatjet1_subjet1_mass_;
+/*             OS2jet_fatjet1_subjet1_mass*/  TBranch *OS2jet_fatjet1_subjet1_mass_branch;
+/*             OS2jet_fatjet1_subjet1_mass*/  bool     OS2jet_fatjet1_subjet1_mass_isLoaded;
+//---------------------------------------------------------------------------------
+/*               OS2jet_fatjet2_subjet0_pt*/  float    OS2jet_fatjet2_subjet0_pt_;
+/*               OS2jet_fatjet2_subjet0_pt*/  TBranch *OS2jet_fatjet2_subjet0_pt_branch;
+/*               OS2jet_fatjet2_subjet0_pt*/  bool     OS2jet_fatjet2_subjet0_pt_isLoaded;
+//---------------------------------------------------------------------------------
+/*               OS2jet_fatjet2_subjet1_pt*/  float    OS2jet_fatjet2_subjet1_pt_;
+/*               OS2jet_fatjet2_subjet1_pt*/  TBranch *OS2jet_fatjet2_subjet1_pt_branch;
+/*               OS2jet_fatjet2_subjet1_pt*/  bool     OS2jet_fatjet2_subjet1_pt_isLoaded;
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet2_subjet0_eta*/  float    OS2jet_fatjet2_subjet0_eta_;
+/*              OS2jet_fatjet2_subjet0_eta*/  TBranch *OS2jet_fatjet2_subjet0_eta_branch;
+/*              OS2jet_fatjet2_subjet0_eta*/  bool     OS2jet_fatjet2_subjet0_eta_isLoaded;
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet2_subjet1_eta*/  float    OS2jet_fatjet2_subjet1_eta_;
+/*              OS2jet_fatjet2_subjet1_eta*/  TBranch *OS2jet_fatjet2_subjet1_eta_branch;
+/*              OS2jet_fatjet2_subjet1_eta*/  bool     OS2jet_fatjet2_subjet1_eta_isLoaded;
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet2_subjet0_mass*/  float    OS2jet_fatjet2_subjet0_mass_;
+/*             OS2jet_fatjet2_subjet0_mass*/  TBranch *OS2jet_fatjet2_subjet0_mass_branch;
+/*             OS2jet_fatjet2_subjet0_mass*/  bool     OS2jet_fatjet2_subjet0_mass_isLoaded;
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet2_subjet1_mass*/  float    OS2jet_fatjet2_subjet1_mass_;
+/*             OS2jet_fatjet2_subjet1_mass*/  TBranch *OS2jet_fatjet2_subjet1_mass_branch;
+/*             OS2jet_fatjet2_subjet1_mass*/  bool     OS2jet_fatjet2_subjet1_mass_isLoaded;
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_tau1*/  float    OS2jet_fatjet1_tau1_;
+/*                     OS2jet_fatjet1_tau1*/  TBranch *OS2jet_fatjet1_tau1_branch;
+/*                     OS2jet_fatjet1_tau1*/  bool     OS2jet_fatjet1_tau1_isLoaded;
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_tau2*/  float    OS2jet_fatjet1_tau2_;
+/*                     OS2jet_fatjet1_tau2*/  TBranch *OS2jet_fatjet1_tau2_branch;
+/*                     OS2jet_fatjet1_tau2*/  bool     OS2jet_fatjet1_tau2_isLoaded;
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_tau3*/  float    OS2jet_fatjet1_tau3_;
+/*                     OS2jet_fatjet1_tau3*/  TBranch *OS2jet_fatjet1_tau3_branch;
+/*                     OS2jet_fatjet1_tau3*/  bool     OS2jet_fatjet1_tau3_isLoaded;
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet1_tau21*/  float    OS2jet_fatjet1_tau21_;
+/*                    OS2jet_fatjet1_tau21*/  TBranch *OS2jet_fatjet1_tau21_branch;
+/*                    OS2jet_fatjet1_tau21*/  bool     OS2jet_fatjet1_tau21_isLoaded;
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet2_tau21*/  float    OS2jet_fatjet2_tau21_;
+/*                    OS2jet_fatjet2_tau21*/  TBranch *OS2jet_fatjet2_tau21_branch;
+/*                    OS2jet_fatjet2_tau21*/  bool     OS2jet_fatjet2_tau21_isLoaded;
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet1_tau32*/  float    OS2jet_fatjet1_tau32_;
+/*                    OS2jet_fatjet1_tau32*/  TBranch *OS2jet_fatjet1_tau32_branch;
+/*                    OS2jet_fatjet1_tau32*/  bool     OS2jet_fatjet1_tau32_isLoaded;
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet2_tau32*/  float    OS2jet_fatjet2_tau32_;
+/*                    OS2jet_fatjet2_tau32*/  TBranch *OS2jet_fatjet2_tau32_branch;
+/*                    OS2jet_fatjet2_tau32*/  bool     OS2jet_fatjet2_tau32_isLoaded;
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_tau1*/  float    OS2jet_fatjet2_tau1_;
+/*                     OS2jet_fatjet2_tau1*/  TBranch *OS2jet_fatjet2_tau1_branch;
+/*                     OS2jet_fatjet2_tau1*/  bool     OS2jet_fatjet2_tau1_isLoaded;
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_tau2*/  float    OS2jet_fatjet2_tau2_;
+/*                     OS2jet_fatjet2_tau2*/  TBranch *OS2jet_fatjet2_tau2_branch;
+/*                     OS2jet_fatjet2_tau2*/  bool     OS2jet_fatjet2_tau2_isLoaded;
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_tau3*/  float    OS2jet_fatjet2_tau3_;
+/*                     OS2jet_fatjet2_tau3*/  TBranch *OS2jet_fatjet2_tau3_branch;
+/*                     OS2jet_fatjet2_tau3*/  bool     OS2jet_fatjet2_tau3_isLoaded;
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet1_ll_DR*/  float    OS2jet_fatjet1_ll_DR_;
+/*                    OS2jet_fatjet1_ll_DR*/  TBranch *OS2jet_fatjet1_ll_DR_branch;
+/*                    OS2jet_fatjet1_ll_DR*/  bool     OS2jet_fatjet1_ll_DR_isLoaded;
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet2_ll_DR*/  float    OS2jet_fatjet2_ll_DR_;
+/*                    OS2jet_fatjet2_ll_DR*/  TBranch *OS2jet_fatjet2_ll_DR_branch;
+/*                    OS2jet_fatjet2_ll_DR*/  bool     OS2jet_fatjet2_ll_DR_isLoaded;
+//---------------------------------------------------------------------------------
+/*                OS2jet_fatjet12_ll_DRmax*/  float    OS2jet_fatjet12_ll_DRmax_;
+/*                OS2jet_fatjet12_ll_DRmax*/  TBranch *OS2jet_fatjet12_ll_DRmax_branch;
+/*                OS2jet_fatjet12_ll_DRmax*/  bool     OS2jet_fatjet12_ll_DRmax_isLoaded;
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet12_ptvectorsum*/  float    OS2jet_fatjet12_ptvectorsum_;
+/*             OS2jet_fatjet12_ptvectorsum*/  TBranch *OS2jet_fatjet12_ptvectorsum_branch;
+/*             OS2jet_fatjet12_ptvectorsum*/  bool     OS2jet_fatjet12_ptvectorsum_isLoaded;
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet12_ptscalarsum*/  float    OS2jet_fatjet12_ptscalarsum_;
+/*             OS2jet_fatjet12_ptscalarsum*/  TBranch *OS2jet_fatjet12_ptscalarsum_branch;
+/*             OS2jet_fatjet12_ptscalarsum*/  bool     OS2jet_fatjet12_ptscalarsum_isLoaded;
+//---------------------------------------------------------------------------------
+/*            OS2jet_fatjet12_ptscalarprod*/  float    OS2jet_fatjet12_ptscalarprod_;
+/*            OS2jet_fatjet12_ptscalarprod*/  TBranch *OS2jet_fatjet12_ptscalarprod_branch;
+/*            OS2jet_fatjet12_ptscalarprod*/  bool     OS2jet_fatjet12_ptscalarprod_isLoaded;
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet12_mass*/  float    OS2jet_fatjet12_mass_;
+/*                    OS2jet_fatjet12_mass*/  TBranch *OS2jet_fatjet12_mass_branch;
+/*                    OS2jet_fatjet12_mass*/  bool     OS2jet_fatjet12_mass_isLoaded;
+//---------------------------------------------------------------------------------
+/*                 OS2jet_fatjet12_masssum*/  float    OS2jet_fatjet12_masssum_;
+/*                 OS2jet_fatjet12_masssum*/  TBranch *OS2jet_fatjet12_masssum_branch;
+/*                 OS2jet_fatjet12_masssum*/  bool     OS2jet_fatjet12_masssum_isLoaded;
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet12_massproduct*/  float    OS2jet_fatjet12_massproduct_;
+/*             OS2jet_fatjet12_massproduct*/  TBranch *OS2jet_fatjet12_massproduct_branch;
+/*             OS2jet_fatjet12_massproduct*/  bool     OS2jet_fatjet12_massproduct_isLoaded;
+//---------------------------------------------------------------------------------
+/*               OS2jet_fatjet12_massSDsum*/  float    OS2jet_fatjet12_massSDsum_;
+/*               OS2jet_fatjet12_massSDsum*/  TBranch *OS2jet_fatjet12_massSDsum_branch;
+/*               OS2jet_fatjet12_massSDsum*/  bool     OS2jet_fatjet12_massSDsum_isLoaded;
+//---------------------------------------------------------------------------------
+/*           OS2jet_fatjet12_massSDproduct*/  float    OS2jet_fatjet12_massSDproduct_;
+/*           OS2jet_fatjet12_massSDproduct*/  TBranch *OS2jet_fatjet12_massSDproduct_branch;
+/*           OS2jet_fatjet12_massSDproduct*/  bool     OS2jet_fatjet12_massSDproduct_isLoaded;
+//---------------------------------------------------------------------------------
+/*                      OS2jet_fatjet12_DR*/  float    OS2jet_fatjet12_DR_;
+/*                      OS2jet_fatjet12_DR*/  TBranch *OS2jet_fatjet12_DR_branch;
+/*                      OS2jet_fatjet12_DR*/  bool     OS2jet_fatjet12_DR_isLoaded;
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet12_DPhi*/  float    OS2jet_fatjet12_DPhi_;
+/*                    OS2jet_fatjet12_DPhi*/  TBranch *OS2jet_fatjet12_DPhi_branch;
+/*                    OS2jet_fatjet12_DPhi*/  bool     OS2jet_fatjet12_DPhi_isLoaded;
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet12_DEta*/  float    OS2jet_fatjet12_DEta_;
+/*                    OS2jet_fatjet12_DEta*/  TBranch *OS2jet_fatjet12_DEta_branch;
+/*                    OS2jet_fatjet12_DEta*/  bool     OS2jet_fatjet12_DEta_isLoaded;
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet1_toptag*/  float    OS2jet_fatjet1_toptag_;
+/*                   OS2jet_fatjet1_toptag*/  TBranch *OS2jet_fatjet1_toptag_branch;
+/*                   OS2jet_fatjet1_toptag*/  bool     OS2jet_fatjet1_toptag_isLoaded;
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet2_toptag*/  float    OS2jet_fatjet2_toptag_;
+/*                   OS2jet_fatjet2_toptag*/  TBranch *OS2jet_fatjet2_toptag_branch;
+/*                   OS2jet_fatjet2_toptag*/  bool     OS2jet_fatjet2_toptag_isLoaded;
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_Wtag*/  float    OS2jet_fatjet1_Wtag_;
+/*                     OS2jet_fatjet1_Wtag*/  TBranch *OS2jet_fatjet1_Wtag_branch;
+/*                     OS2jet_fatjet1_Wtag*/  bool     OS2jet_fatjet1_Wtag_isLoaded;
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_Wtag*/  float    OS2jet_fatjet2_Wtag_;
+/*                     OS2jet_fatjet2_Wtag*/  TBranch *OS2jet_fatjet2_Wtag_branch;
+/*                     OS2jet_fatjet2_Wtag*/  bool     OS2jet_fatjet2_Wtag_isLoaded;
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_Ztag*/  float    OS2jet_fatjet1_Ztag_;
+/*                     OS2jet_fatjet1_Ztag*/  TBranch *OS2jet_fatjet1_Ztag_branch;
+/*                     OS2jet_fatjet1_Ztag*/  bool     OS2jet_fatjet1_Ztag_isLoaded;
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_Ztag*/  float    OS2jet_fatjet2_Ztag_;
+/*                     OS2jet_fatjet2_Ztag*/  TBranch *OS2jet_fatjet2_Ztag_branch;
+/*                     OS2jet_fatjet2_Ztag*/  bool     OS2jet_fatjet2_Ztag_isLoaded;
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet1_Zbbtag*/  float    OS2jet_fatjet1_Zbbtag_;
+/*                   OS2jet_fatjet1_Zbbtag*/  TBranch *OS2jet_fatjet1_Zbbtag_branch;
+/*                   OS2jet_fatjet1_Zbbtag*/  bool     OS2jet_fatjet1_Zbbtag_isLoaded;
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet2_Zbbtag*/  float    OS2jet_fatjet2_Zbbtag_;
+/*                   OS2jet_fatjet2_Zbbtag*/  TBranch *OS2jet_fatjet2_Zbbtag_branch;
+/*                   OS2jet_fatjet2_Zbbtag*/  bool     OS2jet_fatjet2_Zbbtag_isLoaded;
+//---------------------------------------------------------------------------------
+/*                  OS2jet_fatjet12_WtWtag*/  float    OS2jet_fatjet12_WtWtag_;
+/*                  OS2jet_fatjet12_WtWtag*/  TBranch *OS2jet_fatjet12_WtWtag_branch;
+/*                  OS2jet_fatjet12_WtWtag*/  bool     OS2jet_fatjet12_WtWtag_isLoaded;
+//---------------------------------------------------------------------------------
+/*                  OS2jet_fatjet12_WpWtag*/  float    OS2jet_fatjet12_WpWtag_;
+/*                  OS2jet_fatjet12_WpWtag*/  TBranch *OS2jet_fatjet12_WpWtag_branch;
+/*                  OS2jet_fatjet12_WpWtag*/  bool     OS2jet_fatjet12_WpWtag_isLoaded;
+//---------------------------------------------------------------------------------
+/*                         OS2jet_jet1_idx*/  int      OS2jet_jet1_idx_;
+/*                         OS2jet_jet1_idx*/  TBranch *OS2jet_jet1_idx_branch;
+/*                         OS2jet_jet1_idx*/  bool     OS2jet_jet1_idx_isLoaded;
+//---------------------------------------------------------------------------------
+/*                         OS2jet_jet2_idx*/  int      OS2jet_jet2_idx_;
+/*                         OS2jet_jet2_idx*/  TBranch *OS2jet_jet2_idx_branch;
+/*                         OS2jet_jet2_idx*/  bool     OS2jet_jet2_idx_isLoaded;
+//---------------------------------------------------------------------------------
+/*                          OS2jet_jet1_pt*/  float    OS2jet_jet1_pt_;
+/*                          OS2jet_jet1_pt*/  TBranch *OS2jet_jet1_pt_branch;
+/*                          OS2jet_jet1_pt*/  bool     OS2jet_jet1_pt_isLoaded;
+//---------------------------------------------------------------------------------
+/*                          OS2jet_jet2_pt*/  float    OS2jet_jet2_pt_;
+/*                          OS2jet_jet2_pt*/  TBranch *OS2jet_jet2_pt_branch;
+/*                          OS2jet_jet2_pt*/  bool     OS2jet_jet2_pt_isLoaded;
+//---------------------------------------------------------------------------------
+/*                OS2jet_jet12_ptvectorsum*/  float    OS2jet_jet12_ptvectorsum_;
+/*                OS2jet_jet12_ptvectorsum*/  TBranch *OS2jet_jet12_ptvectorsum_branch;
+/*                OS2jet_jet12_ptvectorsum*/  bool     OS2jet_jet12_ptvectorsum_isLoaded;
+//---------------------------------------------------------------------------------
+/*                OS2jet_jet12_ptscalarsum*/  float    OS2jet_jet12_ptscalarsum_;
+/*                OS2jet_jet12_ptscalarsum*/  TBranch *OS2jet_jet12_ptscalarsum_branch;
+/*                OS2jet_jet12_ptscalarsum*/  bool     OS2jet_jet12_ptscalarsum_isLoaded;
+//---------------------------------------------------------------------------------
+/*               OS2jet_jet12_ptscalarprod*/  float    OS2jet_jet12_ptscalarprod_;
+/*               OS2jet_jet12_ptscalarprod*/  TBranch *OS2jet_jet12_ptscalarprod_branch;
+/*               OS2jet_jet12_ptscalarprod*/  bool     OS2jet_jet12_ptscalarprod_isLoaded;
+//---------------------------------------------------------------------------------
+/*                       OS2jet_jet12_mass*/  float    OS2jet_jet12_mass_;
+/*                       OS2jet_jet12_mass*/  TBranch *OS2jet_jet12_mass_branch;
+/*                       OS2jet_jet12_mass*/  bool     OS2jet_jet12_mass_isLoaded;
+//---------------------------------------------------------------------------------
+/*                         OS2jet_jet12_DR*/  float    OS2jet_jet12_DR_;
+/*                         OS2jet_jet12_DR*/  TBranch *OS2jet_jet12_DR_branch;
+/*                         OS2jet_jet12_DR*/  bool     OS2jet_jet12_DR_isLoaded;
+//---------------------------------------------------------------------------------
+/*                       OS2jet_jet12_DPhi*/  float    OS2jet_jet12_DPhi_;
+/*                       OS2jet_jet12_DPhi*/  TBranch *OS2jet_jet12_DPhi_branch;
+/*                       OS2jet_jet12_DPhi*/  bool     OS2jet_jet12_DPhi_isLoaded;
+//---------------------------------------------------------------------------------
+/*                       OS2jet_jet12_DEta*/  float    OS2jet_jet12_DEta_;
+/*                       OS2jet_jet12_DEta*/  TBranch *OS2jet_jet12_DEta_branch;
+/*                       OS2jet_jet12_DEta*/  bool     OS2jet_jet12_DEta_isLoaded;
+//---------------------------------------------------------------------------------
+/*                              OS2jet_MET*/  float    OS2jet_MET_;
+/*                              OS2jet_MET*/  TBranch *OS2jet_MET_branch;
+/*                              OS2jet_MET*/  bool     OS2jet_MET_isLoaded;
+//---------------------------------------------------------------------------------
+/*                 OS2jet_MET_fatjet1_DPhi*/  float    OS2jet_MET_fatjet1_DPhi_;
+/*                 OS2jet_MET_fatjet1_DPhi*/  TBranch *OS2jet_MET_fatjet1_DPhi_branch;
+/*                 OS2jet_MET_fatjet1_DPhi*/  bool     OS2jet_MET_fatjet1_DPhi_isLoaded;
+//---------------------------------------------------------------------------------
+/*                      OS2jet_MET_ll_DPhi*/  float    OS2jet_MET_ll_DPhi_;
+/*                      OS2jet_MET_ll_DPhi*/  TBranch *OS2jet_MET_ll_DPhi_branch;
+/*                      OS2jet_MET_ll_DPhi*/  bool     OS2jet_MET_ll_DPhi_isLoaded;
+//---------------------------------------------------------------------------------
+/*   OS2jet_fatjet1_Recojet_matchJet_DRmin*/  float    OS2jet_fatjet1_Recojet_matchJet_DRmin_;
+/*   OS2jet_fatjet1_Recojet_matchJet_DRmin*/  TBranch *OS2jet_fatjet1_Recojet_matchJet_DRmin_branch;
+/*   OS2jet_fatjet1_Recojet_matchJet_DRmin*/  bool     OS2jet_fatjet1_Recojet_matchJet_DRmin_isLoaded;
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet1_genmatching*/  int      OS2jet_fatjet1_genmatching_;
+/*              OS2jet_fatjet1_genmatching*/  TBranch *OS2jet_fatjet1_genmatching_branch;
+/*              OS2jet_fatjet1_genmatching*/  bool     OS2jet_fatjet1_genmatching_isLoaded;
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet2_genmatching*/  int      OS2jet_fatjet2_genmatching_;
+/*              OS2jet_fatjet2_genmatching*/  TBranch *OS2jet_fatjet2_genmatching_branch;
+/*              OS2jet_fatjet2_genmatching*/  bool     OS2jet_fatjet2_genmatching_isLoaded;
+//---------------------------------------------------------------------------------
+/*            OS2jet_fatjet1_genmatchingv2*/  int      OS2jet_fatjet1_genmatchingv2_;
+/*            OS2jet_fatjet1_genmatchingv2*/  TBranch *OS2jet_fatjet1_genmatchingv2_branch;
+/*            OS2jet_fatjet1_genmatchingv2*/  bool     OS2jet_fatjet1_genmatchingv2_isLoaded;
+//---------------------------------------------------------------------------------
+/*            OS2jet_fatjet2_genmatchingv2*/  int      OS2jet_fatjet2_genmatchingv2_;
+/*            OS2jet_fatjet2_genmatchingv2*/  TBranch *OS2jet_fatjet2_genmatchingv2_branch;
+/*            OS2jet_fatjet2_genmatchingv2*/  bool     OS2jet_fatjet2_genmatchingv2_isLoaded;
+//---------------------------------------------------------------------------------
+/*            OS2jet_fatjet1_genmatchingv3*/  int      OS2jet_fatjet1_genmatchingv3_;
+/*            OS2jet_fatjet1_genmatchingv3*/  TBranch *OS2jet_fatjet1_genmatchingv3_branch;
+/*            OS2jet_fatjet1_genmatchingv3*/  bool     OS2jet_fatjet1_genmatchingv3_isLoaded;
+//---------------------------------------------------------------------------------
+/*                          OS2jet_genMVVV*/  float    OS2jet_genMVVV_;
+/*                          OS2jet_genMVVV*/  TBranch *OS2jet_genMVVV_branch;
+/*                          OS2jet_genMVVV*/  bool     OS2jet_genMVVV_isLoaded;
+//---------------------------------------------------------------------------------
+/*                         OS2jet_genpTVVV*/  float    OS2jet_genpTVVV_;
+/*                         OS2jet_genpTVVV*/  TBranch *OS2jet_genpTVVV_branch;
+/*                         OS2jet_genpTVVV*/  bool     OS2jet_genpTVVV_isLoaded;
+//---------------------------------------------------------------------------------
+/*                  OS2jet_Mfatjetsleptons*/  float    OS2jet_Mfatjetsleptons_;
+/*                  OS2jet_Mfatjetsleptons*/  TBranch *OS2jet_Mfatjetsleptons_branch;
+/*                  OS2jet_Mfatjetsleptons*/  bool     OS2jet_Mfatjetsleptons_isLoaded;
+//---------------------------------------------------------------------------------
+/*              OS2jet_MTfatjetsleptonsMET*/  float    OS2jet_MTfatjetsleptonsMET_;
+/*              OS2jet_MTfatjetsleptonsMET*/  TBranch *OS2jet_MTfatjetsleptonsMET_branch;
+/*              OS2jet_MTfatjetsleptonsMET*/  bool     OS2jet_MTfatjetsleptonsMET_isLoaded;
+//---------------------------------------------------------------------------------
+/*                 OS2jet_fatjet1_tau21cut*/  bool     OS2jet_fatjet1_tau21cut_;
+/*                 OS2jet_fatjet1_tau21cut*/  TBranch *OS2jet_fatjet1_tau21cut_branch;
+/*                 OS2jet_fatjet1_tau21cut*/  bool     OS2jet_fatjet1_tau21cut_isLoaded;
+//---------------------------------------------------------------------------------
+/*                OS2jet_fatjet1_massSDcut*/  bool     OS2jet_fatjet1_massSDcut_;
+/*                OS2jet_fatjet1_massSDcut*/  TBranch *OS2jet_fatjet1_massSDcut_branch;
+/*                OS2jet_fatjet1_massSDcut*/  bool     OS2jet_fatjet1_massSDcut_isLoaded;
+//---------------------------------------------------------------------------------
+/*                  OS2jet_Nfatjets_vloose*/  int      OS2jet_Nfatjets_vloose_;
+/*                  OS2jet_Nfatjets_vloose*/  TBranch *OS2jet_Nfatjets_vloose_branch;
+/*                  OS2jet_Nfatjets_vloose*/  bool     OS2jet_Nfatjets_vloose_isLoaded;
+//---------------------------------------------------------------------------------
+/*                   OS2jet_Nfatjets_loose*/  int      OS2jet_Nfatjets_loose_;
+/*                   OS2jet_Nfatjets_loose*/  TBranch *OS2jet_Nfatjets_loose_branch;
+/*                   OS2jet_Nfatjets_loose*/  bool     OS2jet_Nfatjets_loose_isLoaded;
+//---------------------------------------------------------------------------------
+/*                  OS2jet_Nfatjets_medium*/  int      OS2jet_Nfatjets_medium_;
+/*                  OS2jet_Nfatjets_medium*/  TBranch *OS2jet_Nfatjets_medium_branch;
+/*                  OS2jet_Nfatjets_medium*/  bool     OS2jet_Nfatjets_medium_isLoaded;
+//---------------------------------------------------------------------------------
+/*                 OS2jet_fatjetwgt_vloose*/  float    OS2jet_fatjetwgt_vloose_;
+/*                 OS2jet_fatjetwgt_vloose*/  TBranch *OS2jet_fatjetwgt_vloose_branch;
+/*                 OS2jet_fatjetwgt_vloose*/  bool     OS2jet_fatjetwgt_vloose_isLoaded;
+//---------------------------------------------------------------------------------
+/*                  OS2jet_fatjetwgt_loose*/  float    OS2jet_fatjetwgt_loose_;
+/*                  OS2jet_fatjetwgt_loose*/  TBranch *OS2jet_fatjetwgt_loose_branch;
+/*                  OS2jet_fatjetwgt_loose*/  bool     OS2jet_fatjetwgt_loose_isLoaded;
+//---------------------------------------------------------------------------------
+/*                 OS2jet_fatjetwgt_medium*/  float    OS2jet_fatjetwgt_medium_;
+/*                 OS2jet_fatjetwgt_medium*/  TBranch *OS2jet_fatjetwgt_medium_branch;
+/*                 OS2jet_fatjetwgt_medium*/  bool     OS2jet_fatjetwgt_medium_isLoaded;
 //---------------------------------------------------------------------------------
 public: 
 void Init(TTree *tree);
@@ -879,43 +1299,253 @@ void LoadAllBranches();
 //---------------------------------------------------------------------------------
 /*                Cut_4LepMET_Preselection*/  const bool &Cut_4LepMET_Preselection();
 //---------------------------------------------------------------------------------
+/*              Cut_OS2Fatjet_Preselection*/  const bool &Cut_OS2Fatjet_Preselection();
+//---------------------------------------------------------------------------------
+/*   Cut_OS2Fatjet_Preselection_genmatched*/  const bool &Cut_OS2Fatjet_Preselection_genmatched();
+//---------------------------------------------------------------------------------
+/*            Cut_OS2Fatjet_OFPreselection*/  const bool &Cut_OS2Fatjet_OFPreselection();
+//---------------------------------------------------------------------------------
+/*                   Cut_OS2Fatjet_OF2jets*/  const bool &Cut_OS2Fatjet_OF2jets();
+//---------------------------------------------------------------------------------
+/*                 Cut_OS2Fatjet_OF1fatjet*/  const bool &Cut_OS2Fatjet_OF1fatjet();
+//---------------------------------------------------------------------------------
+/*                        OS2jet_SFcontent*/  const int &OS2jet_SFcontent();
+//---------------------------------------------------------------------------------
 /*                  Cut_4LepMET_emuChannel*/  const bool &Cut_4LepMET_emuChannel();
+//---------------------------------------------------------------------------------
+/*                       OS2jet_Jetcontent*/  const int &OS2jet_Jetcontent();
 //---------------------------------------------------------------------------------
 /*                 Cut_4LepMET_offzChannel*/  const bool &Cut_4LepMET_offzChannel();
 //---------------------------------------------------------------------------------
+/*                         OS2jet_Nfatjets*/  const int &OS2jet_Nfatjets();
+//---------------------------------------------------------------------------------
 /*                  Cut_4LepMET_onzChannel*/  const bool &Cut_4LepMET_onzChannel();
+//---------------------------------------------------------------------------------
+/*                            OS2jet_Njets*/  const int &OS2jet_Njets();
 //---------------------------------------------------------------------------------
 /*          Cut_4LepMET_onzChannel_HighMET*/  const bool &Cut_4LepMET_onzChannel_HighMET();
 //---------------------------------------------------------------------------------
+/*                         OS2jet_Nbjetsv1*/  const int &OS2jet_Nbjetsv1();
+//---------------------------------------------------------------------------------
 /*             Var_4LepMET_Zcand_lep_idx_0*/  const int &Var_4LepMET_Zcand_lep_idx_0();
+//---------------------------------------------------------------------------------
+/*                         OS2jet_Nbjetsv2*/  const int &OS2jet_Nbjetsv2();
 //---------------------------------------------------------------------------------
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  const int &Var_4LepMET_Zcand_lep_pdgid_0();
 //---------------------------------------------------------------------------------
+/*                        OS2jet_fatjet_pt*/  const float &OS2jet_fatjet_pt();
+//---------------------------------------------------------------------------------
 /*              Var_4LepMET_Zcand_lep_p4_0*/  const ROOT::Math::LorentzVector<ROOT::Math::PtEtaPhiM4D<float> > &Var_4LepMET_Zcand_lep_p4_0();
+//---------------------------------------------------------------------------------
+/*                          OS2jet_lep1_pt*/  const float &OS2jet_lep1_pt();
 //---------------------------------------------------------------------------------
 /*             Var_4LepMET_Zcand_lep_idx_1*/  const int &Var_4LepMET_Zcand_lep_idx_1();
 //---------------------------------------------------------------------------------
+/*                          OS2jet_lep2_pt*/  const float &OS2jet_lep2_pt();
+//---------------------------------------------------------------------------------
 /*           Var_4LepMET_Zcand_lep_pdgid_1*/  const int &Var_4LepMET_Zcand_lep_pdgid_1();
+//---------------------------------------------------------------------------------
+/*                OS2jet_lep12_ptvectorsum*/  const float &OS2jet_lep12_ptvectorsum();
 //---------------------------------------------------------------------------------
 /*              Var_4LepMET_Zcand_lep_p4_1*/  const ROOT::Math::LorentzVector<ROOT::Math::PtEtaPhiM4D<float> > &Var_4LepMET_Zcand_lep_p4_1();
 //---------------------------------------------------------------------------------
+/*                OS2jet_lep12_ptscalarsum*/  const float &OS2jet_lep12_ptscalarsum();
+//---------------------------------------------------------------------------------
 /*                   Var_4LepMET_Zcand_mll*/  const float &Var_4LepMET_Zcand_mll();
+//---------------------------------------------------------------------------------
+/*               OS2jet_lep12_ptscalarprod*/  const float &OS2jet_lep12_ptscalarprod();
 //---------------------------------------------------------------------------------
 /*             Var_4LepMET_other_lep_idx_0*/  const int &Var_4LepMET_other_lep_idx_0();
 //---------------------------------------------------------------------------------
+/*                       OS2jet_lep12_mass*/  const float &OS2jet_lep12_mass();
+//---------------------------------------------------------------------------------
 /*           Var_4LepMET_other_lep_pdgid_0*/  const int &Var_4LepMET_other_lep_pdgid_0();
+//---------------------------------------------------------------------------------
+/*                         OS2jet_lep12_DR*/  const float &OS2jet_lep12_DR();
 //---------------------------------------------------------------------------------
 /*              Var_4LepMET_other_lep_p4_0*/  const ROOT::Math::LorentzVector<ROOT::Math::PtEtaPhiM4D<float> > &Var_4LepMET_other_lep_p4_0();
 //---------------------------------------------------------------------------------
+/*                       OS2jet_lep12_DPhi*/  const float &OS2jet_lep12_DPhi();
+//---------------------------------------------------------------------------------
 /*             Var_4LepMET_other_lep_idx_1*/  const int &Var_4LepMET_other_lep_idx_1();
+//---------------------------------------------------------------------------------
+/*                       OS2jet_lep12_Deta*/  const float &OS2jet_lep12_Deta();
 //---------------------------------------------------------------------------------
 /*           Var_4LepMET_other_lep_pdgid_1*/  const int &Var_4LepMET_other_lep_pdgid_1();
 //---------------------------------------------------------------------------------
+/*                       OS2jet_fatjet1_pt*/  const float &OS2jet_fatjet1_pt();
+//---------------------------------------------------------------------------------
 /*              Var_4LepMET_other_lep_p4_1*/  const ROOT::Math::LorentzVector<ROOT::Math::PtEtaPhiM4D<float> > &Var_4LepMET_other_lep_p4_1();
+//---------------------------------------------------------------------------------
+/*                       OS2jet_fatjet2_pt*/  const float &OS2jet_fatjet2_pt();
 //---------------------------------------------------------------------------------
 /*                   Var_4LepMET_other_mll*/  const float &Var_4LepMET_other_mll();
 //---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_mass*/  const float &OS2jet_fatjet1_mass();
+//---------------------------------------------------------------------------------
 /*                         Var_4LepMET_mt2*/  const float &Var_4LepMET_mt2();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_mass*/  const float &OS2jet_fatjet2_mass();
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet1_massSD*/  const float &OS2jet_fatjet1_massSD();
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet2_massSD*/  const float &OS2jet_fatjet2_massSD();
+//---------------------------------------------------------------------------------
+/*               OS2jet_fatjet1_subjet0_pt*/  const float &OS2jet_fatjet1_subjet0_pt();
+//---------------------------------------------------------------------------------
+/*               OS2jet_fatjet1_subjet1_pt*/  const float &OS2jet_fatjet1_subjet1_pt();
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet1_subjet0_eta*/  const float &OS2jet_fatjet1_subjet0_eta();
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet1_subjet1_eta*/  const float &OS2jet_fatjet1_subjet1_eta();
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet1_subjet0_mass*/  const float &OS2jet_fatjet1_subjet0_mass();
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet1_subjet1_mass*/  const float &OS2jet_fatjet1_subjet1_mass();
+//---------------------------------------------------------------------------------
+/*               OS2jet_fatjet2_subjet0_pt*/  const float &OS2jet_fatjet2_subjet0_pt();
+//---------------------------------------------------------------------------------
+/*               OS2jet_fatjet2_subjet1_pt*/  const float &OS2jet_fatjet2_subjet1_pt();
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet2_subjet0_eta*/  const float &OS2jet_fatjet2_subjet0_eta();
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet2_subjet1_eta*/  const float &OS2jet_fatjet2_subjet1_eta();
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet2_subjet0_mass*/  const float &OS2jet_fatjet2_subjet0_mass();
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet2_subjet1_mass*/  const float &OS2jet_fatjet2_subjet1_mass();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_tau1*/  const float &OS2jet_fatjet1_tau1();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_tau2*/  const float &OS2jet_fatjet1_tau2();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_tau3*/  const float &OS2jet_fatjet1_tau3();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet1_tau21*/  const float &OS2jet_fatjet1_tau21();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet2_tau21*/  const float &OS2jet_fatjet2_tau21();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet1_tau32*/  const float &OS2jet_fatjet1_tau32();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet2_tau32*/  const float &OS2jet_fatjet2_tau32();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_tau1*/  const float &OS2jet_fatjet2_tau1();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_tau2*/  const float &OS2jet_fatjet2_tau2();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_tau3*/  const float &OS2jet_fatjet2_tau3();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet1_ll_DR*/  const float &OS2jet_fatjet1_ll_DR();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet2_ll_DR*/  const float &OS2jet_fatjet2_ll_DR();
+//---------------------------------------------------------------------------------
+/*                OS2jet_fatjet12_ll_DRmax*/  const float &OS2jet_fatjet12_ll_DRmax();
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet12_ptvectorsum*/  const float &OS2jet_fatjet12_ptvectorsum();
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet12_ptscalarsum*/  const float &OS2jet_fatjet12_ptscalarsum();
+//---------------------------------------------------------------------------------
+/*            OS2jet_fatjet12_ptscalarprod*/  const float &OS2jet_fatjet12_ptscalarprod();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet12_mass*/  const float &OS2jet_fatjet12_mass();
+//---------------------------------------------------------------------------------
+/*                 OS2jet_fatjet12_masssum*/  const float &OS2jet_fatjet12_masssum();
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet12_massproduct*/  const float &OS2jet_fatjet12_massproduct();
+//---------------------------------------------------------------------------------
+/*               OS2jet_fatjet12_massSDsum*/  const float &OS2jet_fatjet12_massSDsum();
+//---------------------------------------------------------------------------------
+/*           OS2jet_fatjet12_massSDproduct*/  const float &OS2jet_fatjet12_massSDproduct();
+//---------------------------------------------------------------------------------
+/*                      OS2jet_fatjet12_DR*/  const float &OS2jet_fatjet12_DR();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet12_DPhi*/  const float &OS2jet_fatjet12_DPhi();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet12_DEta*/  const float &OS2jet_fatjet12_DEta();
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet1_toptag*/  const float &OS2jet_fatjet1_toptag();
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet2_toptag*/  const float &OS2jet_fatjet2_toptag();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_Wtag*/  const float &OS2jet_fatjet1_Wtag();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_Wtag*/  const float &OS2jet_fatjet2_Wtag();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_Ztag*/  const float &OS2jet_fatjet1_Ztag();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_Ztag*/  const float &OS2jet_fatjet2_Ztag();
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet1_Zbbtag*/  const float &OS2jet_fatjet1_Zbbtag();
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet2_Zbbtag*/  const float &OS2jet_fatjet2_Zbbtag();
+//---------------------------------------------------------------------------------
+/*                  OS2jet_fatjet12_WtWtag*/  const float &OS2jet_fatjet12_WtWtag();
+//---------------------------------------------------------------------------------
+/*                  OS2jet_fatjet12_WpWtag*/  const float &OS2jet_fatjet12_WpWtag();
+//---------------------------------------------------------------------------------
+/*                         OS2jet_jet1_idx*/  const int &OS2jet_jet1_idx();
+//---------------------------------------------------------------------------------
+/*                         OS2jet_jet2_idx*/  const int &OS2jet_jet2_idx();
+//---------------------------------------------------------------------------------
+/*                          OS2jet_jet1_pt*/  const float &OS2jet_jet1_pt();
+//---------------------------------------------------------------------------------
+/*                          OS2jet_jet2_pt*/  const float &OS2jet_jet2_pt();
+//---------------------------------------------------------------------------------
+/*                OS2jet_jet12_ptvectorsum*/  const float &OS2jet_jet12_ptvectorsum();
+//---------------------------------------------------------------------------------
+/*                OS2jet_jet12_ptscalarsum*/  const float &OS2jet_jet12_ptscalarsum();
+//---------------------------------------------------------------------------------
+/*               OS2jet_jet12_ptscalarprod*/  const float &OS2jet_jet12_ptscalarprod();
+//---------------------------------------------------------------------------------
+/*                       OS2jet_jet12_mass*/  const float &OS2jet_jet12_mass();
+//---------------------------------------------------------------------------------
+/*                         OS2jet_jet12_DR*/  const float &OS2jet_jet12_DR();
+//---------------------------------------------------------------------------------
+/*                       OS2jet_jet12_DPhi*/  const float &OS2jet_jet12_DPhi();
+//---------------------------------------------------------------------------------
+/*                       OS2jet_jet12_DEta*/  const float &OS2jet_jet12_DEta();
+//---------------------------------------------------------------------------------
+/*                              OS2jet_MET*/  const float &OS2jet_MET();
+//---------------------------------------------------------------------------------
+/*                 OS2jet_MET_fatjet1_DPhi*/  const float &OS2jet_MET_fatjet1_DPhi();
+//---------------------------------------------------------------------------------
+/*                      OS2jet_MET_ll_DPhi*/  const float &OS2jet_MET_ll_DPhi();
+//---------------------------------------------------------------------------------
+/*   OS2jet_fatjet1_Recojet_matchJet_DRmin*/  const float &OS2jet_fatjet1_Recojet_matchJet_DRmin();
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet1_genmatching*/  const int &OS2jet_fatjet1_genmatching();
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet2_genmatching*/  const int &OS2jet_fatjet2_genmatching();
+//---------------------------------------------------------------------------------
+/*            OS2jet_fatjet1_genmatchingv2*/  const int &OS2jet_fatjet1_genmatchingv2();
+//---------------------------------------------------------------------------------
+/*            OS2jet_fatjet2_genmatchingv2*/  const int &OS2jet_fatjet2_genmatchingv2();
+//---------------------------------------------------------------------------------
+/*            OS2jet_fatjet1_genmatchingv3*/  const int &OS2jet_fatjet1_genmatchingv3();
+//---------------------------------------------------------------------------------
+/*                          OS2jet_genMVVV*/  const float &OS2jet_genMVVV();
+//---------------------------------------------------------------------------------
+/*                         OS2jet_genpTVVV*/  const float &OS2jet_genpTVVV();
+//---------------------------------------------------------------------------------
+/*                  OS2jet_Mfatjetsleptons*/  const float &OS2jet_Mfatjetsleptons();
+//---------------------------------------------------------------------------------
+/*              OS2jet_MTfatjetsleptonsMET*/  const float &OS2jet_MTfatjetsleptonsMET();
+//---------------------------------------------------------------------------------
+/*                 OS2jet_fatjet1_tau21cut*/  const bool &OS2jet_fatjet1_tau21cut();
+//---------------------------------------------------------------------------------
+/*                OS2jet_fatjet1_massSDcut*/  const bool &OS2jet_fatjet1_massSDcut();
+//---------------------------------------------------------------------------------
+/*                  OS2jet_Nfatjets_vloose*/  const int &OS2jet_Nfatjets_vloose();
+//---------------------------------------------------------------------------------
+/*                   OS2jet_Nfatjets_loose*/  const int &OS2jet_Nfatjets_loose();
+//---------------------------------------------------------------------------------
+/*                  OS2jet_Nfatjets_medium*/  const int &OS2jet_Nfatjets_medium();
+//---------------------------------------------------------------------------------
+/*                 OS2jet_fatjetwgt_vloose*/  const float &OS2jet_fatjetwgt_vloose();
+//---------------------------------------------------------------------------------
+/*                  OS2jet_fatjetwgt_loose*/  const float &OS2jet_fatjetwgt_loose();
+//---------------------------------------------------------------------------------
+/*                 OS2jet_fatjetwgt_medium*/  const float &OS2jet_fatjetwgt_medium();
 //---------------------------------------------------------------------------------
 
   static void progress(int nEventsTotal, int nEventsChain);
@@ -1185,43 +1815,253 @@ namespace tas {
 //---------------------------------------------------------------------------------
 /*                Cut_4LepMET_Preselection*/  const bool &Cut_4LepMET_Preselection();
 //---------------------------------------------------------------------------------
+/*              Cut_OS2Fatjet_Preselection*/  const bool &Cut_OS2Fatjet_Preselection();
+//---------------------------------------------------------------------------------
+/*   Cut_OS2Fatjet_Preselection_genmatched*/  const bool &Cut_OS2Fatjet_Preselection_genmatched();
+//---------------------------------------------------------------------------------
+/*            Cut_OS2Fatjet_OFPreselection*/  const bool &Cut_OS2Fatjet_OFPreselection();
+//---------------------------------------------------------------------------------
+/*                   Cut_OS2Fatjet_OF2jets*/  const bool &Cut_OS2Fatjet_OF2jets();
+//---------------------------------------------------------------------------------
+/*                 Cut_OS2Fatjet_OF1fatjet*/  const bool &Cut_OS2Fatjet_OF1fatjet();
+//---------------------------------------------------------------------------------
+/*                        OS2jet_SFcontent*/  const int &OS2jet_SFcontent();
+//---------------------------------------------------------------------------------
 /*                  Cut_4LepMET_emuChannel*/  const bool &Cut_4LepMET_emuChannel();
+//---------------------------------------------------------------------------------
+/*                       OS2jet_Jetcontent*/  const int &OS2jet_Jetcontent();
 //---------------------------------------------------------------------------------
 /*                 Cut_4LepMET_offzChannel*/  const bool &Cut_4LepMET_offzChannel();
 //---------------------------------------------------------------------------------
+/*                         OS2jet_Nfatjets*/  const int &OS2jet_Nfatjets();
+//---------------------------------------------------------------------------------
 /*                  Cut_4LepMET_onzChannel*/  const bool &Cut_4LepMET_onzChannel();
+//---------------------------------------------------------------------------------
+/*                            OS2jet_Njets*/  const int &OS2jet_Njets();
 //---------------------------------------------------------------------------------
 /*          Cut_4LepMET_onzChannel_HighMET*/  const bool &Cut_4LepMET_onzChannel_HighMET();
 //---------------------------------------------------------------------------------
+/*                         OS2jet_Nbjetsv1*/  const int &OS2jet_Nbjetsv1();
+//---------------------------------------------------------------------------------
 /*             Var_4LepMET_Zcand_lep_idx_0*/  const int &Var_4LepMET_Zcand_lep_idx_0();
+//---------------------------------------------------------------------------------
+/*                         OS2jet_Nbjetsv2*/  const int &OS2jet_Nbjetsv2();
 //---------------------------------------------------------------------------------
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  const int &Var_4LepMET_Zcand_lep_pdgid_0();
 //---------------------------------------------------------------------------------
+/*                        OS2jet_fatjet_pt*/  const float &OS2jet_fatjet_pt();
+//---------------------------------------------------------------------------------
 /*              Var_4LepMET_Zcand_lep_p4_0*/  const ROOT::Math::LorentzVector<ROOT::Math::PtEtaPhiM4D<float> > &Var_4LepMET_Zcand_lep_p4_0();
+//---------------------------------------------------------------------------------
+/*                          OS2jet_lep1_pt*/  const float &OS2jet_lep1_pt();
 //---------------------------------------------------------------------------------
 /*             Var_4LepMET_Zcand_lep_idx_1*/  const int &Var_4LepMET_Zcand_lep_idx_1();
 //---------------------------------------------------------------------------------
+/*                          OS2jet_lep2_pt*/  const float &OS2jet_lep2_pt();
+//---------------------------------------------------------------------------------
 /*           Var_4LepMET_Zcand_lep_pdgid_1*/  const int &Var_4LepMET_Zcand_lep_pdgid_1();
+//---------------------------------------------------------------------------------
+/*                OS2jet_lep12_ptvectorsum*/  const float &OS2jet_lep12_ptvectorsum();
 //---------------------------------------------------------------------------------
 /*              Var_4LepMET_Zcand_lep_p4_1*/  const ROOT::Math::LorentzVector<ROOT::Math::PtEtaPhiM4D<float> > &Var_4LepMET_Zcand_lep_p4_1();
 //---------------------------------------------------------------------------------
+/*                OS2jet_lep12_ptscalarsum*/  const float &OS2jet_lep12_ptscalarsum();
+//---------------------------------------------------------------------------------
 /*                   Var_4LepMET_Zcand_mll*/  const float &Var_4LepMET_Zcand_mll();
+//---------------------------------------------------------------------------------
+/*               OS2jet_lep12_ptscalarprod*/  const float &OS2jet_lep12_ptscalarprod();
 //---------------------------------------------------------------------------------
 /*             Var_4LepMET_other_lep_idx_0*/  const int &Var_4LepMET_other_lep_idx_0();
 //---------------------------------------------------------------------------------
+/*                       OS2jet_lep12_mass*/  const float &OS2jet_lep12_mass();
+//---------------------------------------------------------------------------------
 /*           Var_4LepMET_other_lep_pdgid_0*/  const int &Var_4LepMET_other_lep_pdgid_0();
+//---------------------------------------------------------------------------------
+/*                         OS2jet_lep12_DR*/  const float &OS2jet_lep12_DR();
 //---------------------------------------------------------------------------------
 /*              Var_4LepMET_other_lep_p4_0*/  const ROOT::Math::LorentzVector<ROOT::Math::PtEtaPhiM4D<float> > &Var_4LepMET_other_lep_p4_0();
 //---------------------------------------------------------------------------------
+/*                       OS2jet_lep12_DPhi*/  const float &OS2jet_lep12_DPhi();
+//---------------------------------------------------------------------------------
 /*             Var_4LepMET_other_lep_idx_1*/  const int &Var_4LepMET_other_lep_idx_1();
+//---------------------------------------------------------------------------------
+/*                       OS2jet_lep12_Deta*/  const float &OS2jet_lep12_Deta();
 //---------------------------------------------------------------------------------
 /*           Var_4LepMET_other_lep_pdgid_1*/  const int &Var_4LepMET_other_lep_pdgid_1();
 //---------------------------------------------------------------------------------
+/*                       OS2jet_fatjet1_pt*/  const float &OS2jet_fatjet1_pt();
+//---------------------------------------------------------------------------------
 /*              Var_4LepMET_other_lep_p4_1*/  const ROOT::Math::LorentzVector<ROOT::Math::PtEtaPhiM4D<float> > &Var_4LepMET_other_lep_p4_1();
+//---------------------------------------------------------------------------------
+/*                       OS2jet_fatjet2_pt*/  const float &OS2jet_fatjet2_pt();
 //---------------------------------------------------------------------------------
 /*                   Var_4LepMET_other_mll*/  const float &Var_4LepMET_other_mll();
 //---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_mass*/  const float &OS2jet_fatjet1_mass();
+//---------------------------------------------------------------------------------
 /*                         Var_4LepMET_mt2*/  const float &Var_4LepMET_mt2();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_mass*/  const float &OS2jet_fatjet2_mass();
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet1_massSD*/  const float &OS2jet_fatjet1_massSD();
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet2_massSD*/  const float &OS2jet_fatjet2_massSD();
+//---------------------------------------------------------------------------------
+/*               OS2jet_fatjet1_subjet0_pt*/  const float &OS2jet_fatjet1_subjet0_pt();
+//---------------------------------------------------------------------------------
+/*               OS2jet_fatjet1_subjet1_pt*/  const float &OS2jet_fatjet1_subjet1_pt();
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet1_subjet0_eta*/  const float &OS2jet_fatjet1_subjet0_eta();
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet1_subjet1_eta*/  const float &OS2jet_fatjet1_subjet1_eta();
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet1_subjet0_mass*/  const float &OS2jet_fatjet1_subjet0_mass();
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet1_subjet1_mass*/  const float &OS2jet_fatjet1_subjet1_mass();
+//---------------------------------------------------------------------------------
+/*               OS2jet_fatjet2_subjet0_pt*/  const float &OS2jet_fatjet2_subjet0_pt();
+//---------------------------------------------------------------------------------
+/*               OS2jet_fatjet2_subjet1_pt*/  const float &OS2jet_fatjet2_subjet1_pt();
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet2_subjet0_eta*/  const float &OS2jet_fatjet2_subjet0_eta();
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet2_subjet1_eta*/  const float &OS2jet_fatjet2_subjet1_eta();
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet2_subjet0_mass*/  const float &OS2jet_fatjet2_subjet0_mass();
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet2_subjet1_mass*/  const float &OS2jet_fatjet2_subjet1_mass();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_tau1*/  const float &OS2jet_fatjet1_tau1();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_tau2*/  const float &OS2jet_fatjet1_tau2();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_tau3*/  const float &OS2jet_fatjet1_tau3();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet1_tau21*/  const float &OS2jet_fatjet1_tau21();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet2_tau21*/  const float &OS2jet_fatjet2_tau21();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet1_tau32*/  const float &OS2jet_fatjet1_tau32();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet2_tau32*/  const float &OS2jet_fatjet2_tau32();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_tau1*/  const float &OS2jet_fatjet2_tau1();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_tau2*/  const float &OS2jet_fatjet2_tau2();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_tau3*/  const float &OS2jet_fatjet2_tau3();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet1_ll_DR*/  const float &OS2jet_fatjet1_ll_DR();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet2_ll_DR*/  const float &OS2jet_fatjet2_ll_DR();
+//---------------------------------------------------------------------------------
+/*                OS2jet_fatjet12_ll_DRmax*/  const float &OS2jet_fatjet12_ll_DRmax();
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet12_ptvectorsum*/  const float &OS2jet_fatjet12_ptvectorsum();
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet12_ptscalarsum*/  const float &OS2jet_fatjet12_ptscalarsum();
+//---------------------------------------------------------------------------------
+/*            OS2jet_fatjet12_ptscalarprod*/  const float &OS2jet_fatjet12_ptscalarprod();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet12_mass*/  const float &OS2jet_fatjet12_mass();
+//---------------------------------------------------------------------------------
+/*                 OS2jet_fatjet12_masssum*/  const float &OS2jet_fatjet12_masssum();
+//---------------------------------------------------------------------------------
+/*             OS2jet_fatjet12_massproduct*/  const float &OS2jet_fatjet12_massproduct();
+//---------------------------------------------------------------------------------
+/*               OS2jet_fatjet12_massSDsum*/  const float &OS2jet_fatjet12_massSDsum();
+//---------------------------------------------------------------------------------
+/*           OS2jet_fatjet12_massSDproduct*/  const float &OS2jet_fatjet12_massSDproduct();
+//---------------------------------------------------------------------------------
+/*                      OS2jet_fatjet12_DR*/  const float &OS2jet_fatjet12_DR();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet12_DPhi*/  const float &OS2jet_fatjet12_DPhi();
+//---------------------------------------------------------------------------------
+/*                    OS2jet_fatjet12_DEta*/  const float &OS2jet_fatjet12_DEta();
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet1_toptag*/  const float &OS2jet_fatjet1_toptag();
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet2_toptag*/  const float &OS2jet_fatjet2_toptag();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_Wtag*/  const float &OS2jet_fatjet1_Wtag();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_Wtag*/  const float &OS2jet_fatjet2_Wtag();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet1_Ztag*/  const float &OS2jet_fatjet1_Ztag();
+//---------------------------------------------------------------------------------
+/*                     OS2jet_fatjet2_Ztag*/  const float &OS2jet_fatjet2_Ztag();
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet1_Zbbtag*/  const float &OS2jet_fatjet1_Zbbtag();
+//---------------------------------------------------------------------------------
+/*                   OS2jet_fatjet2_Zbbtag*/  const float &OS2jet_fatjet2_Zbbtag();
+//---------------------------------------------------------------------------------
+/*                  OS2jet_fatjet12_WtWtag*/  const float &OS2jet_fatjet12_WtWtag();
+//---------------------------------------------------------------------------------
+/*                  OS2jet_fatjet12_WpWtag*/  const float &OS2jet_fatjet12_WpWtag();
+//---------------------------------------------------------------------------------
+/*                         OS2jet_jet1_idx*/  const int &OS2jet_jet1_idx();
+//---------------------------------------------------------------------------------
+/*                         OS2jet_jet2_idx*/  const int &OS2jet_jet2_idx();
+//---------------------------------------------------------------------------------
+/*                          OS2jet_jet1_pt*/  const float &OS2jet_jet1_pt();
+//---------------------------------------------------------------------------------
+/*                          OS2jet_jet2_pt*/  const float &OS2jet_jet2_pt();
+//---------------------------------------------------------------------------------
+/*                OS2jet_jet12_ptvectorsum*/  const float &OS2jet_jet12_ptvectorsum();
+//---------------------------------------------------------------------------------
+/*                OS2jet_jet12_ptscalarsum*/  const float &OS2jet_jet12_ptscalarsum();
+//---------------------------------------------------------------------------------
+/*               OS2jet_jet12_ptscalarprod*/  const float &OS2jet_jet12_ptscalarprod();
+//---------------------------------------------------------------------------------
+/*                       OS2jet_jet12_mass*/  const float &OS2jet_jet12_mass();
+//---------------------------------------------------------------------------------
+/*                         OS2jet_jet12_DR*/  const float &OS2jet_jet12_DR();
+//---------------------------------------------------------------------------------
+/*                       OS2jet_jet12_DPhi*/  const float &OS2jet_jet12_DPhi();
+//---------------------------------------------------------------------------------
+/*                       OS2jet_jet12_DEta*/  const float &OS2jet_jet12_DEta();
+//---------------------------------------------------------------------------------
+/*                              OS2jet_MET*/  const float &OS2jet_MET();
+//---------------------------------------------------------------------------------
+/*                 OS2jet_MET_fatjet1_DPhi*/  const float &OS2jet_MET_fatjet1_DPhi();
+//---------------------------------------------------------------------------------
+/*                      OS2jet_MET_ll_DPhi*/  const float &OS2jet_MET_ll_DPhi();
+//---------------------------------------------------------------------------------
+/*   OS2jet_fatjet1_Recojet_matchJet_DRmin*/  const float &OS2jet_fatjet1_Recojet_matchJet_DRmin();
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet1_genmatching*/  const int &OS2jet_fatjet1_genmatching();
+//---------------------------------------------------------------------------------
+/*              OS2jet_fatjet2_genmatching*/  const int &OS2jet_fatjet2_genmatching();
+//---------------------------------------------------------------------------------
+/*            OS2jet_fatjet1_genmatchingv2*/  const int &OS2jet_fatjet1_genmatchingv2();
+//---------------------------------------------------------------------------------
+/*            OS2jet_fatjet2_genmatchingv2*/  const int &OS2jet_fatjet2_genmatchingv2();
+//---------------------------------------------------------------------------------
+/*            OS2jet_fatjet1_genmatchingv3*/  const int &OS2jet_fatjet1_genmatchingv3();
+//---------------------------------------------------------------------------------
+/*                          OS2jet_genMVVV*/  const float &OS2jet_genMVVV();
+//---------------------------------------------------------------------------------
+/*                         OS2jet_genpTVVV*/  const float &OS2jet_genpTVVV();
+//---------------------------------------------------------------------------------
+/*                  OS2jet_Mfatjetsleptons*/  const float &OS2jet_Mfatjetsleptons();
+//---------------------------------------------------------------------------------
+/*              OS2jet_MTfatjetsleptonsMET*/  const float &OS2jet_MTfatjetsleptonsMET();
+//---------------------------------------------------------------------------------
+/*                 OS2jet_fatjet1_tau21cut*/  const bool &OS2jet_fatjet1_tau21cut();
+//---------------------------------------------------------------------------------
+/*                OS2jet_fatjet1_massSDcut*/  const bool &OS2jet_fatjet1_massSDcut();
+//---------------------------------------------------------------------------------
+/*                  OS2jet_Nfatjets_vloose*/  const int &OS2jet_Nfatjets_vloose();
+//---------------------------------------------------------------------------------
+/*                   OS2jet_Nfatjets_loose*/  const int &OS2jet_Nfatjets_loose();
+//---------------------------------------------------------------------------------
+/*                  OS2jet_Nfatjets_medium*/  const int &OS2jet_Nfatjets_medium();
+//---------------------------------------------------------------------------------
+/*                 OS2jet_fatjetwgt_vloose*/  const float &OS2jet_fatjetwgt_vloose();
+//---------------------------------------------------------------------------------
+/*                  OS2jet_fatjetwgt_loose*/  const float &OS2jet_fatjetwgt_loose();
+//---------------------------------------------------------------------------------
+/*                 OS2jet_fatjetwgt_medium*/  const float &OS2jet_fatjetwgt_medium();
 //---------------------------------------------------------------------------------
 }
 #endif
