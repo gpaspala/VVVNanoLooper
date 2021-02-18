@@ -1,6 +1,6 @@
 // -*- C++ -*-
 // This is a header file generated with the command:
-// makeCMS3ClassFiles("/home/users/gpaspala/myTries/VVVNanoLooper/www_eft_newPtcut.root", "t", "VVVTree", "tas", "vvv")
+// makeCMS3ClassFiles("/home/users/gpaspala/myTries/VVVNanoLooper/WWZ_st.root", "t", "VVVTree", "tas", "vvv")
 
 #ifndef VVVTree_H
 #define VVVTree_H
@@ -540,6 +540,10 @@ class VVVTree {
 /*                Cut_4LepMET_Preselection*/  TBranch *Cut_4LepMET_Preselection_branch;
 /*                Cut_4LepMET_Preselection*/  bool     Cut_4LepMET_Preselection_isLoaded;
 //---------------------------------------------------------------------------------
+/*                    Cut_OS2Fatjet_OSleps*/  bool     Cut_OS2Fatjet_OSleps_;
+/*                    Cut_OS2Fatjet_OSleps*/  TBranch *Cut_OS2Fatjet_OSleps_branch;
+/*                    Cut_OS2Fatjet_OSleps*/  bool     Cut_OS2Fatjet_OSleps_isLoaded;
+//---------------------------------------------------------------------------------
 /*              Cut_OS2Fatjet_Preselection*/  bool     Cut_OS2Fatjet_Preselection_;
 /*              Cut_OS2Fatjet_Preselection*/  TBranch *Cut_OS2Fatjet_Preselection_branch;
 /*              Cut_OS2Fatjet_Preselection*/  bool     Cut_OS2Fatjet_Preselection_isLoaded;
@@ -607,6 +611,10 @@ class VVVTree {
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  int      Var_4LepMET_Zcand_lep_pdgid_0_;
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  TBranch *Var_4LepMET_Zcand_lep_pdgid_0_branch;
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  bool     Var_4LepMET_Zcand_lep_pdgid_0_isLoaded;
+//---------------------------------------------------------------------------------
+/*                               OS2jet_ST*/  float    OS2jet_ST_;
+/*                               OS2jet_ST*/  TBranch *OS2jet_ST_branch;
+/*                               OS2jet_ST*/  bool     OS2jet_ST_isLoaded;
 //---------------------------------------------------------------------------------
 /*                        OS2jet_fatjet_pt*/  float    OS2jet_fatjet_pt_;
 /*                        OS2jet_fatjet_pt*/  TBranch *OS2jet_fatjet_pt_branch;
@@ -1000,6 +1008,10 @@ class VVVTree {
 /*                  OS2jet_Mfatjetsleptons*/  TBranch *OS2jet_Mfatjetsleptons_branch;
 /*                  OS2jet_Mfatjetsleptons*/  bool     OS2jet_Mfatjetsleptons_isLoaded;
 //---------------------------------------------------------------------------------
+/*               OS2jet_MfatjetsleptonsMET*/  float    OS2jet_MfatjetsleptonsMET_;
+/*               OS2jet_MfatjetsleptonsMET*/  TBranch *OS2jet_MfatjetsleptonsMET_branch;
+/*               OS2jet_MfatjetsleptonsMET*/  bool     OS2jet_MfatjetsleptonsMET_isLoaded;
+//---------------------------------------------------------------------------------
 /*              OS2jet_MTfatjetsleptonsMET*/  float    OS2jet_MTfatjetsleptonsMET_;
 /*              OS2jet_MTfatjetsleptonsMET*/  TBranch *OS2jet_MTfatjetsleptonsMET_branch;
 /*              OS2jet_MTfatjetsleptonsMET*/  bool     OS2jet_MTfatjetsleptonsMET_isLoaded;
@@ -1299,6 +1311,8 @@ void LoadAllBranches();
 //---------------------------------------------------------------------------------
 /*                Cut_4LepMET_Preselection*/  const bool &Cut_4LepMET_Preselection();
 //---------------------------------------------------------------------------------
+/*                    Cut_OS2Fatjet_OSleps*/  const bool &Cut_OS2Fatjet_OSleps();
+//---------------------------------------------------------------------------------
 /*              Cut_OS2Fatjet_Preselection*/  const bool &Cut_OS2Fatjet_Preselection();
 //---------------------------------------------------------------------------------
 /*   Cut_OS2Fatjet_Preselection_genmatched*/  const bool &Cut_OS2Fatjet_Preselection_genmatched();
@@ -1332,6 +1346,8 @@ void LoadAllBranches();
 /*                         OS2jet_Nbjetsv2*/  const int &OS2jet_Nbjetsv2();
 //---------------------------------------------------------------------------------
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  const int &Var_4LepMET_Zcand_lep_pdgid_0();
+//---------------------------------------------------------------------------------
+/*                               OS2jet_ST*/  const float &OS2jet_ST();
 //---------------------------------------------------------------------------------
 /*                        OS2jet_fatjet_pt*/  const float &OS2jet_fatjet_pt();
 //---------------------------------------------------------------------------------
@@ -1528,6 +1544,8 @@ void LoadAllBranches();
 /*                         OS2jet_genpTVVV*/  const float &OS2jet_genpTVVV();
 //---------------------------------------------------------------------------------
 /*                  OS2jet_Mfatjetsleptons*/  const float &OS2jet_Mfatjetsleptons();
+//---------------------------------------------------------------------------------
+/*               OS2jet_MfatjetsleptonsMET*/  const float &OS2jet_MfatjetsleptonsMET();
 //---------------------------------------------------------------------------------
 /*              OS2jet_MTfatjetsleptonsMET*/  const float &OS2jet_MTfatjetsleptonsMET();
 //---------------------------------------------------------------------------------
@@ -1815,6 +1833,8 @@ namespace tas {
 //---------------------------------------------------------------------------------
 /*                Cut_4LepMET_Preselection*/  const bool &Cut_4LepMET_Preselection();
 //---------------------------------------------------------------------------------
+/*                    Cut_OS2Fatjet_OSleps*/  const bool &Cut_OS2Fatjet_OSleps();
+//---------------------------------------------------------------------------------
 /*              Cut_OS2Fatjet_Preselection*/  const bool &Cut_OS2Fatjet_Preselection();
 //---------------------------------------------------------------------------------
 /*   Cut_OS2Fatjet_Preselection_genmatched*/  const bool &Cut_OS2Fatjet_Preselection_genmatched();
@@ -1848,6 +1868,8 @@ namespace tas {
 /*                         OS2jet_Nbjetsv2*/  const int &OS2jet_Nbjetsv2();
 //---------------------------------------------------------------------------------
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  const int &Var_4LepMET_Zcand_lep_pdgid_0();
+//---------------------------------------------------------------------------------
+/*                               OS2jet_ST*/  const float &OS2jet_ST();
 //---------------------------------------------------------------------------------
 /*                        OS2jet_fatjet_pt*/  const float &OS2jet_fatjet_pt();
 //---------------------------------------------------------------------------------
@@ -2044,6 +2066,8 @@ namespace tas {
 /*                         OS2jet_genpTVVV*/  const float &OS2jet_genpTVVV();
 //---------------------------------------------------------------------------------
 /*                  OS2jet_Mfatjetsleptons*/  const float &OS2jet_Mfatjetsleptons();
+//---------------------------------------------------------------------------------
+/*               OS2jet_MfatjetsleptonsMET*/  const float &OS2jet_MfatjetsleptonsMET();
 //---------------------------------------------------------------------------------
 /*              OS2jet_MTfatjetsleptonsMET*/  const float &OS2jet_MTfatjetsleptonsMET();
 //---------------------------------------------------------------------------------

@@ -52,7 +52,7 @@ void Process_OS2Fatjet_VVVTree()
     // Set variables used in this category.
     // If histograms are booked with these variables the histograms will be filled automatically.
     // Please follow the convention of <category>_<varname> structure.
-
+    ana.tx.setBranch<bool>         ("Cut_OS2Fatjet_OSleps"                     , vvv.Cut_OS2Fatjet_OSleps());
     ana.tx.setBranch<bool>         ("Cut_OS2Fatjet_Preselection"               , vvv.Cut_OS2Fatjet_Preselection());
     ana.tx.setBranch<bool>         ("Cut_OS2Fatjet_Preselection_genmatched"    , vvv.Cut_OS2Fatjet_Preselection_genmatched());
     ana.tx.setBranch<bool>         ("Cut_OS2Fatjet_OFPreselection"       , vvv.Cut_OS2Fatjet_OFPreselection());
@@ -70,7 +70,20 @@ void Process_OS2Fatjet_VVVTree()
     ana.tx.setBranch<float>        ("OS2jet_jet12_DR"              ,vvv.OS2jet_jet12_DR());
 
     ana.tx.setBranch<bool>         ("OS2jet_fatjet1_tau21cut"       , vvv.OS2jet_fatjet1_tau21cut());
+    ana.tx.setBranch<float>        ("OS2jet_fatjet1_pt"             ,vvv.OS2jet_fatjet1_pt());
 
+
+    ana.tx.setBranch<float>        ("OS2jet_ST"                         ,vvv.OS2jet_ST());
+    ana.tx.setBranch<float>        ("OS2jet_fatjet1_massSD"             ,vvv.OS2jet_fatjet1_massSD());
+
+    ana.tx.setBranch<float>        ("OS2jet_MTfatjetsleptonsMET"                     ,vvv.OS2jet_MTfatjetsleptonsMET());
+    ana.tx.setBranch<float>        ("OS2jet_Mfatjetsleptons"                         ,vvv.OS2jet_Mfatjetsleptons());
+    ana.tx.setBranch<float>        ("OS2jet_MfatjetsleptonsMET"                      ,vvv.OS2jet_MfatjetsleptonsMET());
+    ana.tx.setBranch<float>        ("OS2jet_genpTVVV"                                ,vvv.OS2jet_genpTVVV());
+
+
+   ana.tx.setBranch<float>        ("OS2jet_genMVVV"                         ,vvv.OS2jet_genMVVV());
+   ana.tx.setBranch<float>        ("OS2jet_MET"                             ,vvv.OS2jet_MET());
 
 
 

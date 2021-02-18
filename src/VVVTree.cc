@@ -406,6 +406,9 @@ void VVVTree::Init(TTree *tree) {
 /*                Cut_4LepMET_Preselection*/  Cut_4LepMET_Preselection_branch = tree->GetBranch("Cut_4LepMET_Preselection");
 /*                Cut_4LepMET_Preselection*/  if (Cut_4LepMET_Preselection_branch) Cut_4LepMET_Preselection_branch->SetAddress(&Cut_4LepMET_Preselection_);
 //---------------------------------------------------------------------------------
+/*                    Cut_OS2Fatjet_OSleps*/  Cut_OS2Fatjet_OSleps_branch = tree->GetBranch("Cut_OS2Fatjet_OSleps");
+/*                    Cut_OS2Fatjet_OSleps*/  if (Cut_OS2Fatjet_OSleps_branch) Cut_OS2Fatjet_OSleps_branch->SetAddress(&Cut_OS2Fatjet_OSleps_);
+//---------------------------------------------------------------------------------
 /*              Cut_OS2Fatjet_Preselection*/  Cut_OS2Fatjet_Preselection_branch = tree->GetBranch("Cut_OS2Fatjet_Preselection");
 /*              Cut_OS2Fatjet_Preselection*/  if (Cut_OS2Fatjet_Preselection_branch) Cut_OS2Fatjet_Preselection_branch->SetAddress(&Cut_OS2Fatjet_Preselection_);
 //---------------------------------------------------------------------------------
@@ -456,6 +459,9 @@ void VVVTree::Init(TTree *tree) {
 //---------------------------------------------------------------------------------
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  Var_4LepMET_Zcand_lep_pdgid_0_branch = tree->GetBranch("Var_4LepMET_Zcand_lep_pdgid_0");
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  if (Var_4LepMET_Zcand_lep_pdgid_0_branch) Var_4LepMET_Zcand_lep_pdgid_0_branch->SetAddress(&Var_4LepMET_Zcand_lep_pdgid_0_);
+//---------------------------------------------------------------------------------
+/*                               OS2jet_ST*/  OS2jet_ST_branch = tree->GetBranch("OS2jet_ST");
+/*                               OS2jet_ST*/  if (OS2jet_ST_branch) OS2jet_ST_branch->SetAddress(&OS2jet_ST_);
 //---------------------------------------------------------------------------------
 /*                        OS2jet_fatjet_pt*/  OS2jet_fatjet_pt_branch = tree->GetBranch("OS2jet_fatjet_pt");
 /*                        OS2jet_fatjet_pt*/  if (OS2jet_fatjet_pt_branch) OS2jet_fatjet_pt_branch->SetAddress(&OS2jet_fatjet_pt_);
@@ -738,6 +744,9 @@ void VVVTree::Init(TTree *tree) {
 //---------------------------------------------------------------------------------
 /*                  OS2jet_Mfatjetsleptons*/  OS2jet_Mfatjetsleptons_branch = tree->GetBranch("OS2jet_Mfatjetsleptons");
 /*                  OS2jet_Mfatjetsleptons*/  if (OS2jet_Mfatjetsleptons_branch) OS2jet_Mfatjetsleptons_branch->SetAddress(&OS2jet_Mfatjetsleptons_);
+//---------------------------------------------------------------------------------
+/*               OS2jet_MfatjetsleptonsMET*/  OS2jet_MfatjetsleptonsMET_branch = tree->GetBranch("OS2jet_MfatjetsleptonsMET");
+/*               OS2jet_MfatjetsleptonsMET*/  if (OS2jet_MfatjetsleptonsMET_branch) OS2jet_MfatjetsleptonsMET_branch->SetAddress(&OS2jet_MfatjetsleptonsMET_);
 //---------------------------------------------------------------------------------
 /*              OS2jet_MTfatjetsleptonsMET*/  OS2jet_MTfatjetsleptonsMET_branch = tree->GetBranch("OS2jet_MTfatjetsleptonsMET");
 /*              OS2jet_MTfatjetsleptonsMET*/  if (OS2jet_MTfatjetsleptonsMET_branch) OS2jet_MTfatjetsleptonsMET_branch->SetAddress(&OS2jet_MTfatjetsleptonsMET_);
@@ -1032,6 +1041,8 @@ void VVVTree::GetEntry(unsigned int idx) {
 //---------------------------------------------------------------------------------
 /*                Cut_4LepMET_Preselection*/  Cut_4LepMET_Preselection_isLoaded = false;
 //---------------------------------------------------------------------------------
+/*                    Cut_OS2Fatjet_OSleps*/  Cut_OS2Fatjet_OSleps_isLoaded = false;
+//---------------------------------------------------------------------------------
 /*              Cut_OS2Fatjet_Preselection*/  Cut_OS2Fatjet_Preselection_isLoaded = false;
 //---------------------------------------------------------------------------------
 /*   Cut_OS2Fatjet_Preselection_genmatched*/  Cut_OS2Fatjet_Preselection_genmatched_isLoaded = false;
@@ -1065,6 +1076,8 @@ void VVVTree::GetEntry(unsigned int idx) {
 /*                         OS2jet_Nbjetsv2*/  OS2jet_Nbjetsv2_isLoaded = false;
 //---------------------------------------------------------------------------------
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  Var_4LepMET_Zcand_lep_pdgid_0_isLoaded = false;
+//---------------------------------------------------------------------------------
+/*                               OS2jet_ST*/  OS2jet_ST_isLoaded = false;
 //---------------------------------------------------------------------------------
 /*                        OS2jet_fatjet_pt*/  OS2jet_fatjet_pt_isLoaded = false;
 //---------------------------------------------------------------------------------
@@ -1261,6 +1274,8 @@ void VVVTree::GetEntry(unsigned int idx) {
 /*                         OS2jet_genpTVVV*/  OS2jet_genpTVVV_isLoaded = false;
 //---------------------------------------------------------------------------------
 /*                  OS2jet_Mfatjetsleptons*/  OS2jet_Mfatjetsleptons_isLoaded = false;
+//---------------------------------------------------------------------------------
+/*               OS2jet_MfatjetsleptonsMET*/  OS2jet_MfatjetsleptonsMET_isLoaded = false;
 //---------------------------------------------------------------------------------
 /*              OS2jet_MTfatjetsleptonsMET*/  OS2jet_MTfatjetsleptonsMET_isLoaded = false;
 //---------------------------------------------------------------------------------
@@ -1543,6 +1558,8 @@ void VVVTree::LoadAllBranches() {
 //---------------------------------------------------------------------------------
 /*                Cut_4LepMET_Preselection*/  if (Cut_4LepMET_Preselection_branch != 0) Cut_4LepMET_Preselection();
 //---------------------------------------------------------------------------------
+/*                    Cut_OS2Fatjet_OSleps*/  if (Cut_OS2Fatjet_OSleps_branch != 0) Cut_OS2Fatjet_OSleps();
+//---------------------------------------------------------------------------------
 /*              Cut_OS2Fatjet_Preselection*/  if (Cut_OS2Fatjet_Preselection_branch != 0) Cut_OS2Fatjet_Preselection();
 //---------------------------------------------------------------------------------
 /*   Cut_OS2Fatjet_Preselection_genmatched*/  if (Cut_OS2Fatjet_Preselection_genmatched_branch != 0) Cut_OS2Fatjet_Preselection_genmatched();
@@ -1576,6 +1593,8 @@ void VVVTree::LoadAllBranches() {
 /*                         OS2jet_Nbjetsv2*/  if (OS2jet_Nbjetsv2_branch != 0) OS2jet_Nbjetsv2();
 //---------------------------------------------------------------------------------
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  if (Var_4LepMET_Zcand_lep_pdgid_0_branch != 0) Var_4LepMET_Zcand_lep_pdgid_0();
+//---------------------------------------------------------------------------------
+/*                               OS2jet_ST*/  if (OS2jet_ST_branch != 0) OS2jet_ST();
 //---------------------------------------------------------------------------------
 /*                        OS2jet_fatjet_pt*/  if (OS2jet_fatjet_pt_branch != 0) OS2jet_fatjet_pt();
 //---------------------------------------------------------------------------------
@@ -1772,6 +1791,8 @@ void VVVTree::LoadAllBranches() {
 /*                         OS2jet_genpTVVV*/  if (OS2jet_genpTVVV_branch != 0) OS2jet_genpTVVV();
 //---------------------------------------------------------------------------------
 /*                  OS2jet_Mfatjetsleptons*/  if (OS2jet_Mfatjetsleptons_branch != 0) OS2jet_Mfatjetsleptons();
+//---------------------------------------------------------------------------------
+/*               OS2jet_MfatjetsleptonsMET*/  if (OS2jet_MfatjetsleptonsMET_branch != 0) OS2jet_MfatjetsleptonsMET();
 //---------------------------------------------------------------------------------
 /*              OS2jet_MTfatjetsleptonsMET*/  if (OS2jet_MTfatjetsleptonsMET_branch != 0) OS2jet_MTfatjetsleptonsMET();
 //---------------------------------------------------------------------------------
@@ -3600,6 +3621,20 @@ void VVVTree::LoadAllBranches() {
 /*                Cut_4LepMET_Preselection*/}
 
 //---------------------------------------------------------------------------------
+/*                    Cut_OS2Fatjet_OSleps*/const bool &VVVTree::Cut_OS2Fatjet_OSleps() {
+/*                    Cut_OS2Fatjet_OSleps*/  if (not Cut_OS2Fatjet_OSleps_isLoaded) {
+/*                    Cut_OS2Fatjet_OSleps*/    if (Cut_OS2Fatjet_OSleps_branch != 0) {
+/*                    Cut_OS2Fatjet_OSleps*/      Cut_OS2Fatjet_OSleps_branch->GetEntry(index);
+/*                    Cut_OS2Fatjet_OSleps*/    } else {
+/*                    Cut_OS2Fatjet_OSleps*/      printf("branch Cut_OS2Fatjet_OSleps_branch does not exist!\n");
+/*                    Cut_OS2Fatjet_OSleps*/      exit(1);
+/*                    Cut_OS2Fatjet_OSleps*/    }
+/*                    Cut_OS2Fatjet_OSleps*/    Cut_OS2Fatjet_OSleps_isLoaded = true;
+/*                    Cut_OS2Fatjet_OSleps*/  }
+/*                    Cut_OS2Fatjet_OSleps*/  return Cut_OS2Fatjet_OSleps_;
+/*                    Cut_OS2Fatjet_OSleps*/}
+
+//---------------------------------------------------------------------------------
 /*              Cut_OS2Fatjet_Preselection*/const bool &VVVTree::Cut_OS2Fatjet_Preselection() {
 /*              Cut_OS2Fatjet_Preselection*/  if (not Cut_OS2Fatjet_Preselection_isLoaded) {
 /*              Cut_OS2Fatjet_Preselection*/    if (Cut_OS2Fatjet_Preselection_branch != 0) {
@@ -3836,6 +3871,20 @@ void VVVTree::LoadAllBranches() {
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  }
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/  return Var_4LepMET_Zcand_lep_pdgid_0_;
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/}
+
+//---------------------------------------------------------------------------------
+/*                               OS2jet_ST*/const float &VVVTree::OS2jet_ST() {
+/*                               OS2jet_ST*/  if (not OS2jet_ST_isLoaded) {
+/*                               OS2jet_ST*/    if (OS2jet_ST_branch != 0) {
+/*                               OS2jet_ST*/      OS2jet_ST_branch->GetEntry(index);
+/*                               OS2jet_ST*/    } else {
+/*                               OS2jet_ST*/      printf("branch OS2jet_ST_branch does not exist!\n");
+/*                               OS2jet_ST*/      exit(1);
+/*                               OS2jet_ST*/    }
+/*                               OS2jet_ST*/    OS2jet_ST_isLoaded = true;
+/*                               OS2jet_ST*/  }
+/*                               OS2jet_ST*/  return OS2jet_ST_;
+/*                               OS2jet_ST*/}
 
 //---------------------------------------------------------------------------------
 /*                        OS2jet_fatjet_pt*/const float &VVVTree::OS2jet_fatjet_pt() {
@@ -5210,6 +5259,20 @@ void VVVTree::LoadAllBranches() {
 /*                  OS2jet_Mfatjetsleptons*/}
 
 //---------------------------------------------------------------------------------
+/*               OS2jet_MfatjetsleptonsMET*/const float &VVVTree::OS2jet_MfatjetsleptonsMET() {
+/*               OS2jet_MfatjetsleptonsMET*/  if (not OS2jet_MfatjetsleptonsMET_isLoaded) {
+/*               OS2jet_MfatjetsleptonsMET*/    if (OS2jet_MfatjetsleptonsMET_branch != 0) {
+/*               OS2jet_MfatjetsleptonsMET*/      OS2jet_MfatjetsleptonsMET_branch->GetEntry(index);
+/*               OS2jet_MfatjetsleptonsMET*/    } else {
+/*               OS2jet_MfatjetsleptonsMET*/      printf("branch OS2jet_MfatjetsleptonsMET_branch does not exist!\n");
+/*               OS2jet_MfatjetsleptonsMET*/      exit(1);
+/*               OS2jet_MfatjetsleptonsMET*/    }
+/*               OS2jet_MfatjetsleptonsMET*/    OS2jet_MfatjetsleptonsMET_isLoaded = true;
+/*               OS2jet_MfatjetsleptonsMET*/  }
+/*               OS2jet_MfatjetsleptonsMET*/  return OS2jet_MfatjetsleptonsMET_;
+/*               OS2jet_MfatjetsleptonsMET*/}
+
+//---------------------------------------------------------------------------------
 /*              OS2jet_MTfatjetsleptonsMET*/const float &VVVTree::OS2jet_MTfatjetsleptonsMET() {
 /*              OS2jet_MTfatjetsleptonsMET*/  if (not OS2jet_MTfatjetsleptonsMET_isLoaded) {
 /*              OS2jet_MTfatjetsleptonsMET*/    if (OS2jet_MTfatjetsleptonsMET_branch != 0) {
@@ -5618,6 +5681,8 @@ namespace tas {
 //---------------------------------------------------------------------------------
 /*                Cut_4LepMET_Preselection*/const bool &Cut_4LepMET_Preselection() { return vvv.Cut_4LepMET_Preselection(); }
 //---------------------------------------------------------------------------------
+/*                    Cut_OS2Fatjet_OSleps*/const bool &Cut_OS2Fatjet_OSleps() { return vvv.Cut_OS2Fatjet_OSleps(); }
+//---------------------------------------------------------------------------------
 /*              Cut_OS2Fatjet_Preselection*/const bool &Cut_OS2Fatjet_Preselection() { return vvv.Cut_OS2Fatjet_Preselection(); }
 //---------------------------------------------------------------------------------
 /*   Cut_OS2Fatjet_Preselection_genmatched*/const bool &Cut_OS2Fatjet_Preselection_genmatched() { return vvv.Cut_OS2Fatjet_Preselection_genmatched(); }
@@ -5651,6 +5716,8 @@ namespace tas {
 /*                         OS2jet_Nbjetsv2*/const int &OS2jet_Nbjetsv2() { return vvv.OS2jet_Nbjetsv2(); }
 //---------------------------------------------------------------------------------
 /*           Var_4LepMET_Zcand_lep_pdgid_0*/const int &Var_4LepMET_Zcand_lep_pdgid_0() { return vvv.Var_4LepMET_Zcand_lep_pdgid_0(); }
+//---------------------------------------------------------------------------------
+/*                               OS2jet_ST*/const float &OS2jet_ST() { return vvv.OS2jet_ST(); }
 //---------------------------------------------------------------------------------
 /*                        OS2jet_fatjet_pt*/const float &OS2jet_fatjet_pt() { return vvv.OS2jet_fatjet_pt(); }
 //---------------------------------------------------------------------------------
@@ -5847,6 +5914,8 @@ namespace tas {
 /*                         OS2jet_genpTVVV*/const float &OS2jet_genpTVVV() { return vvv.OS2jet_genpTVVV(); }
 //---------------------------------------------------------------------------------
 /*                  OS2jet_Mfatjetsleptons*/const float &OS2jet_Mfatjetsleptons() { return vvv.OS2jet_Mfatjetsleptons(); }
+//---------------------------------------------------------------------------------
+/*               OS2jet_MfatjetsleptonsMET*/const float &OS2jet_MfatjetsleptonsMET() { return vvv.OS2jet_MfatjetsleptonsMET(); }
 //---------------------------------------------------------------------------------
 /*              OS2jet_MTfatjetsleptonsMET*/const float &OS2jet_MTfatjetsleptonsMET() { return vvv.OS2jet_MTfatjetsleptonsMET(); }
 //---------------------------------------------------------------------------------
