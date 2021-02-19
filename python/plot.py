@@ -123,6 +123,8 @@ def main(args):
     if args.style == 1: grouping_setting = style.grouping_3LepMET
     if args.style == 5: grouping_setting = style.grouping_OS2jet
     if args.style == 7: grouping_setting = style.grouping_1Lep4jet
+    if args.style == 8: grouping_setting = style.grouping_OS2Fatjet
+
 
     # Now loop over files to check the grouping and print a warning that it is skipping some stuff
     root_file_groups = {}
@@ -199,6 +201,13 @@ def main(args):
         legend_labels = style.legend_labels_1Lep4jet
         sig_labels = style.sig_labels_1Lep4jet
         colors = style.colors_1Lep4jet
+    if args.style == 8: # OS+Fatjets style
+        bkg_plot_order = style.bkg_plot_order_OS2Fatjet
+        sig_plot_order = style.sig_plot_order_OS2Fatjet
+        legend_labels = style.legend_labels_OS2Fatjet
+        sig_labels = style.sig_labels_OS2Fatjet
+        colors = style.colors_OS2Fatjet
+
 
     # Print the options set
     print("")

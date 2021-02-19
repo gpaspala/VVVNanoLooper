@@ -1,0 +1,332 @@
+{
+    "last_updated": 1613743389.920656,
+    "tasks": [
+        {
+            "bad": {
+                "jobs_not_done": {},
+                "missing_events": 250000,
+                "plots": []
+            },
+            "general": {
+                "cmssw_version": "CMSSW_9_2_0",
+                "dataset": "/WWZ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1/NANOAODSIM",
+                "event_rate": -1,
+                "executable": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/condor_executable_metis.sh",
+                "global_tag": null,
+                "nevents_done": 0,
+                "nevents_total": 250000,
+                "njobs_done": 0,
+                "njobs_total": 1,
+                "open_dataset": false,
+                "output_dir": "/hadoop/cms/store/user/gpaspala/VVVAnalysis/testMaster/2018/WWZ_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testMaster/",
+                "queried_nevents": 250000,
+                "status": "running",
+                "tag": "testMaster",
+                "taskdir": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/tasks/CondorTask_WWZ_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testMaster",
+                "timestamp": 1613743389,
+                "type": "CondorTask"
+            },
+            "history": {
+                "nevents_done": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "nevents_total": [
+                    250000,
+                    250000,
+                    250000,
+                    250000,
+                    250000
+                ],
+                "njobs_done": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "njobs_total": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "timestamps": [
+                    1613742900,
+                    1613742900,
+                    1613743200,
+                    1613743200,
+                    1613743200
+                ]
+            }
+        },
+        {
+            "bad": {
+                "jobs_not_done": {
+                    "1": {
+                        "events": 250000,
+                        "inputs": 1,
+                        "last_error": "",
+                        "last_log": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/tasks/CondorTask_WWZ_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testST6/logs/std_logs//1e.4984.0.out",
+                        "last_sites": [
+                            "T2_US_UCSD",
+                            "T2_US_UCSD",
+                            "T2_US_UCSD",
+                            "T2_US_UCSD"
+                        ],
+                        "retries": 4
+                    }
+                },
+                "missing_events": 250000,
+                "plots": []
+            },
+            "general": {
+                "cmssw_version": "CMSSW_9_2_0",
+                "dataset": "/WWZ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1/NANOAODSIM",
+                "event_rate": -1,
+                "executable": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/condor_executable_metis.sh",
+                "global_tag": null,
+                "nevents_done": 0,
+                "nevents_total": 250000,
+                "njobs_done": 0,
+                "njobs_total": 1,
+                "open_dataset": false,
+                "output_dir": "/hadoop/cms/store/user/gpaspala/VVVAnalysis/testST6/2018/WWZ_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testST6/",
+                "queried_nevents": 250000,
+                "status": "running",
+                "tag": "testST6",
+                "taskdir": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/tasks/CondorTask_WWZ_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testST6",
+                "timestamp": 1613742156,
+                "type": "CondorTask"
+            },
+            "history": {
+                "nevents_done": [
+                    0
+                ],
+                "nevents_total": [
+                    250000
+                ],
+                "njobs_done": [
+                    0
+                ],
+                "njobs_total": [
+                    1
+                ],
+                "timestamps": [
+                    1613742000
+                ]
+            }
+        },
+        {
+            "bad": {
+                "jobs_not_done": {
+                    "1": {
+                        "events": 78000,
+                        "inputs": 1,
+                        "last_error": "",
+                        "last_log": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/tasks/CondorTask_WZZ_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testST6/logs/std_logs//1e.4985.0.out",
+                        "last_sites": [
+                            "T2_US_UCSD",
+                            "T2_US_UCSD",
+                            "T2_US_UCSD",
+                            "T2_US_UCSD"
+                        ],
+                        "retries": 4
+                    },
+                    "2": {
+                        "events": 172000,
+                        "inputs": 1,
+                        "last_error": "",
+                        "last_log": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/tasks/CondorTask_WZZ_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testST6/logs/std_logs//1e.4985.1.out",
+                        "last_sites": [
+                            "T2_US_UCSD",
+                            "T2_US_UCSD",
+                            "T2_US_UCSD"
+                        ],
+                        "retries": 3
+                    }
+                },
+                "missing_events": 250000,
+                "plots": []
+            },
+            "general": {
+                "cmssw_version": "CMSSW_9_2_0",
+                "dataset": "/WZZ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1/NANOAODSIM",
+                "event_rate": -1,
+                "executable": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/condor_executable_metis.sh",
+                "global_tag": null,
+                "nevents_done": 0,
+                "nevents_total": 250000,
+                "njobs_done": 0,
+                "njobs_total": 2,
+                "open_dataset": false,
+                "output_dir": "/hadoop/cms/store/user/gpaspala/VVVAnalysis/testST6/2018/WZZ_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testST6/",
+                "queried_nevents": 250000,
+                "status": "running",
+                "tag": "testST6",
+                "taskdir": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/tasks/CondorTask_WZZ_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testST6",
+                "timestamp": 1613742156,
+                "type": "CondorTask"
+            },
+            "history": {
+                "nevents_done": [
+                    0
+                ],
+                "nevents_total": [
+                    250000
+                ],
+                "njobs_done": [
+                    0
+                ],
+                "njobs_total": [
+                    2
+                ],
+                "timestamps": [
+                    1613742000
+                ]
+            }
+        },
+        {
+            "bad": {
+                "jobs_not_done": {
+                    "1": {
+                        "events": 250000,
+                        "inputs": 1,
+                        "last_error": "",
+                        "last_log": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/tasks/CondorTask_ZZZ_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testST6/logs/std_logs//1e.4983.0.out",
+                        "last_sites": [
+                            "T2_US_UCSD",
+                            "T2_US_UCSD",
+                            "T2_US_UCSD",
+                            "T2_US_UCSD"
+                        ],
+                        "retries": 4
+                    }
+                },
+                "missing_events": 250000,
+                "plots": []
+            },
+            "general": {
+                "cmssw_version": "CMSSW_9_2_0",
+                "dataset": "/ZZZ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1/NANOAODSIM",
+                "event_rate": -1,
+                "executable": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/condor_executable_metis.sh",
+                "global_tag": null,
+                "nevents_done": 0,
+                "nevents_total": 250000,
+                "njobs_done": 0,
+                "njobs_total": 1,
+                "open_dataset": false,
+                "output_dir": "/hadoop/cms/store/user/gpaspala/VVVAnalysis/testST6/2018/ZZZ_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testST6/",
+                "queried_nevents": 250000,
+                "status": "running",
+                "tag": "testST6",
+                "taskdir": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/tasks/CondorTask_ZZZ_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testST6",
+                "timestamp": 1613742156,
+                "type": "CondorTask"
+            },
+            "history": {
+                "nevents_done": [
+                    0
+                ],
+                "nevents_total": [
+                    250000
+                ],
+                "njobs_done": [
+                    0
+                ],
+                "njobs_total": [
+                    1
+                ],
+                "timestamps": [
+                    1613742000
+                ]
+            }
+        },
+        {
+            "bad": {
+                "jobs_not_done": {
+                    "1": {
+                        "events": 32000,
+                        "inputs": 1,
+                        "last_error": "",
+                        "last_log": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/tasks/CondorTask_WWW_4F_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testST6/logs/std_logs//1e.4982.0.out",
+                        "last_sites": [
+                            "T2_US_UCSD",
+                            "T2_US_UCSD",
+                            "T2_US_UCSD"
+                        ],
+                        "retries": 3
+                    },
+                    "2": {
+                        "events": 104000,
+                        "inputs": 1,
+                        "last_error": "",
+                        "last_log": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/tasks/CondorTask_WWW_4F_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testST6/logs/std_logs//1e.4982.1.out",
+                        "last_sites": [
+                            "T2_US_UCSD",
+                            "T2_US_UCSD",
+                            "T2_US_UCSD"
+                        ],
+                        "retries": 3
+                    },
+                    "3": {
+                        "events": 104000,
+                        "inputs": 1,
+                        "last_error": "",
+                        "last_log": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/tasks/CondorTask_WWW_4F_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testST6/logs/std_logs//1e.4982.2.out",
+                        "last_sites": [
+                            "T2_US_UCSD",
+                            "T2_US_UCSD",
+                            "T2_US_UCSD",
+                            "T2_US_UCSD"
+                        ],
+                        "retries": 4
+                    }
+                },
+                "missing_events": 240000,
+                "plots": []
+            },
+            "general": {
+                "cmssw_version": "CMSSW_9_2_0",
+                "dataset": "/WWW_4F_TuneCP5_13TeV-amcatnlo-pythia8/RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1/NANOAODSIM",
+                "event_rate": -1,
+                "executable": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/condor_executable_metis.sh",
+                "global_tag": null,
+                "nevents_done": 0,
+                "nevents_total": 240000,
+                "njobs_done": 0,
+                "njobs_total": 3,
+                "open_dataset": false,
+                "output_dir": "/hadoop/cms/store/user/gpaspala/VVVAnalysis/testST6/2018/WWW_4F_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testST6/",
+                "queried_nevents": 240000,
+                "status": "running",
+                "tag": "testST6",
+                "taskdir": "/home/users/gpaspala/myTries/VVVNanoLooper/condor/tasks/CondorTask_WWW_4F_TuneCP5_13TeV-amcatnlo-pythia8_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1_NANOAODSIM_testST6",
+                "timestamp": 1613742156,
+                "type": "CondorTask"
+            },
+            "history": {
+                "nevents_done": [
+                    0
+                ],
+                "nevents_total": [
+                    240000
+                ],
+                "njobs_done": [
+                    0
+                ],
+                "njobs_total": [
+                    3
+                ],
+                "timestamps": [
+                    1613742000
+                ]
+            }
+        }
+    ]
+}

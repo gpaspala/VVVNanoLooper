@@ -1,0 +1,750 @@
+On branch master
+Your branch is ahead of 'upstream/master' by 26 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../python/plot.py
+	modified:   ../python/style.py
+	modified:   ../rooutil (new commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../.VVVTree_new.cc
+	../.VVVTree_new.h
+	../.VVVTree_newOnly.cc
+	../.VVVTree_newOnly.h
+	../.VVVTree_old.cc
+	../.VVVTree_old.h
+	gitversion.txt
+	summary.json
+	web_summary.json
+	../python/style.pyc
+	../scriptTorunEFT.sh
+	../test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+521f59b8797770db3833f2aa9f8fd761bfe7c9e9
+commit 521f59b8797770db3833f2aa9f8fd761bfe7c9e9
+Author: gpaspala <lisa.candia@hotmail.com>
+Date:   Fri Jan 29 08:09:55 2021 -0800
+
+    sync
+
+commit 971e52a707f3cf9cdb6d6495cc6dfb3b7961260e
+Author: gpaspala <lisa.candia@hotmail.com>
+Date:   Wed Jan 27 02:37:15 2021 -0800
+
+    add histos
+
+commit 84a59fd0795c922cd84cefaab16a53d151ee12f3
+Author: gpaspala <lisa.candia@hotmail.com>
+Date:   Wed Jan 27 02:00:59 2021 -0800
+
+    fix bug
+
+commit 656c1ada2b6cf742bf26a07f9cc5e2811855f5a0
+Author: gpaspala <lisa.candia@hotmail.com>
+Date:   Wed Jan 13 03:39:36 2021 -0800
+
+    adding stuff
+
+commit 92b2dfc191b92add865b747ef31ca8687f99c745
+Author: gpaspala <lisa.candia@hotmail.com>
+Date:   Mon Jan 11 10:53:40 2021 -0800
+
+    removed .nfs
+
+commit 99c9d8d11439733afd3e8f0ca1c2bac391ba1f0c
+Author: gpaspala <gpaspala@users.noreply.github.com>
+Date:   Mon Jan 11 20:32:30 2021 +0200
+
+    Delete .nfs0000000032325ed500001645
+
+commit a3d2f7e22a797251d9c76cfb8f5bec568b549d73
+Author: gpaspala <gpaspala@users.noreply.github.com>
+Date:   Mon Jan 11 20:32:15 2021 +0200
+
+    Delete .nfs0000000032325ed400001646
+
+commit 1c0a1d0382c80888628f161649ee9d09a45a6160
+Author: gpaspala <gpaspala@users.noreply.github.com>
+Date:   Mon Jan 11 20:31:27 2021 +0200
+
+    Delete .nfs0000000032325ed30000163f
+
+commit 91415cd79b8d84b962b7ce14f2ffb8e46bcc018d
+Author: gpaspala <gpaspala@users.noreply.github.com>
+Date:   Mon Jan 11 20:31:20 2021 +0200
+
+    Delete .nfs0000000032325ed200001640
+
+commit 49c889a6634c3f96fbfa32ebbfc60a6ed9554cc1
+Author: gpaspala <gpaspala@users.noreply.github.com>
+Date:   Mon Jan 11 20:30:58 2021 +0200
+
+    Delete .nfs0000000032325ed10000163c
+
+commit f9b8ceb00e599ea4abce4f599e3f5ebf6bac7b12
+Author: gpaspala <gpaspala@users.noreply.github.com>
+Date:   Mon Jan 11 20:30:34 2021 +0200
+
+    Delete .nfs0000000032325ed00000163d
+
+commit b34771cf796937ad2bba3563e46ceee7262d70ad
+Author: gpaspala <gpaspala@users.noreply.github.com>
+Date:   Mon Jan 11 20:30:17 2021 +0200
+
+    Delete .nfs0000000032325ecf0000163a
+
+commit e101e1f19a5a02b03978f0b548cfefab83e5f306
+Author: gpaspala <gpaspala@users.noreply.github.com>
+Date:   Mon Jan 11 20:30:03 2021 +0200
+
+    Delete .nfs0000000032325ece0000163b
+
+commit 5109f7e9d29dc111426605e85080dc44229b14d6
+Author: gpaspala <gpaspala@users.noreply.github.com>
+Date:   Mon Jan 11 20:19:01 2021 +0200
+
+    Delete .nfs0000000032325ecb00001639
+
+commit 24bc03648daaf424f44c3172a8140a8c4e1f59a2
+Author: gpaspala <gpaspala@users.noreply.github.com>
+Date:   Mon Jan 11 20:17:47 2021 +0200
+
+    Delete .nfs0000000032325ec100001638
+
+commit 5f8a7f57a76d9c31b1d669cc8a3671b60e054d48
+Author: gpaspala <lisa.candia@hotmail.com>
+Date:   Mon Jan 11 10:05:00 2021 -0800
+
+    adding varibales to FatJet workflow
+
+commit bdb5233d59e71065c6ed8f82abcdf534a277adb4
+Author: gpaspala <lisa.candia@hotmail.com>
+Date:   Fri Jan 8 04:23:09 2021 -0800
+
+    test
+
+commit 311bf0e31d5d5bc092e327b933ac1749fdfc2627
+Author: gpaspala <lisa.candia@hotmail.com>
+Date:   Wed Jan 6 06:24:26 2021 -0800
+
+    adding stuff in Fatjet workflow
+
+commit f2e8612ef5743165f2c9db564abaa786f019947b
+Author: gpaspala <lisa.candia@hotmail.com>
+Date:   Mon Jan 4 02:09:26 2021 -0800
+
+    small bug
+
+commit bcafb064ad73355a3e84ff823ac17bea141c081f
+Author: gpaspala <lisa.candia@hotmail.com>
+Date:   Mon Jan 4 02:04:10 2021 -0800
+
+    OS2FatJet workFlow
+
+commit 7388f012d856d88b88b7bf3be2b295569d539560
+Author: gpaspala <gpaspala@users.noreply.github.com>
+Date:   Tue Dec 29 19:30:56 2020 +0200
+
+    Delete test2.txt
+
+commit ab14d147c1b84cb8906b3e3dd1f0427ee62177af
+Author: gpaspala <lisa.candia@hotmail.com>
+Date:   Tue Dec 29 09:24:12 2020 -0800
+
+    test file2
+
+commit 026def087858e10b49b68488a61ad93e0fab1e34
+Author: gpaspala <gpaspala@users.noreply.github.com>
+Date:   Tue Dec 29 16:04:40 2020 +0200
+
+    Delete 1
+
+commit f9a9271cbb425eca34832e95c24893fb1ae3c6d4
+Author: gpaspala <lisa.candia@hotmail.com>
+Date:   Tue Dec 29 06:02:53 2020 -0800
+
+    mychanges
+
+commit 506fb6320da28a449bc057d58285d360216acf09
+Author: gpaspala <gpaspala@users.noreply.github.com>
+Date:   Tue Dec 29 15:57:17 2020 +0200
+
+    Delete test.txt
+
+commit c364f4467cedde20140cb9746d67c7f56cf0a8de
+Author: gpaspala <lisa.candia@hotmail.com>
+Date:   Tue Dec 29 05:44:30 2020 -0800
+
+    test
+
+commit 479e728f8f2c5dec6dd3b80ad8c3587792bbdc69
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Jan 7 12:48:39 2021 -0800
+
+    Fix some issues. Not sure how it happened
+
+commit 283fb090e890c7e3105736c4111d874cc78869da
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Dec 17 21:23:18 2020 -0800
+
+    update xcache redirector
+
+commit 7ef7a5709cb7fb8c35976970831e4e7c70281ea7
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Dec 17 17:25:26 2020 -0800
+
+    Wrap official and private samples via DBSSample or DirectorySample in order for smoother submission
+
+commit e6a2e984205b6d0367d53538b3f0155fe65574e9
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Dec 17 17:17:55 2020 -0800
+
+    Fixing to fit conventions, some tab and style check, is_EFT_sample flag
+
+commit 84cd787dfb07c650ebec9544aa9aef0a16155282
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Dec 17 16:31:58 2020 -0800
+
+    update rooutil
+
+commit 0edd52472ef795248e8a96b7fd560162b65abeef
+Merge: b1d60cf 3f0f23f
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Dec 17 16:31:20 2020 -0800
+
+    Merge branch 'master' of github.com:sgnoohc/VVVNanoLooper
+
+commit b1d60cfc86dd36583458c4eebd51d56dc65d0ed2
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Dec 17 16:31:17 2020 -0800
+
+    update sample list
+
+commit 3f0f23fe16c4055fcfe84a3dfd33cde420139845
+Merge: de1144b a6058d1
+Author: Philip <sgnoohc@gmail.com>
+Date:   Mon Dec 14 07:55:47 2020 -0800
+
+    Merge pull request #7 from haweber/master
+    
+    Overhaul of lepton and ak8 SF application
+
+commit a6058d1d9eef09b4b7eceb61566bc0d49f362354
+Author: haweber <hannsjorg.artur.weber@cern.ch>
+Date:   Wed Dec 9 12:18:30 2020 -0800
+
+    Forgot to sort one vector that I added
+
+commit b56c5e956d15a36fb144c4deb8382adaa5752ca2
+Author: haweber <hannsjorg.artur.weber@cern.ch>
+Date:   Wed Dec 9 09:56:10 2020 -0800
+
+    Update fatjet SF application (and small bugfix for lepton SF). Overall code is sped up by x10
+
+commit e6e7d5efdbd1ecddfd27f8da728ba8c2ad447697
+Author: haweber <hannsjorg.artur.weber@cern.ch>
+Date:   Tue Dec 8 14:37:00 2020 -0800
+
+    Update leptonSF application method avoiding saving root files. Sped up the code by more than x3. Fatjets still to be done.
+
+commit 0ea5901fe496f48eefef7b61e0496fb2f297e001
+Merge: 5621fc7 de1144b
+Author: haweber <haweber@users.noreply.github.com>
+Date:   Thu Oct 15 14:20:50 2020 -0500
+
+    Merge pull request #2 from sgnoohc/master
+    
+    Get the updates to the master repository (sgnoohc) to my fork (haweber)
+
+commit de1144bad2b1bde4789a9b6b926e5ca8a5b71d92
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Fri Sep 25 13:19:41 2020 -0700
+
+    Adding LHE Reweighting scheme
+
+commit ee3ae3dccc8d7221c83e50743d300cae4a6a6578
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Fri Sep 25 11:30:23 2020 -0700
+
+    Take out unnecessary DY
+
+commit f69ceddf431dd7cf0162d60b349c36b5037d3e80
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Fri Sep 25 11:29:59 2020 -0700
+
+    adding few more sample list
+
+commit 9c547f5fca1c6acd9786fd90709c6a0054ed6d94
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Mon Sep 21 18:48:19 2020 -0700
+
+    Update NanoTools to include LHE reweighting from Jonas
+
+commit 0094ba7c1279aea9b114174495c68e40f89d8b6f
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Mon Sep 21 18:23:07 2020 -0700
+
+    Update NanoTools
+
+commit a9cffc48bb81df480c610ce28cc2f55a3c023e8a
+Merge: 82501da 045e4bb
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Mon Sep 21 18:20:11 2020 -0700
+
+    Merge branch 'master' of github.com:sgnoohc/VVVNanoLooper
+
+commit 82501dadc39d10ab527de2cba071fef3c78c1be4
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Mon Sep 21 18:20:08 2020 -0700
+
+    simplify trigger stuff
+
+commit 045e4bbc95f918975f95862bfb390b888d22d087
+Merge: 46ce589 a8d36e7
+Author: Philip <sgnoohc@gmail.com>
+Date:   Thu Sep 17 07:34:42 2020 -0700
+
+    Merge pull request #6 from yulunmiao/SS2jet_update
+    
+    region parameter update
+
+commit a8d36e71a7e7ee86f19f4980e4750e7eb2d5004f
+Author: Philip <sgnoohc@gmail.com>
+Date:   Thu Sep 17 07:34:10 2020 -0700
+
+    Update main.cc
+    
+    Formatting fix.
+    Adding spaces, just like reading a real sentence.
+    No tabs.
+
+commit 27ee63b36786732b212c1210df2d171e9c973dfe
+Author: yulunmiao <60363605+yulunmiao@users.noreply.github.com>
+Date:   Thu Sep 17 08:12:44 2020 -0500
+
+    added ScaleFactors.h to AnalysisConfig.h
+
+commit 010e45e7e10f77efc8e82ddb62770e3518595a05
+Author: yulunmiao <yulunmiao@gmail.com>
+Date:   Wed Sep 16 18:17:31 2020 -0700
+
+    region parameter update
+
+commit 46ce5896772e8b30997283f1808bf5b680dac617
+Merge: 660eac4 b7672b0
+Author: Philip <sgnoohc@gmail.com>
+Date:   Mon Sep 14 20:56:03 2020 -0700
+
+    Merge pull request #4 from yulunmiao/SS2jet_update
+    
+    SS2jet update
+
+commit b7672b06c925cf6b3dd29ccc16ceaa0323a64e55
+Author: yulunmiao <60363605+yulunmiao@users.noreply.github.com>
+Date:   Wed Sep 9 18:22:52 2020 -0500
+
+    Update Process_SS2jet.h
+
+commit 660eac4552a0f7f53a67dd3246eb3bdab0da5665
+Merge: c3a5fa9 5621fc7
+Author: haweber <haweber@users.noreply.github.com>
+Date:   Mon Jul 27 16:30:26 2020 -0500
+
+    Merge pull request #3 from haweber/master
+    
+    Fix lepton fatjet overlap removal.
+    Merging - it is such a small change, no need to be reviewed.
+
+commit 5621fc7ad07740c486a3358fcfd0083c056f325c
+Author: haweber <hannsjorg.artur.weber@cern.ch>
+Date:   Mon Jul 27 14:28:06 2020 -0700
+
+    Fix lepton fatjet overlap removal
+
+commit c3a5fa9c48964da5da51d76ab7764d031253193d
+Merge: f70bc8b 7d2e72a
+Author: Philip <sgnoohc@gmail.com>
+Date:   Sun Jul 19 20:36:50 2020 +0900
+
+    Merge pull request #2 from haweber/master
+    
+    Implementation of lepton SF and fatjet SF (tested for OS); implementation of noise filters (not tested yet)
+
+commit 23bb38d464cdc705dca3c0d5e8d1d25b9e5c6972
+Author: yulunmiao <yulunmiao@gmail.com>
+Date:   Fri Jul 17 07:49:09 2020 -0700
+
+    update of SS2jet channel
+
+commit 7d2e72ab3de83daaaf757c15ff9b435af53a34db
+Author: haweber <hannsjorg.artur.weber@cern.ch>
+Date:   Thu Jul 16 08:36:49 2020 -0700
+
+    Bug fix for fatjet scale factors. Bug fix in condor submission - need to also send the scale factors.
+
+commit 5f143c9003ba7d9a2ea038720059f1c37c6b9fb1
+Author: haweber <hannsjorg.artur.weber@cern.ch>
+Date:   Mon Jul 13 12:49:37 2020 -0700
+
+    Update README file to reflect the added flags for submitMetis.py and plot.py
+
+commit 94aada735e6754790188ea88ee03e601ac506116
+Author: haweber <hannsjorg.artur.weber@cern.ch>
+Date:   Mon Jul 13 11:40:47 2020 -0700
+
+    Fixed the scale factor issue
+
+commit 539bc4f43d927f40f150d0d903a15dbb03eb3f56
+Author: haweber <hannsjorg.artur.weber@cern.ch>
+Date:   Fri Jul 10 14:44:30 2020 -0700
+
+    Update OS2j looper to include scale factors, change cuts, unified cutflow. Add scale factors. Scale factor application does not work properly. Need to work on this next week.
+
+commit 9aa0f0d60d1b101175ca61549e3da10e5a5a36df
+Author: yulunmiao <yulunmiao@gmail.com>
+Date:   Tue Jun 30 15:03:09 2020 -0700
+
+    update of SS2jet channel
+
+commit f70bc8b7857d362972af590e11e335f1507d9d44
+Author: Philip <sgnoohc@gmail.com>
+Date:   Thu Jun 4 06:29:29 2020 -0700
+
+    Few comments and testing github + slack setting
+
+commit b6abaa744abd9c2ce9ed31fe904f15fddfa6f04a
+Merge: 211edd4 03176c5
+Author: haweber <haweber@users.noreply.github.com>
+Date:   Wed Jun 3 15:18:55 2020 -0500
+
+    Merge pull request #1 from haweber/master
+    
+    Minor update
+
+commit 03176c5472f9af59bef9e3ce7ca54b6ce3f109c6
+Author: haweber <hannsjorg.artur.weber@cern.ch>
+Date:   Wed Jun 3 11:50:46 2020 -0700
+
+    Add few common branches, add some minor selection, minor cleanups.
+
+commit 839887a4e85faaac2ca9e20f7dd113cf8a1236a9
+Merge: bf677b6 211edd4
+Author: haweber <haweber@users.noreply.github.com>
+Date:   Mon Jun 1 16:55:24 2020 -0500
+
+    Merge pull request #1 from sgnoohc/master
+    
+    Make stuff more modular, do samples.py for all years, add my current …
+
+commit 211edd4c6b86902fb29ff7fae5e5abe657383d39
+Author: haweber <hannsjorg.artur.weber@cern.ch>
+Date:   Mon Jun 1 13:07:54 2020 -0700
+
+    Make stuff more modular, do samples.py for all years, add my current status on OS
+
+commit bf677b6dac35fdbd98a6c301d0968c08ec7c1f9f
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Mon May 25 15:25:53 2020 -0700
+
+    update
+
+commit f81e81e379ae0d711418b3282dd56136063189cc
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Tue May 19 16:55:28 2020 -0700
+
+    update. adding baby making features
+
+commit a96fe37ea4cc89eaebefdeff3dff900844c524a6
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Apr 30 14:47:50 2020 -0700
+
+    update on 1lep
+
+commit f6137a2cff073c58acff3d3ddeeca3addc616f42
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Tue Apr 14 10:13:38 2020 -0700
+
+    update
+
+commit 36b506405ef427752313098a7acc709c943006e2
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Tue Apr 14 10:08:02 2020 -0700
+
+    update
+
+commit e11b0bb505c0f090fc5e884a3a51ea0000286183
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Tue Apr 14 10:04:26 2020 -0700
+
+    update
+
+commit cd18c31922bd383c0f39f74b329ea2ba4cdc71a5
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Tue Apr 14 09:23:04 2020 -0700
+
+    update
+
+commit ccfb1880b5930cfcc34bdffdd4219fae04790930
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Sun Apr 12 20:25:25 2020 -0700
+
+    update
+
+commit 4907eb2cacddabe452d63ea7de70b96dbedd2a45
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Sun Apr 12 20:21:25 2020 -0700
+
+    update
+
+commit 20bbb0a6ecd1e8271a4543b74eb8bc0675070a80
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Sun Apr 12 20:20:37 2020 -0700
+
+    update
+
+commit b7175bd0b34cd0ddc2d9287e34761150af187de1
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Sun Apr 12 20:10:11 2020 -0700
+
+    update
+
+commit fe570b00a564d0dbe95f6292924fcdfcfd02a185
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Sun Apr 12 12:01:43 2020 -0700
+
+    update
+
+commit 3e17ec3b5ec5cdbb6c918169c9dcce29925c9526
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Sun Apr 12 11:59:04 2020 -0700
+
+    update
+
+commit d5cb7b70437bdfab944685e8b63d0bdec9fae838
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Sun Apr 12 11:53:35 2020 -0700
+
+    update
+
+commit 34aa08f15df64250296b6c02866e660dc15c2815
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Sun Apr 12 11:44:23 2020 -0700
+
+    update
+
+commit 93aaec050a653645ea2f965e84885120bee79b3c
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Sun Apr 12 02:20:19 2020 -0700
+
+    update
+
+commit 988e6ea1a97742d81f905fbb2cdc253926de6476
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Sat Apr 11 11:01:09 2020 -0700
+
+    update
+
+commit d98d176b9abbd576c57b3fb31d920fd9f3352c21
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Apr 9 16:51:33 2020 -0700
+
+    update
+
+commit 4a1727a78f83fc6acc5849a1be5d784c0ceef8ab
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Apr 9 12:43:31 2020 -0700
+
+    update
+
+commit 1c649b5c91fd8341bfe1a0cb5569fee442d39ba9
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Apr 9 11:53:18 2020 -0700
+
+    update
+
+commit 38513f951de142ce59bb6563a9bc356db2ebb851
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Apr 9 11:51:44 2020 -0700
+
+    update
+
+commit 90aa058d9d86c910edcdff7d731fc5d70d1d3c91
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Apr 9 11:41:50 2020 -0700
+
+    update
+
+commit 13dbec62d7360f76aab133b78cadae66d8f97d2e
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Apr 9 11:38:31 2020 -0700
+
+    update muon selection
+
+commit 3968e1369387608d44231687b808d42829260781
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Apr 9 11:35:15 2020 -0700
+
+    update
+
+commit 7d8263b30b98754d67d8bd59e4a9afb2ff009988
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Apr 9 11:34:55 2020 -0700
+
+    update
+
+commit a4238076234a081996cb0e41982ef935518b156a
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Apr 9 10:42:03 2020 -0700
+
+    update
+
+commit a4a8eb911c21945ff4f90d5e984e469d162e355a
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Apr 9 09:45:29 2020 -0700
+
+    updtae
+
+commit c3b97c4909d0f55171a32b792c18e32a48ecb9c2
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Apr 9 09:35:49 2020 -0700
+
+    update
+
+commit 07e21ccc0ca0e97e6c37d164181373dcec8567ad
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Apr 9 00:39:03 2020 -0700
+
+    update
+
+commit 9f5dab743b0af80fb86fe6a85edf1122684c8442
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Apr 9 00:17:47 2020 -0700
+
+    update
+
+commit 6f8c5df312ce837e37d402df2b70e2a64b58cf25
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Thu Apr 9 00:01:10 2020 -0700
+
+    update
+
+commit debc2a1ebc2404ec775b2573e5a6d52649d4b7bf
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Wed Apr 8 18:02:40 2020 -0700
+
+    update
+
+commit 874548d014a83fdea03aabeb9754332a8c727daf
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Wed Apr 8 17:48:15 2020 -0700
+
+    update README
+
+commit 42e09ffc896c0a7bf1087a433a2f831ae9032f7f
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Wed Apr 8 17:47:37 2020 -0700
+
+    update
+
+commit 46942c3420c4cfa05fc1fcd995f9f0791582f222
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Wed Apr 8 17:46:06 2020 -0700
+
+    README update
+
+commit d3a049f761fd23a3809dbe2e09a90f1104af754b
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Wed Apr 8 17:44:58 2020 -0700
+
+    README update
+
+commit a20537dd214d1cc979b4ee3d5a5e0c004897407a
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Wed Apr 8 17:33:30 2020 -0700
+
+    update
+
+commit 0707fa90273220e1c97b4318316b4f3eb201b827
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Wed Apr 8 17:31:26 2020 -0700
+
+    First major update
+
+commit 656e0a456d308d5460b77367afd783e4cec7d38e
+Author: Philip Chang <sgnoohc@gmail.com>
+Date:   Wed Apr 8 15:15:42 2020 -0700
+
+    first commit
+diff --git a/python/plot.py b/python/plot.py
+index 9bbd935..7a845ec 100644
+--- a/python/plot.py
++++ b/python/plot.py
+@@ -123,6 +123,8 @@ def main(args):
+     if args.style == 1: grouping_setting = style.grouping_3LepMET
+     if args.style == 5: grouping_setting = style.grouping_OS2jet
+     if args.style == 7: grouping_setting = style.grouping_1Lep4jet
++    if args.style == 8: grouping_setting = style.grouping_OS2Fatjet
++
+ 
+     # Now loop over files to check the grouping and print a warning that it is skipping some stuff
+     root_file_groups = {}
+@@ -199,6 +201,13 @@ def main(args):
+         legend_labels = style.legend_labels_1Lep4jet
+         sig_labels = style.sig_labels_1Lep4jet
+         colors = style.colors_1Lep4jet
++    if args.style == 8: # OS+Fatjets style
++        bkg_plot_order = style.bkg_plot_order_OS2Fatjet
++        sig_plot_order = style.sig_plot_order_OS2Fatjet
++        legend_labels = style.legend_labels_OS2Fatjet
++        sig_labels = style.sig_labels_OS2Fatjet
++        colors = style.colors_OS2Fatjet
++
+ 
+     # Print the options set
+     print("")
+diff --git a/python/style.py b/python/style.py
+index 8acdba4..72b8ffa 100644
+--- a/python/style.py
++++ b/python/style.py
+@@ -151,6 +151,28 @@ sig_labels_1Lep4jet = [ "VVV", "VH" ]
+ colors_1Lep4jet = [2001, 7004, 7003, 7001]
+ """
+ 
++
++
++#~~~~~~~~~~~~~~~~~~
++# 2OSFatJet style
++#~~~~~~~~~~~~~~~~
++
++grouping_OS2Fatjet ={
++ "DY_high.root"           : "Z",
++ "DY_low.root"            : "Z",
++ "WWW.root"               : "VVV",
++ "WWZ.root"               : "VVV",
++ "WZZ.root"               : "VVV",
++ "ZZZ.root"               : "VVV",  
++}
++
++
++bkg_plot_order_OS2Fatjet = [ "ZZ" ]
++legend_labels_OS2Fatjet = [ "ZZ"]
++colors_OS2Fatjet        = [9001, 2003]
++sig_plot_order_OS2Fatjet = [ "VVV" ]
++sig_labels_OS2Fatjet = [ "VVV" ]
++
+ #~~~~~~~~~~~~~~~~
+ # 1Lep 4jet styles
+ #~~~~~~~~~~~~~~~~
+diff --git a/rooutil b/rooutil
+index 718ae74..ec8bc15 160000
+--- a/rooutil
++++ b/rooutil
+@@ -1 +1 @@
+-Subproject commit 718ae74cebf42d393645ffb2b714ebbf10cc29b2
++Subproject commit ec8bc1530a8bf068f92e0f909e458b94b2c49eaf

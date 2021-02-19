@@ -151,6 +151,28 @@ sig_labels_1Lep4jet = [ "VVV", "VH" ]
 colors_1Lep4jet = [2001, 7004, 7003, 7001]
 """
 
+
+
+#~~~~~~~~~~~~~~~~~~
+# 2OSFatJet style
+#~~~~~~~~~~~~~~~~
+
+grouping_OS2Fatjet ={
+ "DY_high.root"           : "Z",
+ "DY_low.root"            : "Z",
+ "WWW.root"               : "VVV",
+ "WWZ.root"               : "VVV",
+ "WZZ.root"               : "VVV",
+ "ZZZ.root"               : "VVV",  
+}
+
+
+bkg_plot_order_OS2Fatjet = [ "ZZ" ]
+legend_labels_OS2Fatjet = [ "ZZ"]
+colors_OS2Fatjet        = [9001, 2003]
+sig_plot_order_OS2Fatjet = [ "VVV" ]
+sig_labels_OS2Fatjet = [ "VVV" ]
+
 #~~~~~~~~~~~~~~~~
 # 1Lep 4jet styles
 #~~~~~~~~~~~~~~~~
