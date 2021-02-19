@@ -106,6 +106,8 @@ Begin_OS2Fatjet_Create_Branches();
 
     ana.histograms.addHistogram("EvtMassNoMET" , 450,   0,  4500, [&]() { return      ana.tx.getBranch<float>("OS2jet_Mfatjetsleptons"         )   ; } );
     ana.histograms.addHistogram("EvtMassWithMET", 450,   0,  4500, [&]() { return      ana.tx.getBranch<float>("OS2jet_MfatjetsleptonsMET"     )   ; } );
+    ana.histograms.addHistogram("EvtMassWith2jets", 450,   0,  4500, [&]() { return      ana.tx.getBranch<float>("OS2jet_Mfatjetleptonsjets"     )   ; } );
+
     ana.histograms.addHistogram("genVVV_pt"    , 300,   0,  1500, [&]() { return      ana.tx.getBranch<float>("OS2jet_genpTVVV"                )   ; } );
     ana.histograms.addHistogram("genVVV_M"     , 450,   0,  4500, [&]() { return      ana.tx.getBranch<float>("OS2jet_genMVVV"                 )   ; } );
     ana.histograms.addHistogram("MET"          , 300,   0,  1500, [&]() { return      ana.tx.getBranch<float>("OS2jet_MET"                     )   ; } );
@@ -294,6 +296,7 @@ Begin_OS2Fatjet_Create_Branches();
                                             ana.tx.setBranch<float>("OS2jet_Mfatjetsleptons",       -999.);
                                             ana.tx.setBranch<float>("OS2jet_MfatjetsleptonsMET",    -999.);
                                             ana.tx.setBranch<float>("OS2jet_MTfatjetsleptonsMET",   -999.);
+                                            ana.tx.setBranch<float>("OS2jet_Mfatjetleptonsjets",   -999.);
                                             ana.tx.setBranch<bool >("OS2jet_fatjet1_tau21cut",      false);
                                             ana.tx.setBranch<bool >("OS2jet_fatjet1_massSDcut",     false);
                                             /*ana.tx.setBranch<bool >("OS2jet_fatjet2_massSDcut",     false);
@@ -342,6 +345,10 @@ Begin_OS2Fatjet_Create_Branches();
 
 
                                             ana.tx.setBranch<float>("OS2jet_MfatjetsleptonsMET", LVfjlm.M());
+
+
+
+
      													               //now fill branches already here
 
                                             //int nfat= ana.tx.getBranchLazy<vector<LorentzVector>>("Common_fatjet_p4").size();
@@ -398,6 +405,39 @@ Begin_OS2Fatjet_Create_Branches();
                                             ana.tx.setBranch<int>  ("OS2jet_Njets",                 nnonfat);
                                             ana.tx.setBranch<int>  ("OS2jet_Nbjetsv2",              nbnonfat);
                                             //ana.tx.setBranch<int>  ("OS2jet_NfatjetsMinusNjets",    nfat-nnonfat);
+
+                                            LorentzVector LVfjl2j = LorentzVector(0.,0.,0.,0.); //lorentz vector fatjet-lepton-2ak4 non-bjets
+
+
+                                            for(unsigned int il = 0; il<ana.tx.getBranchLazy<vector<LorentzVector>>("Common_lep_p4").size(); ++il){
+                                              LVfjl2j += ana.tx.getBranchLazy<vector<LorentzVector>>("Common_lep_p4")[il];
+                                            }
+
+                                             //find two highest pt ak4 no b tagged jets:
+                                             int counter =0;
+                                             int idx1=-1;
+                                             int idx2=-1;
+
+                                            for(unsigned int ij = 0; ij<ana.tx.getBranchLazy<vector<bool>>("Common_jet_p4").size(); ++ij){
+                                              cout << "pass 0" << endl;
+                                              if(ana.tx.getBranchLazy<vector<int>>("Common_jet_overlapfatjet")[ij]>=0) continue;
+                                              if(ana.tx.getBranchLazy<vector<bool>>("Common_jet_passBloose")[ij]) continue;
+                                               ++counter;
+                                               if (counter==1) idx1=ij;
+                                               if  (counter==2) idx2 =ij;
+
+                                            }
+
+                                            if( idx1>0 && idx2>0 && nfat>0){
+
+                                              LVfjl2j = ana.tx.getBranchLazy<vector<LorentzVector>>("Common_fatjet_p4")[0]; //only one fat jet
+                                              LVfjl2j += ana.tx.getBranchLazy<vector<LorentzVector>>("Common_jet_p4")[idx1];
+                                              LVfjl2j += ana.tx.getBranchLazy<vector<LorentzVector>>("Common_jet_p4")[idx2];
+                                              ana.tx.setBranch<float>("OS2jet_Mfatjetleptonsjets", LVfjl2j.M());
+                                              cout <<"true"<< endl;
+                                            }
+
+
 
                                             float st = ht + ht_ak4 + ana.tx.getBranchLazy<vector<LorentzVector>>("Common_lep_p4")[0].Pt() + ana.tx.getBranchLazy<vector<LorentzVector>>("Common_lep_p4")[1].Pt();
                                             ana.tx.setBranch<float>("OS2jet_ST",   st);
@@ -909,6 +949,9 @@ Begin_OS2Fatjet_Create_Branches();
     ana.tx.createBranch<float>("OS2jet_genpTVVV"              );
     ana.tx.createBranch<float>("OS2jet_Mfatjetsleptons"       );
     ana.tx.createBranch<float>("OS2jet_MfatjetsleptonsMET"       );
+    ana.tx.createBranch<float>("OS2jet_Mfatjetleptonsjets"       );
+
+
     ana.tx.createBranch<float>("OS2jet_MTfatjetsleptonsMET"   );
     ana.tx.createBranch<bool >("OS2jet_fatjet1_tau21cut"      );
     ana.tx.createBranch<bool >("OS2jet_fatjet1_massSDcut"     );

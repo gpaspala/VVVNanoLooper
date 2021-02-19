@@ -92,7 +92,7 @@ EXTRAARGS="$(getjobad metis_extraargs)"
 #     INPUTFILENAMES=${INPUTFILENAMES/\/store/root:\/\/cmsxrootd.fnal.gov\/\/store}
 # fi
 echo Executing ./doVVVAnalysis -i $INPUTFILENAMES -t Events -o ${OUTPUTNAME}.root ${EXTRAARGS}
-./doVVVAnalysis -i $INPUTFILENAMES -t Events -o ${OUTPUTNAME}.root ${EXTRAARGS}
+./doVVVAnalysis -i $INPUTFILENAMES -w  -t Events -o ${OUTPUTNAME}.root  ${EXTRAARGS}
 RET=$?
 
 if [ ${RET} != 0 ]; then
