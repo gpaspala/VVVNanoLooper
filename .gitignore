@@ -7,3 +7,8 @@ logger_metis.log
 condor/samples.pyc
 condor/package.tar.xz
 condor/package.tar.gz
+scriptTorunEFT.sh
+condor/gitversion.txt
+condor/summary.json
+condor/summary.txt
+condor/web_summary.json
