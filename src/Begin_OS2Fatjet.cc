@@ -95,6 +95,40 @@ Begin_OS2Fatjet_Create_Branches();
     ana.cutflow.addCutToLastActiveCut("Cut_OS2Fatjet_SFZ1fatjet_sel",                [&]() { return ana.tx.getBranch<bool>("OS2jet_fatjet1_tau21cut");}, UNITY);
 
 
+    //DY CR//
+    //DY CR
+    ana.cutflow.getCut("Cut_OS2Fatjet_SFZPreselection");
+    ana.cutflow.addCutToLastActiveCut("Cut_OS2Fatjet_DYCRPreselection",               [&]() { return ana.tx.getBranch<int>("OS2jet_Njets")==0;}, UNITY);
+
+
+    //ana.cutflow.addCutToLastActiveCut("Cut_OS2jet_DYCR2jets",                      [&]() { return ana.tx.getBranch<int>("OS2jet_Jetcontent")==0;}, UNITY);
+    // ____________________//
+    //*** OS2jet_DYCR1fatjet
+    ana.cutflow.getCut("Cut_OS2Fatjet_DYCRPreselection");
+    ana.cutflow.addCutToLastActiveCut("Cut_OS2Fatjet_DYCR1fatjet",                   [&]() { return ana.tx.getBranch<int>("OS2jet_Jetcontent")==1;}, UNITY);
+    //DY CR msd sideban
+    ana.cutflow.addCutToLastActiveCut("Cut_OS2Fatjet_DYCR1fatjet_mSDwind",           [&]() { return ana.tx.getBranch<float>("OS2jet_fatjet1_massSD")>40 && ana.tx.getBranch<float>("OS2jet_fatjet1_massSD")<60; }, UNITY);
+
+    //ana.cutflow.addCutToLastActiveCut("Cut_OS2Fatjet_DYCR1fatjet_medWP",             [&]() { return ana.tx.getBranch<int>("OS2jet_Nfatjets_medium")==1;}, [&]() { return ana.tx.getBranch<float>("OS2jet_fatjetwgt_medium"); });
+    ana.cutflow.addCutToLastActiveCut("Cut_OS2Fatjet_DYCR1fatjet_sel",               [&]() { return ana.tx.getBranch<bool>("OS2jet_fatjet1_tau21cut");}, UNITY);
+
+
+    //add a ttbar CR//
+
+    //top CR
+    ana.cutflow.getCut("Cut_OS2Fatjet_Preselection");
+    ana.cutflow.addCutToLastActiveCut("Cut_OS2Fatjet_topCRPreselection",               [&]() { return ana.tx.getBranch<int>("OS2jet_Nbjetsmedv1")>=1;},  [&]() { return ana.tx.getBranchLazy<float>("Common_btagWeight_DeepCSVB");});
+    ana.cutflow.addCutToLastActiveCut("Cut_OS2Fatjet_topCR2jets",                      [&]() { return ana.tx.getBranch<int>("OS2jet_Jetcontent")==0;}, UNITY);
+    // ____________________
+    // *** OS2jet_topCR1fatjet
+    ana.cutflow.getCut("Cut_OS2Fatjet_topCRPreselection");
+    ana.cutflow.addCutToLastActiveCut("Cut_OS2Fatjet_topCR1fatjet",                    [&]() { return ana.tx.getBranch<int>("OS2jet_Jetcontent")==1;}, UNITY);
+    ana.cutflow.addCutToLastActiveCut("Cut_OS2Fatjet_topCR1fatjet_medWP",              [&]() { return ana.tx.getBranch<int>("OS2jet_Nfatjets_medium")==1;}, [&]() { return ana.tx.getBranch<float>("OS2jet_fatjetwgt_medium"); });
+    ana.cutflow.addCutToLastActiveCut("Cut_OS2Fatjet_topCR1fatjet_sel",                [&]() { return ana.tx.getBranch<bool>("OS2jet_fatjet1_tau21cut");}, UNITY);
+
+
+
+
     // Create histograms used in this category.
     // Please follow the convention of h_<category>_<varname> structure.
     // N.B. Using nbins of size 180 or 360 can provide flexibility as it can be rebinned easily, as 180, 360 are highly composite numbers.
@@ -219,7 +253,7 @@ Begin_OS2Fatjet_Create_Branches();
                                             ana.tx.setBranch<int>  ("OS2jet_Nfatjets",              -999);
                                             ana.tx.setBranch<int>  ("OS2jet_Njets",                 -999);
                                             ana.tx.setBranch<int>  ("OS2jet_Nbjetsv1",              ana.tx.getBranchLazy<int>("Common_nb_loose"));
-                                            //ana.tx.setBranch<int>  ("OS2jet_Nbjetsmedv1",           ana.tx.getBranchLazy<int>("Common_nb_medium"));
+                                            ana.tx.setBranch<int>  ("OS2jet_Nbjetsmedv1",           ana.tx.getBranchLazy<int>("Common_nb_medium"));
                                             ana.tx.setBranch<int>  ("OS2jet_Nbjetsv2",              -999);
                                             //ana.tx.setBranch<int>  ("OS2jet_NfatjetsMinusNjets",    -999);
                                             ana.tx.setBranch<float>("OS2jet_fatjet_pt",                 -999);
@@ -848,7 +882,7 @@ Begin_OS2Fatjet_Create_Branches();
     ana.tx.createBranch<int>  ("OS2jet_Nbjetsv2"              );
     ana.tx.createBranch<float>("OS2jet_ST"                    );
 
-    //ana.tx.createBranch<int>  ("OS2jet_Nbjetsmedv1"           );
+    ana.tx.createBranch<int>  ("OS2jet_Nbjetsmedv1"           );
     //ana.tx.createBranch<int>  ("OS2jet_NfatjetsMinusNjets"    );
     ana.tx.createBranch<float>("OS2jet_fatjet_pt"             );
     ana.tx.createBranch<float>("OS2jet_lep1_pt"               );
