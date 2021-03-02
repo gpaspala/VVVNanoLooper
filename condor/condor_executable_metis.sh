@@ -92,7 +92,7 @@ EXTRAARGS="$(getjobad metis_extraargs)"
 #     INPUTFILENAMES=${INPUTFILENAMES/\/store/root:\/\/cmsxrootd.fnal.gov\/\/store}
 # fi
 echo Executing ./doVVVAnalysis -i $INPUTFILENAMES -t Events -o ${OUTPUTNAME}.root ${EXTRAARGS}
-./doVVVAnalysis -i $INPUTFILENAMES -t Events -o ${OUTPUTNAME}.root ${EXTRAARGS}
+./doVVVAnalysis -i $INPUTFILENAMES -w  -t Events -o ${OUTPUTNAME}.root  ${EXTRAARGS}
 RET=$?
 
 if [ ${RET} != 0 ]; then
@@ -133,8 +133,9 @@ ls -lrth
 
 echo -e "\n--- begin copying output ---\n" #                    <----- section division
 echo "Sending output file $OUTPUTNAME.root"
+OUTPUTDIRPATHNEW=$(echo ${OUTPUTDIR} | sed 's/^.*\(\/store.*\).*$/\1/')
 COPY_SRC="file://`pwd`/${OUTPUTNAME}.root"
-COPY_DEST="gsiftp://gftp.t2.ucsd.edu${OUTPUTDIR}/${OUTPUTNAME}_${IFILE}.root"
+COPY_DEST="davs://redirector.t2.ucsd.edu:1094//${OUTPUTDIRPATHNEW}/${OUTPUTNAME}_${IFILE}.root"
 echo "Running: env -i X509_USER_PROXY=${X509_USER_PROXY} gfal-copy -p -f -t 4200 --verbose --checksum ADLER32 ${COPY_SRC} ${COPY_DEST}"
 env -i X509_USER_PROXY=${X509_USER_PROXY} gfal-copy -p -f -t 4200 --verbose --checksum ADLER32 ${COPY_SRC} ${COPY_DEST}
 COPY_STATUS=$?

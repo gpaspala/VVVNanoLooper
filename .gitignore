@@ -12,3 +12,16 @@ condor/gitversion.txt
 condor/summary.json
 condor/summary.txt
 condor/web_summary.json
+
+.*.txt
+.*.cc
+.*.h
+python/*.pyc
+condor/*.json
+histograms
+test.cc
+test.sh
+testdir/
+plotdir/
+condor/count_nevents.py
+

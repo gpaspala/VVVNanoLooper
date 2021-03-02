@@ -24,3 +24,9 @@ void Process_OS2jet()
 
     //ana.tx.setBranch<LorentzVector>("OS2jet_LVVar1", LV_OS2jet_LVVar1);
 }
+
+void PostProcess_OS2jet(){
+    if (ana.cutflow.getCut("Cut_OS2jet_Preselection").pass){
+                   ana.tx.fill(); 
+    }
+  }

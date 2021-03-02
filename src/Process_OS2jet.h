@@ -5,4 +5,6 @@
 
 void Process_OS2jet();
 
+void PostProcess_OS2jet();
+
 #endif

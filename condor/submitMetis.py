@@ -55,12 +55,19 @@ if __name__ == "__main__":
         elif args.year==2016:
             sample_map = samples.data_2016 # See condor/samples.py
     if args.mysample:
-       sample_map =samples.lisa_sampletest
-       # sample_map = samples.samples_VVV4L_2018 # See condor/samples.py
-       # if args.year==2017:
-       #     sample_map = samples.samples_VVV4L_2017 # See condor/samples.py
-       # elif args.year==2016:
-       #     sample_map = samples.samples_VVV4L_2016 # See condor/samples.py
+        sample_map = samples.lisa_sampletest
+        # sample_map = samples.samples_VVV4L_2018 # See condor/samples.py
+        #sample_map = samples.samples_VVV4L_2018_Skimmed # See condor/samples.py
+        #sample_map.update(samples.samples_VVV4L_2018_EFT) # See condor/samples.py
+        #if args.year==2017:
+            # sample_map = samples.samples_VVV4L_2017 # See condor/samples.py
+         #   sample_map = samples.samples_VVV4L_2017_Skimmed # See condor/samples.py
+         #   sample_map.update(samples.samples_VVV4L_2017_EFT) # See condor/samples.py
+        #elif args.year==2016:
+            # sample_map = samples.samples_VVV4L_2016 # See condor/samples.py
+         #   sample_map = samples.samples_VVV4L_2016_Skimmed # See condor/samples.py
+         #   sample_map.update(samples.samples_VVV4L_2016_EFT) # See condor/samples.py
+
         
 
     # submission tag
@@ -95,8 +102,10 @@ if __name__ == "__main__":
                             ["metis_extraargs", "--mode {} {}".format(args.mode,args.addflags)]
                             ]
                         },
-                    cmssw_version = "CMSSW_9_2_0",
-                    scram_arch = "slc6_amd64_gcc700",
+                    #cmssw_version = "CMSSW_9_2_0",
+                    #scram_arch = "slc6_amd64_gcc700",
+                    scram_arch = "slc7_amd64_gcc700",
+                    cmssw_version= "CMSSW_10_0_0",
                     input_executable = "{}/condor_executable_metis.sh".format(condorpath), # your condor executable here
                     tarfile = "{}/package.tar.xz".format(condorpath), # your tarfile with assorted goodies here
                     special_dir = "VVVAnalysis/{}/{}".format(tag,args.year), # output files into /hadoop/cms/store/<user>/<special_dir>
@@ -124,9 +133,11 @@ if __name__ == "__main__":
             task_summary[task.get_sample().get_datasetname()] = task.get_task_summary()
 
         # Parse the summary and make a summary.txt that will be used to pretty status of the jobs
-        StatsParser(data=task_summary, webdir="~/public_html/VVVNanoLooperDashboard").do()
-        os.system("chmod -R 755 ~/public_html/VVVNanoLooperDashboard")
-        os.system("msummary -r | tee summary.txt")
+        os.system("rm web_summary.json")
+        webdir="~/public_html/VVVNanoLooperDashboard{}".format(args.year)
+        StatsParser(data=task_summary, webdir=webdir).do()
+        os.system("chmod -R 755 {}".format(webdir))
+        os.system("msummary -r -i {}/web_summary.json".format(webdir))
 
         # If all done exit the loop
         if all_tasks_complete:
@@ -145,4 +156,3 @@ if __name__ == "__main__":
         except KeyboardInterrupt:
             raw_input("Press Enter to force update, or Ctrl-C to quit.")
             print("Force updating...")
-
