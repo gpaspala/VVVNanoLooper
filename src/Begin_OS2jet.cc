@@ -251,12 +251,10 @@ void Begin_OS2jet()
                                         ana.tx.setBranch<float>("OS2jet_fatjetwgt_vloose",      -999.);
                                         ana.tx.setBranch<float>("OS2jet_fatjetwgt_loose",       -999.);
                                         ana.tx.setBranch<float>("OS2jet_fatjetwgt_medium",      -999.);
-<<<<<<< HEAD
-                                       if(ana.is_EFT_sample) ana.tx.setBranch<float>("OS2jet_LHEWeightSM",           nt.LHEWeight_mg_reweighting()[0]);
+
+                                     //  if(ana.is_EFT_sample) ana.tx.setBranch<float>("OS2jet_LHEWeightSM",           nt.LHEWeight_mg_reweighting()[0]);
                                        //comment
-=======
                                         ana.tx.setBranch<float>("OS2jet_LHEWeightSM",           ana.is_EFT_sample ? ana.tx.getBranch<vector<float>>("Common_LHEWeight_mg_reweighting")[0] : -999);
->>>>>>> common_ntup_cache
 
                                         if(ana.tx.getBranchLazy<vector<LorentzVector>>("Common_gen_vvvdecay_p4s").size()>=6){
                                           LorentzVector genVVV = LorentzVector(0.,0.,0.,0.);
